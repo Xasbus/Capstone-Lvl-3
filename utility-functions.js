@@ -2,8 +2,15 @@ function display(message) {
   document.write(message);
 }
 
-function output(message) {
-  window.outputTag.innerHTML += message;
+function cardConverter(cardObject) {
+  let cardString = `<div class="card">
+  <img class="card-img-top" src="${cardObject.src}">
+  <div class="card-body">
+  <h3 class="card-title">${cardObject.title}</h3>
+  ${cardObject.summary}
+  </div>
+  </div>`;
+  return cardString;
 }
 
 function ask(message) {
@@ -17,13 +24,7 @@ function ask(message) {
   }
 }
 
-function cardConverter(cardObject) {
-  let cardString = `<div class="card">
-  <img class="card-img-top" src="${cardObject.src}">
-  <div class="card-body">
-  <h3 class="card-title">${cardObject.title}</h3>
-  ${cardObject.summary}
-  </div>
-  </div>`;
-  return cardString;
+function output(message = "", outputTag = "outputTag", shouldAppend = true) {
+  if (shouldAppend) window[outputTag].innerHTML += message;
+  else window[outputTag].innerHTML = message;
 }

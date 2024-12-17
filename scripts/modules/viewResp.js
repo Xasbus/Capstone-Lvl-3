@@ -1,3 +1,5 @@
+import { output } from "../utils/output.js";
+
 export function viewResp(resolveValue) {
   const response = JSON.parse(resolveValue);
   const results = response.results;
