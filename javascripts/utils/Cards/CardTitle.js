@@ -1,12 +1,12 @@
-import { CardBody } from "./cardBody";
+import { CardBody } from "./CardBody.js";
 
 export class Title {
     openingTag = "<h3 class='card-title'>";
     closingTag = "</h3>";
     innerHTML = "";
 
-    addContainer(column = new CardBody()) {
-        this.innerHTML += column;
+    addBody(cardBody = new CardBody()) {
+        this.innerHTML += cardBody;
     }
 
     toString() {
