@@ -2116,10 +2116,83 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NavBar */ "./src/Views/NavBar.js");
+/* harmony import */ var _UseMapResize__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./UseMapResize */ "./src/Views/UseMapResize.js");
+
 
 
 function Home() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavBar__WEBPACK_IMPORTED_MODULE_1__.NavBar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, "HOME PAGE"));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavBar__WEBPACK_IMPORTED_MODULE_1__.NavBar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    title: "Playstation",
+    alt: "playstation title",
+    width: "100%",
+    height: "100px",
+    src: "https://cdn.glitch.global/484456c7-95c6-4c6d-8254-08d84585b7a3/f83b7c7f-1593-465d-bd43-6e8becdd04a4.image.png?v=1722101474400"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("u", null, "PlayStation")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
+    className: "backgroundColor"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+    id: "consoles"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    title: "PS5 & Controller",
+    alt: "playstation5",
+    width: "50%",
+    height: "30%",
+    src: "https://gmedia.playstation.com/is/image/SIEPDC/ps5-slim-dualsense-image-block-01-en-16nov23?$1600px--t$"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+    className: "titleColor"
+  }, "Consoles"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Experience an all-new generation of incredible PlayStation games. Lightning Speed. Breath-taking Immersion. Stunning Gameplay"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Lorem ipsum odor amet, consectetuer adipiscing elit. Habitasse tristique ridiculus tristique dictum risus augue nibh. Quisque purus pretium a fames vulputate auctor sit ligula. Ridiculus posuere consequat facilisis commodo nulla senectus egestas integer. Penatibus in fermentum parturient morbi at varius. Sit aliquet clasds inceptos ligula blandit mi neque tempus. Vitae molestie fusce tempus ridiculus mollis lacinia vehicula. Purus platea viverra ac egestas hac?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Clasds dis ad sed donec est. Vehicula torquent mauris posuere praesent, tortor ridiculus pulvinar erat. Vel porttitor praesent aliquam litora varius egestas. Ante consequat luctus praesent sit hac aliquam maximus. Vulputate sociosqu lacus mauris erat venenatis aptent. Netus aliquet augue vulputate maecenas finibus vulputate massa montes. Sit montes aptent eleifend ac elementum felis erat quisque enim. Conubia volutpat adipiscing ac luctus eget metus sapien elit. Augue eros ligula sodales elementum vivamus semper pellentesque ligula."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+    id: "games"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    title: "assorted characters",
+    alt: "assorted characters",
+    width: "50%",
+    height: "30%",
+    src: "https://th.bing.com/th?id=OIP.ZuCoVty7pZYDA3t9Lz3l6QAAAA&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+    className: "titleColor"
+  }, "Games"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "spinner-grow text-success"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "badge bg-success"
+  }, "ON SALE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Discover the games you want, from exclusive blockbusters to innovative indies, all brought to life with the power of the PS5\u2122 console."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Natoque mus curae leo ut commodo, sapien interdum. Dui vel risus erat magna at dui fusce. Malesuada praesent litora vulputate tempor accumsan adipiscing? Dictum classss quisque suscipit aptent vestibulum ipsum semper ad ultrices. Est dui diam ipsum penatibus lacinia posuere metus dui mus. Ultricies praesent elementum primis elementum sollicitudin mus. Sollicitudin torquent magnis fames cubilia eros quis sem. Habitasse consectetur ipsum ultricies inceptos vestibulum per sagittis. Massa enim fringilla; rutrum clwass quis consectetur eros."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Sapien libero mi vehicula mauris; feugiat auctor accumsan. Placerat habitant suspendisse elit donec sed curae phasellus tempus. Congue fermentum consectetur praesent cursus, aenean lobortis tristique. Aliquet ac ac proin condimentum suspendisse a at. Morbi malesuada massa eget id suspendisse. Elit maximus hac montes leo semper varius. Senectus ac aenean taciti penatibus posuere accumsan nullam. Etiam finibus risus neque urna dis tortor. Laoreet turpis dictum clrass sociosqu mi at molestie."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+    id: "accessories"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    title: "Various accessories",
+    alt: "assorted accessories",
+    width: "50%",
+    height: "30%",
+    useMap: "#accessoriesMap",
+    src: "assets\\accessories-image-map.jpg"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("map", {
+    name: "accessoriesMap"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("area", {
+    title: "Controller Info",
+    coords: "636,490, 669,376, 887,376, 919,491, 908,550, 877,557, 841,494, 712,494, 677,557, 643,544,",
+    shape: "poly",
+    target: "_blank",
+    href: "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("area", {
+    title: "Camera Info",
+    coords: "635,57, 914,183",
+    shape: "rect",
+    target: "_blank",
+    href: "https://www.playstation.com/en-us/accessories/hd-camera/"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("area", {
+    title: "Headset Info",
+    coords: "488,483, 393,474, 365,431, 423,225, 480,146, 505,140, 570,167, 584,274, 590,382",
+    shape: "poly",
+    target: "_blank",
+    href: "https://www.playstation.com/en-us/accessories/pulse-3d-wireless-headset/"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+    className: "titleColor"
+  }, "Accessories"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Build your perfect gaming setup with controllers, headsets and other accessories for your PS5\xAE or PS4\u2122 console."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Diam montes euismod orci lobortis hac eleifend mus ridiculus. Proin accumsan phasellus in maximus magna adipiscing sagittis. Venenatis tristique elit malesuada hendrerit inceptos. Malesuada diam suspendisse sollicitudin quisque felis. Montes diam felis elit ipsum quis lectus consectetur ullamcorper. Tempus donec lacinia mus suscipit dignissim et dignissim inceptos? Ad varius nibh iaculis pellentesque lacus cubilia."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Mattis facilisis potenti venenatis magna cubilia ligula venenatis. Consequat tortor fermentum id conubia, primis cras. Dolor maximus enim class posuere vivamus nam volutpat. Sagittis eget laoreet tristique primis, sit massa vehicula. Libero natoque lobortis orci, velit dictumst luctus non. Egestas magnis nulla nulla pharetra massa platea porttitor scelerisque. Hendrerit donec eget; nunc gravida suscipit hac et pretium. Morbi odio class dis; dolor consequat condimentum convallis. Tempor odio odio lacus ligula in lacinia fusce efficitur parturient."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("script", null, "imageMapResize();"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "#consoles"
+  }, "Consoles"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "#games"
+  }, "Games"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "#accessories"
+  }, "Accessories")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "creatorName"
+  }, "Website created by David Billiot")));
 }
 
 /***/ }),
@@ -2140,21 +2213,28 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function NavBar() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
+    className: "navbar nav-pills container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    title: "PS Logo",
+    alt: "logo",
+    width: "40px",
+    src: "data:image/png;base64,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"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/"
-  }, "Home | "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
+  }, "Home "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/consoles"
-  }, "Consoles | "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
+  }, "Consoles "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/games"
-  }, "Games | "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
+  }, "Games "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/accessories"
-  }, "Accessories | "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
+  }, "Accessories "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/signin"
-  }, "Sign In | "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
+  }, "Sign In "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/about"
-  }, "About | "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
+  }, "About "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/contact"
-  }, "Contact | ")));
+  }, "Contact ")));
 }
 
 /***/ }),
@@ -2176,6 +2256,25 @@ __webpack_require__.r(__webpack_exports__);
 
 function SignIn() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavBar__WEBPACK_IMPORTED_MODULE_1__.NavBar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, "Sign In PAGE"));
+}
+
+/***/ }),
+
+/***/ "./src/Views/UseMapResize.js":
+/*!***********************************!*\
+  !*** ./src/Views/UseMapResize.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   UseMapResize: () => (/* binding */ UseMapResize)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function UseMapResize() {
+  imageMapResize();
 }
 
 /***/ }),
