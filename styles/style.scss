@@ -33,8 +33,9 @@ $titleFont: "GoS";
 }
 
 body {
-    color: $colorBody;
-    background-image: url(../images/PS5-background-image.png);
+    background-color: $colorBody;
+    background-image: url(../assets/PS5-background-image.png);
+    
 }
 
 .titleColor {
@@ -116,4 +117,8 @@ p {
     u {
         color: $whiteColor;
     }
+}
+
+ul {  
+    background-image: linear-gradient(rgba(30, 30, 30, 0.7), rgba(72, 2, 164, 0.7), rgba(68, 77, 4, 0.7));  
 }

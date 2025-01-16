@@ -11,8 +11,8 @@
 }
 
 body {
-  color: rgb(180, 180, 180);
-  background-image: url(../images/PS5-background-image.png);
+  background-color: rgb(180, 180, 180);
+  background-image: url(../assets/PS5-background-image.png);
 }
 
 .titleColor {
@@ -89,4 +89,8 @@ p span {
 
 p u {
   color: white;
+}
+
+ul {
+  background-image: linear-gradient(rgba(30, 30, 30, 0.7), rgba(72, 2, 164, 0.7), rgba(68, 77, 4, 0.7));
 }
