@@ -6,7 +6,7 @@ export function NavBar() {
     <>
       <nav>
         <Link to="/">Home | </Link>
-        <Link to="/consoles">Consoles | </Link>
+        <Link to="/consoles">Consoles |</Link>
         <Link to="/games">Games | </Link>
         <Link to="/accessories">Accessories | </Link>
         <Link to="/signin">Sign In | </Link>
