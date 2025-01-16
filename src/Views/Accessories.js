@@ -1,13 +1,13 @@
 import React from "react";
 import { NavBar } from "./NavBar";
 
-export function Home() {
+export function Accessories() {
   return (
     <>
       <header>
         <NavBar />
       </header>
-      <main>HOME PAGE</main>
+      <main>Accessories PAGE</main>
     </>
   );
 }

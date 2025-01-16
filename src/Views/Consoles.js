@@ -1,13 +1,13 @@
 import React from "react";
 import { NavBar } from "./NavBar";
 
-export function Home() {
+export function Consoles() {
   return (
     <>
       <header>
         <NavBar />
       </header>
-      <main>HOME PAGE</main>
+      <main>CONSOLES PAGE</main>
     </>
   );
 }

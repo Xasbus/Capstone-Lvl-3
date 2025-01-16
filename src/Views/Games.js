@@ -1,13 +1,13 @@
 import React from "react";
 import { NavBar } from "./NavBar";
 
-export function Home() {
+export function Games() {
   return (
     <>
       <header>
         <NavBar />
       </header>
-      <main>HOME PAGE</main>
+      <main>GAMES PAGE</main>
     </>
   );
 }

@@ -1,13 +1,13 @@
 import React from "react";
 import { NavBar } from "./NavBar";
 
-export function Home() {
+export function SignIn() {
   return (
     <>
       <header>
         <NavBar />
       </header>
-      <main>HOME PAGE</main>
+      <main>Sign In PAGE</main>
     </>
   );
 }
