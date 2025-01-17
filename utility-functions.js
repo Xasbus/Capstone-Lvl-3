@@ -2,16 +2,16 @@ function display(message) {
   document.write(message);
 }
 
-function cardConverter(cardObject) {
-  let cardString = `<div class="card" style="width: 25%">
-  <img class="card-img-top" src="${cardObject.src}">
-  <div class="card-body">
-  <h3 class="card-title">${cardObject.title}</h3>
-  ${cardObject.summary}
-  </div>
-  </div>`;
-  return cardString;
-}
+// function cardConverter(cardObject) {
+//   let cardString = `<div class="card" style="width: 25%">
+//   <img class="card-img-top" src="${cardObject.src}">
+//   <div class="card-body">
+//   <h3 class="card-title">${cardObject.title}</h3>
+//   ${cardObject.summary}
+//   </div>
+//   </div>`;
+//   return cardString;
+// }
 
 function ask(message) {
   const userText = prompt(message);

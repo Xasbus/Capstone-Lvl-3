@@ -2054,14 +2054,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NavBar */ "./src/Views/NavBar.js");
 /* harmony import */ var _utils_output__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/output */ "./src/utils/output.js");
+/* harmony import */ var _modules_cardConverter__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../modules/cardConverter */ "./src/modules/cardConverter.js");
 
 
 
-// import { cardConverter } from "../modules/cardConverter";
 
 function Consoles() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
-  // useEffect(componentDidUpdate);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavBar__WEBPACK_IMPORTED_MODULE_1__.NavBar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     title: "PS5",
     alt: "consoles",
@@ -2073,8 +2073,8 @@ function Consoles() {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     id: "playstation5"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("output", {
-    className: "outputTag"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    id: "outputTag"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     width: "100%"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row"
@@ -2095,20 +2095,18 @@ function Consoles() {
   }, "PlayStation VR2")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "creatorName"
   }, "Website created by David Billiot")));
-
-  // function componentDidUpdate() {
-  //   function cardConverter(cardObject) {
-  //     let cardString = `<div class="card" style="width: 18rem;">
-  //     <img class="card-img-top" src="${cardObject.src}">
-  //     <div class="card-body">
-  //     <h3 class="card-title">${cardObject.title}</h3>
-  //     ${cardObject.summary}
-  //     </div>
-  //     </div>`;
-  //     return cardString;
-  //   }
-  // }
-
+  function componentDidUpdate() {
+    function cardConverter(cardObject) {
+      let cardString = `<div class="card">
+      <img class="card-img-top" src="${cardObject.src}">
+      <div class="card-body">
+      <h3 class="card-title">${cardObject.title}</h3>
+      ${cardObject.summary}
+      </div>
+      </div>`;
+      return cardString;
+    }
+  }
   function componentDidMount() {
     const cardObject1 = {};
     cardObject1.src = "https://media.direct.playstation.com/is/image/sierialto/PS5-Disc-Slim-New-Hero-1?$Background_Large$";
@@ -2154,7 +2152,7 @@ function Consoles() {
     for (let position = 0; position < cardArray.length; position++) {
       (0,_utils_output__WEBPACK_IMPORTED_MODULE_2__.output)("<section class='p-5'>");
       const cardObject = cardArray[position];
-      const stringCard = cardConverter(cardObject);
+      const stringCard = (0,_modules_cardConverter__WEBPACK_IMPORTED_MODULE_3__.cardConverter)(cardObject);
       (0,_utils_output__WEBPACK_IMPORTED_MODULE_2__.output)(stringCard);
       (0,_utils_output__WEBPACK_IMPORTED_MODULE_2__.output)("</section>");
     }
@@ -2278,6 +2276,29 @@ __webpack_require__.r(__webpack_exports__);
 
 function SignIn() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavBar__WEBPACK_IMPORTED_MODULE_1__.NavBar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, "Sign In PAGE"));
+}
+
+/***/ }),
+
+/***/ "./src/modules/cardConverter.js":
+/*!**************************************!*\
+  !*** ./src/modules/cardConverter.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   cardConverter: () => (/* binding */ cardConverter)
+/* harmony export */ });
+function cardConverter(cardObject) {
+  let cardString = `<div class="card" style="width: 40rem">
+    <img class="card-img-top" src="${cardObject.src}">
+    <div class="card-body">
+    <h3 class="card-title">${cardObject.title}</h3>
+    ${cardObject.summary}
+    </div>
+    </div>`;
+  return cardString;
 }
 
 /***/ }),

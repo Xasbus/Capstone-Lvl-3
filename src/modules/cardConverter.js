@@ -1,5 +1,5 @@
 export function cardConverter(cardObject) {
-  let cardString = `<div class="card" style="width: 100vw">
+  let cardString = `<div class="card" style="width: 40rem">
     <img class="card-img-top" src="${cardObject.src}">
     <div class="card-body">
     <h3 class="card-title">${cardObject.title}</h3>

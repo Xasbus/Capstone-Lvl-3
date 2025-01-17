@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import { NavBar } from "./NavBar";
 import { output } from "../utils/output";
-// import { cardConverter } from "../modules/cardConverter";
+import { cardConverter } from "../modules/cardConverter";
 
 export function Consoles() {
   useEffect(componentDidMount, []);
-  // useEffect(componentDidUpdate);
+  useEffect(componentDidUpdate);
   return (
     <>
       <header>
@@ -23,9 +23,11 @@ export function Consoles() {
         <a id="playstation5"></a>
         <article>
           <a id="playstation5"></a>
-
-          <output className={"outputTag"}></output>
+          <output id="outputTag"></output>
         </article>
+        <br />
+        <br />
+        <br />
       </main>
       <footer>
         <div width="100%">
@@ -50,18 +52,18 @@ export function Consoles() {
     </>
   );
 
-  // function componentDidUpdate() {
-  //   function cardConverter(cardObject) {
-  //     let cardString = `<div class="card" style="width: 18rem;">
-  //     <img class="card-img-top" src="${cardObject.src}">
-  //     <div class="card-body">
-  //     <h3 class="card-title">${cardObject.title}</h3>
-  //     ${cardObject.summary}
-  //     </div>
-  //     </div>`;
-  //     return cardString;
-  //   }
-  // }
+  function componentDidUpdate() {
+    function cardConverter(cardObject) {
+      let cardString = `<div class="card">
+      <img class="card-img-top" src="${cardObject.src}">
+      <div class="card-body">
+      <h3 class="card-title">${cardObject.title}</h3>
+      ${cardObject.summary}
+      </div>
+      </div>`;
+      return cardString;
+    }
+  }
 
   function componentDidMount() {
     const cardObject1 = {};
