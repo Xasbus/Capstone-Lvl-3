@@ -1,5 +1,4 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./node_modules/cookie/dist/index.js":
@@ -8,6 +7,7 @@
   \*******************************************/
 /***/ ((__unused_webpack_module, exports) => {
 
+"use strict";
 
 
 Object.defineProperty(exports, "__esModule", ({
@@ -240,12 +240,95 @@ function isDate(val) {
 
 /***/ }),
 
+/***/ "./node_modules/image-map-resizer/js/imageMapResizer.min.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/image-map-resizer/js/imageMapResizer.min.js ***!
+  \******************************************************************/
+/***/ ((module, exports) => {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! Image Map Resizer (imageMapResizer.min.js ) - v1.0.10 - 2019-04-10
+ *  Desc: Resize HTML imageMap to scaled image.
+ *  Copyright: (c) 2019 David J. Bradshaw - dave@bradshaw.net
+ *  License: MIT
+ */
+
+!function () {
+  "use strict";
+
+  function r() {
+    function e() {
+      var r = {
+          width: u.width / u.naturalWidth,
+          height: u.height / u.naturalHeight
+        },
+        a = {
+          width: parseInt(window.getComputedStyle(u, null).getPropertyValue("padding-left"), 10),
+          height: parseInt(window.getComputedStyle(u, null).getPropertyValue("padding-top"), 10)
+        };
+      i.forEach(function (e, t) {
+        var n = 0;
+        o[t].coords = e.split(",").map(function (e) {
+          var t = 1 == (n = 1 - n) ? "width" : "height";
+          return a[t] + Math.floor(Number(e) * r[t]);
+        }).join(",");
+      });
+    }
+    function t(e) {
+      return e.coords.replace(/ *, */g, ",").replace(/ +/g, ",");
+    }
+    function n() {
+      clearTimeout(d), d = setTimeout(e, 250);
+    }
+    function r(e) {
+      return document.querySelector('img[usemap="' + e + '"]');
+    }
+    var a = this,
+      o = null,
+      i = null,
+      u = null,
+      d = null;
+    "function" != typeof a._resize ? (o = a.getElementsByTagName("area"), i = Array.prototype.map.call(o, t), u = r("#" + a.name) || r(a.name), a._resize = e, u.addEventListener("load", e, !1), window.addEventListener("focus", e, !1), window.addEventListener("resize", n, !1), window.addEventListener("readystatechange", e, !1), document.addEventListener("fullscreenchange", e, !1), u.width === u.naturalWidth && u.height === u.naturalHeight || e()) : a._resize();
+  }
+  function e() {
+    function t(e) {
+      e && (!function (e) {
+        if (!e.tagName) throw new TypeError("Object is not a valid DOM element");
+        if ("MAP" !== e.tagName.toUpperCase()) throw new TypeError("Expected <MAP> tag, found <" + e.tagName + ">.");
+      }(e), r.call(e), n.push(e));
+    }
+    var n;
+    return function (e) {
+      switch (n = [], typeof e) {
+        case "undefined":
+        case "string":
+          Array.prototype.forEach.call(document.querySelectorAll(e || "map"), t);
+          break;
+        case "object":
+          t(e);
+          break;
+        default:
+          throw new TypeError("Unexpected data type (" + typeof e + ").");
+      }
+      return n;
+    };
+  }
+   true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_FACTORY__ = (e),
+		__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+		(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : 0, "jQuery" in window && (window.jQuery.fn.imageMapResize = function () {
+    return this.filter("map").each(r).end();
+  });
+}();
+
+/***/ }),
+
 /***/ "./node_modules/react-dom/cjs/react-dom-client.development.js":
 /*!********************************************************************!*\
   !*** ./node_modules/react-dom/cjs/react-dom-client.development.js ***!
   \********************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
+"use strict";
 /**
  * @license React
  * react-dom-client.development.js
@@ -266,6 +349,7 @@ function isDate(val) {
   \*************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
+"use strict";
 /**
  * @license React
  * react-dom.development.js
@@ -456,6 +540,7 @@ function isDate(val) {
   \******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 
 
 function checkDCE() {
@@ -494,6 +579,7 @@ if (false) {} else {
   \*****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 
 
 function checkDCE() {
@@ -532,6 +618,7 @@ if (false) {} else {
   \*****************************************************/
 /***/ ((module, exports, __webpack_require__) => {
 
+"use strict";
 /* module decorator */ module = __webpack_require__.nmd(module);
 /**
  * @license React
@@ -1504,6 +1591,7 @@ if (false) {} else {
   \*************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 
 
 if (false) {} else {
@@ -1518,6 +1606,7 @@ if (false) {} else {
   \*************************************************************/
 /***/ ((__unused_webpack_module, exports) => {
 
+"use strict";
 /**
  * @license React
  * scheduler.development.js
@@ -1793,6 +1882,7 @@ if (false) {} else {
   \*****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 
 
 if (false) {} else {
@@ -1807,6 +1897,7 @@ if (false) {} else {
   \**********************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 var defaultParseOptions = {
@@ -2004,6 +2095,7 @@ module.exports.splitCookiesString = splitCookiesString;
   \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   About: () => (/* binding */ About)
@@ -2025,6 +2117,7 @@ function About() {
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   Accessories: () => (/* binding */ Accessories)
@@ -2046,6 +2139,7 @@ function Accessories() {
   \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   Consoles: () => (/* binding */ Consoles)
@@ -2067,6 +2161,7 @@ function Consoles() {
   \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   Contact: () => (/* binding */ Contact)
@@ -2088,6 +2183,7 @@ function Contact() {
   \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   Games: () => (/* binding */ Games)
@@ -2109,6 +2205,7 @@ function Games() {
   \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   Home: () => (/* binding */ Home)
@@ -2116,6 +2213,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NavBar */ "./src/Views/NavBar.js");
+/* harmony import */ var _ImageMapComponent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ImageMapComponent */ "./src/Views/ImageMapComponent.js");
+
 
 
 function Home() {
@@ -2153,36 +2252,9 @@ function Home() {
     className: "badge bg-success"
   }, "ON SALE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Discover the games you want, from exclusive blockbusters to innovative indies, all brought to life with the power of the PS5\u2122 console."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Natoque mus curae leo ut commodo, sapien interdum. Dui vel risus erat magna at dui fusce. Malesuada praesent litora vulputate tempor accumsan adipiscing? Dictum classss quisque suscipit aptent vestibulum ipsum semper ad ultrices. Est dui diam ipsum penatibus lacinia posuere metus dui mus. Ultricies praesent elementum primis elementum sollicitudin mus. Sollicitudin torquent magnis fames cubilia eros quis sem. Habitasse consectetur ipsum ultricies inceptos vestibulum per sagittis. Massa enim fringilla; rutrum clwass quis consectetur eros."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Sapien libero mi vehicula mauris; feugiat auctor accumsan. Placerat habitant suspendisse elit donec sed curae phasellus tempus. Congue fermentum consectetur praesent cursus, aenean lobortis tristique. Aliquet ac ac proin condimentum suspendisse a at. Morbi malesuada massa eget id suspendisse. Elit maximus hac montes leo semper varius. Senectus ac aenean taciti penatibus posuere accumsan nullam. Etiam finibus risus neque urna dis tortor. Laoreet turpis dictum clrass sociosqu mi at molestie."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     id: "accessories"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    title: "Various accessories",
-    alt: "assorted accessories",
-    width: "50%",
-    height: "30%",
-    useMap: "#accessoriesMap",
-    src: "assets\\accessories-image-map.jpg"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("map", {
-    name: "accessoriesMap"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("area", {
-    title: "Controller Info",
-    coords: "636,490, 669,376, 887,376, 919,491, 908,550, 877,557, 841,494, 712,494, 677,557, 643,544,",
-    shape: "poly",
-    target: "_blank",
-    href: "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("area", {
-    title: "Camera Info",
-    coords: "635,57, 914,183",
-    shape: "rect",
-    target: "_blank",
-    href: "https://www.playstation.com/en-us/accessories/hd-camera/"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("area", {
-    title: "Headset Info",
-    coords: "488,483, 393,474, 365,431, 423,225, 480,146, 505,140, 570,167, 584,274, 590,382",
-    shape: "poly",
-    target: "_blank",
-    href: "https://www.playstation.com/en-us/accessories/pulse-3d-wireless-headset/"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ImageMapComponent__WEBPACK_IMPORTED_MODULE_2__.ImageMapComponent, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     className: "titleColor"
-  }, "Accessories"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Build your perfect gaming setup with controllers, headsets and other accessories for your PS5\xAE or PS4\u2122 console."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Diam montes euismod orci lobortis hac eleifend mus ridiculus. Proin accumsan phasellus in maximus magna adipiscing sagittis. Venenatis tristique elit malesuada hendrerit inceptos. Malesuada diam suspendisse sollicitudin quisque felis. Montes diam felis elit ipsum quis lectus consectetur ullamcorper. Tempus donec lacinia mus suscipit dignissim et dignissim inceptos? Ad varius nibh iaculis pellentesque lacus cubilia."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Mattis facilisis potenti venenatis magna cubilia ligula venenatis. Consequat tortor fermentum id conubia, primis cras. Dolor maximus enim class posuere vivamus nam volutpat. Sagittis eget laoreet tristique primis, sit massa vehicula. Libero natoque lobortis orci, velit dictumst luctus non. Egestas magnis nulla nulla pharetra massa platea porttitor scelerisque. Hendrerit donec eget; nunc gravida suscipit hac et pretium. Morbi odio class dis; dolor consequat condimentum convallis. Tempor odio odio lacus ligula in lacinia fusce efficitur parturient."))), imageMapResize, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+  }, "Accessories"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Build your perfect gaming setup with controllers, headsets and other accessories for your PS5\xAE or PS4\u2122 console."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Diam montes euismod orci lobortis hac eleifend mus ridiculus. Proin accumsan phasellus in maximus magna adipiscing sagittis. Venenatis tristique elit malesuada hendrerit inceptos. Malesuada diam suspendisse sollicitudin quisque felis. Montes diam felis elit ipsum quis lectus consectetur ullamcorper. Tempus donec lacinia mus suscipit dignissim et dignissim inceptos? Ad varius nibh iaculis pellentesque lacus cubilia."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Mattis facilisis potenti venenatis magna cubilia ligula venenatis. Consequat tortor fermentum id conubia, primis cras. Dolor maximus enim class posuere vivamus nam volutpat. Sagittis eget laoreet tristique primis, sit massa vehicula. Libero natoque lobortis orci, velit dictumst luctus non. Egestas magnis nulla nulla pharetra massa platea porttitor scelerisque. Hendrerit donec eget; nunc gravida suscipit hac et pretium. Morbi odio class dis; dolor consequat condimentum convallis. Tempor odio odio lacus ligula in lacinia fusce efficitur parturient."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: "#consoles"
   }, "Consoles"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: "#games"
@@ -2195,12 +2267,67 @@ function Home() {
 
 /***/ }),
 
+/***/ "./src/Views/ImageMapComponent.js":
+/*!****************************************!*\
+  !*** ./src/Views/ImageMapComponent.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ImageMapComponent: () => (/* binding */ ImageMapComponent)
+/* harmony export */ });
+/* harmony import */ var image_map_resizer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! image-map-resizer */ "./node_modules/image-map-resizer/js/imageMapResizer.min.js");
+/* harmony import */ var image_map_resizer__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(image_map_resizer__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function ImageMapComponent() {
+  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(resizeMap, []);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement((react__WEBPACK_IMPORTED_MODULE_1___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("img", {
+    title: "Various accessories",
+    alt: "assorted accessories",
+    width: "50%",
+    height: "30%",
+    useMap: "#accessoriesMap",
+    src: "assets\\accessories-image-map.jpg"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("map", {
+    name: "accessoriesMap"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("area", {
+    title: "Controller Info",
+    coords: "636,490, 669,376, 887,376, 919,491, 908,550, 877,557, 841,494, 712,494, 677,557, 643,544,",
+    shape: "poly",
+    target: "_blank",
+    href: "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("area", {
+    title: "Camera Info",
+    coords: "635,57, 914,183",
+    shape: "rect",
+    target: "_blank",
+    href: "https://www.playstation.com/en-us/accessories/hd-camera/"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("area", {
+    title: "Headset Info",
+    coords: "488,483, 393,474, 365,431, 423,225, 480,146, 505,140, 570,167, 584,274, 590,382",
+    shape: "poly",
+    target: "_blank",
+    href: "https://www.playstation.com/en-us/accessories/pulse-3d-wireless-headset/"
+  })));
+  function resizeMap() {
+    image_map_resizer__WEBPACK_IMPORTED_MODULE_0___default()();
+  }
+}
+
+/***/ }),
+
 /***/ "./src/Views/NavBar.js":
 /*!*****************************!*\
   !*** ./src/Views/NavBar.js ***!
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   NavBar: () => (/* binding */ NavBar)
@@ -2243,6 +2370,7 @@ function NavBar() {
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   SignIn: () => (/* binding */ SignIn)
@@ -2264,6 +2392,7 @@ function SignIn() {
   \***********************************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   Action: () => (/* binding */ Action),
@@ -11261,6 +11390,7 @@ function deserializeErrors2(errors) {
   \*********************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   decode: () => (/* binding */ decode),
@@ -11962,8 +12092,9 @@ function raceSignal(promise, signal) {
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry needs to be wrapped in an IIFE because it needs to be isolated against other modules in the chunk.
+// This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
 (() => {
+"use strict";
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
