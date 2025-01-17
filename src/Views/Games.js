@@ -104,10 +104,7 @@ export function Games() {
         </article>
         <h3 className="titleColor">Game Trivia</h3>
         <p>How well do you know your video game???</p>
-        <button onClick={handleClick()}>Click here to get questions</button>
-        {/* <form onSubmit={handleClick()}> */}
-        {/* <input type="submit">Click here to get questions</input> */}
-        {/* </form> */}
+        <button onClick={handleClick}>Click here to get questions</button>
         <div id="outputTag"></div>
       </main>
     </>
