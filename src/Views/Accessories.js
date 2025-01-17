@@ -1,6 +1,9 @@
 import React from "react";
 import { NavBar } from "./NavBar";
 import { WinCoupon } from "./WinCoupon";
+import { output } from "../utils/output";
+import { ask } from "../modules/ask";
+import { handleGame } from "../controllers/handleGame";
 
 export function Accessories() {
   return (
@@ -125,7 +128,7 @@ export function Accessories() {
             You have 3 guesses.
           </p>
           <output id="outputTag"></output>
-          <button onClick={<WinCoupon />} type="button">
+          <button onClick={handleGame} type="button">
             Click Here to pay
           </button>
           <hr />

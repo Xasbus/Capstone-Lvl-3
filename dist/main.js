@@ -2033,6 +2033,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NavBar */ "./src/Views/NavBar.js");
 /* harmony import */ var _WinCoupon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./WinCoupon */ "./src/Views/WinCoupon.js");
+/* harmony import */ var _utils_output__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/output */ "./src/utils/output.js");
+/* harmony import */ var _modules_ask__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../modules/ask */ "./src/modules/ask.js");
+/* harmony import */ var _controllers_handleGame__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../controllers/handleGame */ "./src/controllers/handleGame.js");
+
+
+
 
 
 
@@ -2082,7 +2088,7 @@ function Accessories() {
   }, "WIN 25% OFF!!"), "coupon by guessing a number from 0-100.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "You have 3 guesses."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("output", {
     id: "outputTag"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    onClick: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_WinCoupon__WEBPACK_IMPORTED_MODULE_2__.WinCoupon, null),
+    onClick: _controllers_handleGame__WEBPACK_IMPORTED_MODULE_5__.handleGame,
     type: "button"
   }, "Click Here to pay"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     width: "100%"
@@ -2292,6 +2298,28 @@ function WinCoupon() {
       }
     }
   }
+}
+
+/***/ }),
+
+/***/ "./src/controllers/handleGame.js":
+/*!***************************************!*\
+  !*** ./src/controllers/handleGame.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   handleGame: () => (/* binding */ handleGame)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Views_WinCoupon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Views/WinCoupon */ "./src/Views/WinCoupon.js");
+
+
+function handleGame() {
+  return;
+  /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_WinCoupon__WEBPACK_IMPORTED_MODULE_1__.WinCoupon, null);
 }
 
 /***/ }),
