@@ -1,6 +1,5 @@
 import React from "react";
 import { NavBar } from "./NavBar";
-import { UseMapResize } from "./UseMapResize";
 
 export function Home() {
   return (
@@ -162,7 +161,7 @@ export function Home() {
             </p>
           </article>
         </section>
-        <script>imageMapResize();</script>
+        <script>{imageMapResize()}</script>
         <hr />
       </main>
       <footer>

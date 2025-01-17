@@ -2116,8 +2116,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NavBar */ "./src/Views/NavBar.js");
-/* harmony import */ var _UseMapResize__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./UseMapResize */ "./src/Views/UseMapResize.js");
-
 
 
 function Home() {
@@ -2184,7 +2182,7 @@ function Home() {
     href: "https://www.playstation.com/en-us/accessories/pulse-3d-wireless-headset/"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     className: "titleColor"
-  }, "Accessories"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Build your perfect gaming setup with controllers, headsets and other accessories for your PS5\xAE or PS4\u2122 console."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Diam montes euismod orci lobortis hac eleifend mus ridiculus. Proin accumsan phasellus in maximus magna adipiscing sagittis. Venenatis tristique elit malesuada hendrerit inceptos. Malesuada diam suspendisse sollicitudin quisque felis. Montes diam felis elit ipsum quis lectus consectetur ullamcorper. Tempus donec lacinia mus suscipit dignissim et dignissim inceptos? Ad varius nibh iaculis pellentesque lacus cubilia."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Mattis facilisis potenti venenatis magna cubilia ligula venenatis. Consequat tortor fermentum id conubia, primis cras. Dolor maximus enim class posuere vivamus nam volutpat. Sagittis eget laoreet tristique primis, sit massa vehicula. Libero natoque lobortis orci, velit dictumst luctus non. Egestas magnis nulla nulla pharetra massa platea porttitor scelerisque. Hendrerit donec eget; nunc gravida suscipit hac et pretium. Morbi odio class dis; dolor consequat condimentum convallis. Tempor odio odio lacus ligula in lacinia fusce efficitur parturient."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("script", null, "imageMapResize();"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+  }, "Accessories"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Build your perfect gaming setup with controllers, headsets and other accessories for your PS5\xAE or PS4\u2122 console."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Diam montes euismod orci lobortis hac eleifend mus ridiculus. Proin accumsan phasellus in maximus magna adipiscing sagittis. Venenatis tristique elit malesuada hendrerit inceptos. Malesuada diam suspendisse sollicitudin quisque felis. Montes diam felis elit ipsum quis lectus consectetur ullamcorper. Tempus donec lacinia mus suscipit dignissim et dignissim inceptos? Ad varius nibh iaculis pellentesque lacus cubilia."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Mattis facilisis potenti venenatis magna cubilia ligula venenatis. Consequat tortor fermentum id conubia, primis cras. Dolor maximus enim class posuere vivamus nam volutpat. Sagittis eget laoreet tristique primis, sit massa vehicula. Libero natoque lobortis orci, velit dictumst luctus non. Egestas magnis nulla nulla pharetra massa platea porttitor scelerisque. Hendrerit donec eget; nunc gravida suscipit hac et pretium. Morbi odio class dis; dolor consequat condimentum convallis. Tempor odio odio lacus ligula in lacinia fusce efficitur parturient."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("script", null, imageMapResize()), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: "#consoles"
   }, "Consoles"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: "#games"
@@ -2256,25 +2254,6 @@ __webpack_require__.r(__webpack_exports__);
 
 function SignIn() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavBar__WEBPACK_IMPORTED_MODULE_1__.NavBar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, "Sign In PAGE"));
-}
-
-/***/ }),
-
-/***/ "./src/Views/UseMapResize.js":
-/*!***********************************!*\
-  !*** ./src/Views/UseMapResize.js ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   UseMapResize: () => (/* binding */ UseMapResize)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
-function UseMapResize() {
-  imageMapResize();
 }
 
 /***/ }),
