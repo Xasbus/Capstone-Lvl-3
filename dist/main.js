@@ -2605,6 +2605,27 @@ function SignIn() {
 
 /***/ }),
 
+/***/ "./src/controllers/gamesHtml/handleClick.js":
+/*!**************************************************!*\
+  !*** ./src/controllers/gamesHtml/handleClick.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   handleClick: () => (/* binding */ handleClick)
+/* harmony export */ });
+/* harmony import */ var _modules_parseResp_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../modules/parseResp.js */ "./src/modules/parseResp.js");
+
+window.handleClick = handleClick;
+function handleClick() {
+  const promise = fetch("https://opentdb.com/api.php?amount=3&category=15&type=multiple");
+  promise.then(_modules_parseResp_js__WEBPACK_IMPORTED_MODULE_0__.parseResp);
+}
+
+/***/ }),
+
 /***/ "./src/modules/cardConverter.js":
 /*!**************************************!*\
   !*** ./src/modules/cardConverter.js ***!
@@ -2629,49 +2650,13 @@ function cardConverter(cardObject) {
 
 /***/ }),
 
-/***/ "./src/utils/output.js":
-/*!*****************************!*\
-  !*** ./src/utils/output.js ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   output: () => (/* binding */ output)
-/* harmony export */ });
-function output(message = "", outputTag = "outputTag", shouldAppend = true) {
-  if (shouldAppend) window[outputTag].innerHTML += message;else window[outputTag].innerHTML = message;
-}
-
-/***/ }),
-
-/***/ "./src/controllers/gamesHtml/handleClick.js":
-/*!**************************************************!*\
-  !*** ./src/controllers/gamesHtml/handleClick.js ***!
-  \**************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   handleClick: () => (/* binding */ handleClick)
-/* harmony export */ });
-/* harmony import */ var _modules_parseResp_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../modules/parseResp.js */ "./src/modules/parseResp.js");
-
-window.handleClick = handleClick;
-function handleClick() {
-  const promise = fetch("https://opentdb.com/api.php?amount=3&category=15&type=multiple");
-  promise.then(_modules_parseResp_js__WEBPACK_IMPORTED_MODULE_0__.parseResp);
-}
-
-/***/ }),
-
 /***/ "./src/modules/parseResp.js":
 /*!**********************************!*\
   !*** ./src/modules/parseResp.js ***!
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   parseResp: () => (/* binding */ parseResp)
@@ -2691,6 +2676,7 @@ function parseResp(resolveValue) {
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   viewResp: () => (/* binding */ viewResp)
@@ -2744,6 +2730,7 @@ function viewResp(resolveValue) {
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   output: () => (/* binding */ output)
