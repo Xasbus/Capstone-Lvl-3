@@ -3,7 +3,7 @@ function display(message) {
 }
 
 function cardConverter(cardObject) {
-  let cardString = `<div class="card">
+  let cardString = `<div class="card" style="width: 25%">
   <img class="card-img-top" src="${cardObject.src}">
   <div class="card-body">
   <h3 class="card-title">${cardObject.title}</h3>
@@ -24,7 +24,7 @@ function ask(message) {
   }
 }
 
-function output(message = "", outputTag = "outputTag", shouldAppend = true) {
-  if (shouldAppend) window[outputTag].innerHTML += message;
-  else window[outputTag].innerHTML = message;
-}
+// function output(message = "", outputTag = "outputTag", shouldAppend = true) {
+//   if (shouldAppend) window[outputTag].innerHTML += message;
+//   else window[outputTag].innerHTML = message;
+// }

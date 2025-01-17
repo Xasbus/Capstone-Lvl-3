@@ -1,8 +1,11 @@
 import React, { useEffect } from "react";
 import { NavBar } from "./NavBar";
+import { output } from "../utils/output";
+// import { cardConverter } from "../modules/cardConverter";
 
 export function Consoles() {
   useEffect(componentDidMount, []);
+  // useEffect(componentDidUpdate);
   return (
     <>
       <header>
@@ -21,31 +24,45 @@ export function Consoles() {
         <article>
           <a id="playstation5"></a>
 
-          <output className="outputTag"></output>
+          <output className={"outputTag"}></output>
         </article>
       </main>
       <footer>
-        <table width="100%">
-          <tr>
-            <td>
+        <div width="100%">
+          <div className="row">
+            <div className="col">
               <a href="#playstation5">PlayStation 5</a>
-            </td>
-          </tr>
-          <tr>
-            <td>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col">
               <a href="#playstation4">PlayStation 4</a>
-            </td>
-          </tr>
-          <tr>
-            <td>
+            </div>
+          </div>
+          <div>
+            <div className="col">
               <a href="#playstationvr">PlayStation VR2</a>
-            </td>
-          </tr>
-        </table>
+            </div>
+          </div>
+        </div>
         <p className="creatorName">Website created by David Billiot</p>
       </footer>
     </>
   );
+
+  // function componentDidUpdate() {
+  //   function cardConverter(cardObject) {
+  //     let cardString = `<div class="card" style="width: 18rem;">
+  //     <img class="card-img-top" src="${cardObject.src}">
+  //     <div class="card-body">
+  //     <h3 class="card-title">${cardObject.title}</h3>
+  //     ${cardObject.summary}
+  //     </div>
+  //     </div>`;
+  //     return cardString;
+  //   }
+  // }
+
   function componentDidMount() {
     const cardObject1 = {};
     cardObject1.src =
@@ -95,11 +112,11 @@ export function Consoles() {
 
     const cardArray = [cardObject1, cardObject2, cardObject3];
     for (let position = 0; position < cardArray.length; position++) {
-      display("<section class='p-5'>");
+      output("<section class='p-5'>");
       const cardObject = cardArray[position];
       const stringCard = cardConverter(cardObject);
-      display(stringCard);
-      display("</section>");
+      output(stringCard);
+      output("</section>");
     }
   }
 }
