@@ -161,7 +161,7 @@ export function Home() {
             </p>
           </article>
         </section>
-        <script>{imageMapResize()}</script>
+        {imageMapResize}
         <hr />
       </main>
       <footer>
