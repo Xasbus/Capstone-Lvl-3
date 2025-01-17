@@ -11,8 +11,8 @@
 }
 
 body {
-  background-color: rgb(180, 180, 180);
-  background-image: url(../assets/PS5-background-image.png);
+  color: rgb(180, 180, 180);
+  background-image: url(assetsPS5-background-image.png);
 }
 
 .titleColor {

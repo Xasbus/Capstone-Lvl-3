@@ -33,9 +33,8 @@ $titleFont: "GoS";
 }
 
 body {
-    background-color: $colorBody;
-    background-image: url(../assets/PS5-background-image.png);
-    
+    color: $colorBody;
+    background-image: url(assets\PS5-background-image.png);
 }
 
 .titleColor {
