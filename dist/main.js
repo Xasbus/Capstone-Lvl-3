@@ -2195,7 +2195,7 @@ function Accessories() {
   }, "WIN 25% OFF!!"), "coupon by guessing a number from 0-100.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "You have 3 guesses."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     onClick: _controllers_handleGame__WEBPACK_IMPORTED_MODULE_4__.handleGame,
     type: "button"
-  }, "Click Here to play"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("output", {
+  }, "Click Here to play"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("output", {
     id: "outputTag"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     width: "100%"
@@ -2701,6 +2701,71 @@ function handleClick() {
 
 /***/ }),
 
+/***/ "./src/controllers/handleGame.js":
+/*!***************************************!*\
+  !*** ./src/controllers/handleGame.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   handleGame: () => (/* binding */ handleGame)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _modules_ask__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/ask */ "./src/modules/ask.js");
+/* harmony import */ var _utils_output__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/output */ "./src/utils/output.js");
+
+
+
+function handleGame() {
+  let message = "Guess my number.";
+  for (let count = 0; count < 3; count++) {
+    const winItem = (0,_modules_ask__WEBPACK_IMPORTED_MODULE_1__.ask)(message);
+    const userNumber = Number(winItem);
+    const myNumber = 43;
+    const doesMatch = userNumber === myNumber;
+    if (doesMatch) {
+      (0,_utils_output__WEBPACK_IMPORTED_MODULE_2__.output)("WINNER!!! Promo Code: <b>AG34FR<b><br/>");
+    } else {
+      (0,_utils_output__WEBPACK_IMPORTED_MODULE_2__.output)("You didn't guess right.<br/>");
+      const isLess = userNumber < myNumber;
+      if (isLess) {
+        message += " Your number is less than mine. Guess again.";
+      } else {
+        message += " Your number is greater than mine. Guess again.";
+      }
+    }
+  }
+}
+
+/***/ }),
+
+/***/ "./src/modules/ask.js":
+/*!****************************!*\
+  !*** ./src/modules/ask.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ask: () => (/* binding */ ask)
+/* harmony export */ });
+function ask(message) {
+  const userText = prompt(message);
+  const userNumber = Number(userText);
+  const isNotNumber = isNaN(userNumber);
+  if (isNotNumber) {
+    return userText;
+  } else {
+    return userNumber;
+  }
+}
+
+/***/ }),
+
 /***/ "./src/modules/cardConverter.js":
 /*!**************************************!*\
   !*** ./src/modules/cardConverter.js ***!
@@ -2806,85 +2871,6 @@ function viewResp(resolveValue) {
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   output: () => (/* binding */ output)
-/* harmony export */ });
-function output(message = "", outputTag = "outputTag", shouldAppend = true) {
-  if (shouldAppend) window[outputTag].innerHTML += message;else window[outputTag].innerHTML = message;
-}
-
-/***/ }),
-
-/***/ "./src/controllers/handleGame.js":
-/*!***************************************!*\
-  !*** ./src/controllers/handleGame.js ***!
-  \***************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   handleGame: () => (/* binding */ handleGame)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _modules_ask__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/ask */ "./src/modules/ask.js");
-/* harmony import */ var _utils_output__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/output */ "./src/utils/output.js");
-
-
-
-function handleGame() {
-  let message = "Guess my number.";
-  for (let count = 0; count < 3; count++) {
-    const winItem = (0,_modules_ask__WEBPACK_IMPORTED_MODULE_1__.ask)(message);
-    const userNumber = Number(winItem);
-    const myNumber = 43;
-    const doesMatch = userNumber === myNumber;
-    if (doesMatch) {
-      (0,_utils_output__WEBPACK_IMPORTED_MODULE_2__.output)("WINNER!!! Promo Code: <b>AG34FR<b><br/>");
-    } else {
-      (0,_utils_output__WEBPACK_IMPORTED_MODULE_2__.output)("You didn't guess right.<br/>");
-      const isLess = userNumber < myNumber;
-      if (isLess) {
-        message += " Your number is less than mine. Guess again.";
-      } else {
-        message += " Your number is greater than mine. Guess again.";
-      }
-    }
-  }
-}
-
-/***/ }),
-
-/***/ "./src/modules/ask.js":
-/*!****************************!*\
-  !*** ./src/modules/ask.js ***!
-  \****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   ask: () => (/* binding */ ask)
-/* harmony export */ });
-function ask(message) {
-  const userText = prompt(message);
-  const userNumber = Number(userText);
-  const isNotNumber = isNaN(userNumber);
-  if (isNotNumber) {
-    return userText;
-  } else {
-    return userNumber;
-  }
-}
-
-/***/ }),
-
-/***/ "./src/utils/output.js":
-/*!*****************************!*\
-  !*** ./src/utils/output.js ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   output: () => (/* binding */ output)

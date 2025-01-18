@@ -132,6 +132,7 @@ export function Accessories() {
           <button onClick={handleGame} type="button">
             Click Here to play
           </button>
+          <br />
           <output id="outputTag"></output>
           <hr />
         </article>
