@@ -2360,10 +2360,66 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NavBar */ "./src/Views/NavBar.js");
+/* harmony import */ var _controllers_contactHtml_email__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/contactHtml/email */ "./src/controllers/contactHtml/email.js");
+/* harmony import */ var _controllers_contactHtml_date__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../controllers/contactHtml/date */ "./src/controllers/contactHtml/date.js");
+/* harmony import */ var _controllers_contactHtml_phone__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../controllers/contactHtml/phone */ "./src/controllers/contactHtml/phone.js");
+/* harmony import */ var _utils_output__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/output */ "./src/utils/output.js");
+
+
+
+
 
 
 function Contact() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavBar__WEBPACK_IMPORTED_MODULE_1__.NavBar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, "CONTACT PAGE"));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavBar__WEBPACK_IMPORTED_MODULE_1__.NavBar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    alt: "self pic",
+    height: "100%",
+    width: "125px",
+    src: "assets\\contactphoto.jpg"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Contact Us"), "\u2709\uFE0F BlahNonsense283@something.com", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "\uD83D\uDCDE 985 - 555 - 5555", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    alt: "facebook icon",
+    width: "4%",
+    src: "https://th.bing.com/th?id=OIP.lgict_2VY-2-x2b_kDd_vwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
+  }), "@NotRealDavidFB")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, "Contact Customer Service"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
+    onSubmit: _controllers_contactHtml_email__WEBPACK_IMPORTED_MODULE_2__.handleEmail
+  }, "Email: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    id: "emailSize",
+    required: true,
+    name: "myEmail",
+    type: "email",
+    placeholder: "Enter Your Email"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Summary of Issue:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    id: "emailSize",
+    type: "text",
+    placeholder: "Text Here"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    type: "submit"
+  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, "Submit an appointment by phone"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
+    onSubmit: _controllers_contactHtml_phone__WEBPACK_IMPORTED_MODULE_4__.handlePhone
+  }, "Schedule a phone appointment:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    type: "tel",
+    placeholder: "XXX-XXX-XXXX",
+    pattern: "[0-9]{3}-[0-9]{3}-[0-9]{4}",
+    name: "phoneInput"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    type: "submit"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
+    onSubmit: _controllers_contactHtml_date__WEBPACK_IMPORTED_MODULE_3__.handleDate
+  }, "Select date and time:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    type: "datetime-local"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    type: "submit"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("output", {
+    id: "outputTag"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "creatorName"
+  }, "Website created by David Billiot")));
 }
 
 /***/ }),
@@ -2680,6 +2736,7 @@ function SignIn() {
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./src/controllers/gamesHtml/handleClick.js":
 /*!**************************************************!*\
   !*** ./src/controllers/gamesHtml/handleClick.js ***!
@@ -2697,10 +2754,38 @@ window.handleClick = handleClick;
 function handleClick() {
   const promise = fetch("https://opentdb.com/api.php?amount=3&category=15&type=multiple");
   promise.then(_modules_parseResp_js__WEBPACK_IMPORTED_MODULE_0__.parseResp);
+=======
+/***/ "./src/controllers/contactHtml/date.js":
+/*!*********************************************!*\
+  !*** ./src/controllers/contactHtml/date.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   handleDate: () => (/* binding */ handleDate)
+/* harmony export */ });
+/* harmony import */ var _utils_output_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utils/output.js */ "./src/utils/output.js");
+/* harmony import */ var _modules_getServerRespone_getServerResponse3_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../modules/getServerRespone/getServerResponse3.js */ "./src/modules/getServerRespone/getServerResponse3.js");
+/* harmony import */ var _modules_parseResponse_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../modules/parseResponse.js */ "./src/modules/parseResponse.js");
+
+
+
+window.handleDate = handleDate;
+function handleDate(event) {
+  event.preventDefault();
+  // const dateForm = event.target;
+  // const dateInput = dateForm[0];
+  // const dateValue = dateInput.value;
+  (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)(` <br>Sumbitting appointment. . .  <br>`);
+  const promise = new Promise(_modules_getServerRespone_getServerResponse3_js__WEBPACK_IMPORTED_MODULE_1__.getServerResponse3);
+  promise.then(_modules_parseResponse_js__WEBPACK_IMPORTED_MODULE_2__.parseResponse);
+>>>>>>> Contact_Page
 }
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./src/controllers/handleGame.js":
 /*!***************************************!*\
   !*** ./src/controllers/handleGame.js ***!
@@ -2737,11 +2822,90 @@ function handleGame() {
         message += " Your number is greater than mine. Guess again.";
       }
     }
+=======
+/***/ "./src/controllers/contactHtml/email.js":
+/*!**********************************************!*\
+  !*** ./src/controllers/contactHtml/email.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   handleEmail: () => (/* binding */ handleEmail)
+/* harmony export */ });
+/* harmony import */ var _utils_output_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utils/output.js */ "./src/utils/output.js");
+/* harmony import */ var _modules_getServerRespone_getServerResponse1_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../modules/getServerRespone/getServerResponse1.js */ "./src/modules/getServerRespone/getServerResponse1.js");
+/* harmony import */ var _modules_parseResponse_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../modules/parseResponse.js */ "./src/modules/parseResponse.js");
+
+
+
+window.handleEmail = handleEmail;
+function handleEmail(event) {
+  event.preventDefault();
+  // const form = event.target;
+  // const passwordInput = form[0];
+  // const value = passwordInput.value;
+  (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)(` <br>Submitting your concerns. . . `);
+  const promise = new Promise(_modules_getServerRespone_getServerResponse1_js__WEBPACK_IMPORTED_MODULE_1__.getServerResponse1);
+  promise.then(_modules_parseResponse_js__WEBPACK_IMPORTED_MODULE_2__.parseResponse);
+}
+
+/***/ }),
+
+/***/ "./src/controllers/contactHtml/phone.js":
+/*!**********************************************!*\
+  !*** ./src/controllers/contactHtml/phone.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   handlePhone: () => (/* binding */ handlePhone)
+/* harmony export */ });
+/* harmony import */ var _utils_output_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utils/output.js */ "./src/utils/output.js");
+/* harmony import */ var _modules_getServerRespone_getServerResponse2_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../modules/getServerRespone/getServerResponse2.js */ "./src/modules/getServerRespone/getServerResponse2.js");
+/* harmony import */ var _modules_parseResponse_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../modules/parseResponse.js */ "./src/modules/parseResponse.js");
+
+
+
+window.handlePhone = handlePhone;
+function handlePhone(event) {
+  event.preventDefault();
+  // const phoneForm = event.target;
+  // const phoneInput = phoneForm[0];
+  // const phoneValue = phoneInput.value;
+  (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)(` <br>Your info is being processed. . .<br>`);
+  const promise = new Promise(_modules_getServerRespone_getServerResponse2_js__WEBPACK_IMPORTED_MODULE_1__.getServerResponse2);
+  promise.then(_modules_parseResponse_js__WEBPACK_IMPORTED_MODULE_2__.parseResponse);
+}
+
+/***/ }),
+
+/***/ "./src/modules/getServerRespone/getServerResponse1.js":
+/*!************************************************************!*\
+  !*** ./src/modules/getServerRespone/getServerResponse1.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   getServerResponse1: () => (/* binding */ getServerResponse1)
+/* harmony export */ });
+function getServerResponse1(resolve) {
+  setTimeout(activateResolve, 5000);
+  function activateResolve() {
+    const response = {
+      message: "Successfully received. Will get back to you ASAP. "
+    };
+    const resolveValue = JSON.stringify(response);
+    resolve(resolveValue);
+>>>>>>> Contact_Page
   }
 }
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./src/modules/ask.js":
 /*!****************************!*\
   !*** ./src/modules/ask.js ***!
@@ -2761,11 +2925,32 @@ function ask(message) {
     return userText;
   } else {
     return userNumber;
+=======
+/***/ "./src/modules/getServerRespone/getServerResponse2.js":
+/*!************************************************************!*\
+  !*** ./src/modules/getServerRespone/getServerResponse2.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   getServerResponse2: () => (/* binding */ getServerResponse2)
+/* harmony export */ });
+function getServerResponse2(resolve) {
+  setTimeout(activateResolve, 5000);
+  function activateResolve() {
+    const response = {
+      message: "Phone number recorded. Please choose time and date. . .  "
+    };
+    const resolveValue = JSON.stringify(response);
+    resolve(resolveValue);
+>>>>>>> Contact_Page
   }
 }
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./src/modules/cardConverter.js":
 /*!**************************************!*\
   !*** ./src/modules/cardConverter.js ***!
@@ -2860,6 +3045,47 @@ function viewResp(resolveValue) {
             <li>${incorrects3[2]}</li>
         </ol>`;
   (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)(trivia);
+=======
+/***/ "./src/modules/getServerRespone/getServerResponse3.js":
+/*!************************************************************!*\
+  !*** ./src/modules/getServerRespone/getServerResponse3.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   getServerResponse3: () => (/* binding */ getServerResponse3)
+/* harmony export */ });
+function getServerResponse3(resolve) {
+  setTimeout(activateResolve, 5000);
+  function activateResolve() {
+    const response = {
+      message: "Successfully received. See you there! "
+    };
+    const resolveValue = JSON.stringify(response);
+    resolve(resolveValue);
+  }
+}
+
+/***/ }),
+
+/***/ "./src/modules/parseResponse.js":
+/*!**************************************!*\
+  !*** ./src/modules/parseResponse.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   parseResponse: () => (/* binding */ parseResponse)
+/* harmony export */ });
+/* harmony import */ var _utils_output_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/output.js */ "./src/utils/output.js");
+
+function parseResponse(resolveValue) {
+  const response = JSON.parse(resolveValue);
+  const message = response.message;
+  (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)(message);
+>>>>>>> Contact_Page
 }
 
 /***/ }),

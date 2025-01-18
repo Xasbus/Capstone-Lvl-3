@@ -5,7 +5,6 @@ import { parseResponse } from "../../modules/parseResponse.js";
 window.handlePhone = handlePhone;
 
 export function handlePhone(event) {
-  debugger;
   event.preventDefault();
   // const phoneForm = event.target;
   // const phoneInput = phoneForm[0];

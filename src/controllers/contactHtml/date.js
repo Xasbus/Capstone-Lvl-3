@@ -5,7 +5,6 @@ import { parseResponse } from "../../modules/parseResponse.js";
 window.handleDate = handleDate;
 
 export function handleDate(event) {
-  debugger;
   event.preventDefault();
   // const dateForm = event.target;
   // const dateInput = dateForm[0];
