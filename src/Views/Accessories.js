@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import { NavBar } from "./NavBar";
 import { output } from "../utils/output";
 import { ask } from "../modules/ask";
+import { handleGame } from "../controllers/handleGame";
 
 export function Accessories() {
-  useEffect(componentDidMount, []);
   return (
     <>
       <header>
@@ -129,7 +129,7 @@ export function Accessories() {
             You have 3 guesses.
           </p>
 
-          <button onClick={componentDidMount} type="button">
+          <button onClick={handleGame} type="button">
             Click Here to play
           </button>
           <output id="outputTag"></output>
@@ -158,28 +158,4 @@ export function Accessories() {
       </footer>
     </>
   );
-  function componentDidMount() {
-    return function winCoupon() {
-      const message = "Guess a number.";
-      for (count = 0; count < 3; count++) {
-        const winItem = ask(message);
-        const userNumber = Number(winItem);
-        const myNumber = 43;
-        const doesMatch = userNumber === myNumber;
-        if (doesMatch) {
-          output("WINNER!!! Promo Code: <b>AG34FR<b><br>");
-        } else {
-          output("You didn't guess right.<br>");
-
-          const isLess = userNumber < myNumber;
-
-          if (isLess) {
-            message += " Your number is less than mine. Guess again.";
-          } else {
-            message += " Your number is greater than mine. Guess again.";
-          }
-        }
-      }
-    };
-  }
 }
