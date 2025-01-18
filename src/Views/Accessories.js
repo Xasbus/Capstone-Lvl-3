@@ -1,11 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavBar } from "./NavBar";
-import { WinCoupon } from "./WinCoupon";
 import { output } from "../utils/output";
 import { ask } from "../modules/ask";
-import { handleGame } from "../controllers/handleGame";
 
 export function Accessories() {
+  useEffect(componentDidMount, []);
   return (
     <>
       <header>
@@ -83,6 +82,7 @@ export function Accessories() {
               orci.
             </p>
           </section>
+
           <section>
             <h3 id="headset">
               <img
@@ -118,6 +118,7 @@ export function Accessories() {
               maecenas metus quam.
             </p>
           </section>
+
           <p>
             Chance to
             <span className="bold text-primary text-decoration-underline">
@@ -127,10 +128,11 @@ export function Accessories() {
             <br />
             You have 3 guesses.
           </p>
-          <output id="outputTag"></output>
-          <button onClick={handleGame} type="button">
-            Click Here to pay
+
+          <button onClick={componentDidMount} type="button">
+            Click Here to play
           </button>
+          <output id="outputTag"></output>
           <hr />
         </article>
       </main>
@@ -156,4 +158,28 @@ export function Accessories() {
       </footer>
     </>
   );
+  function componentDidMount() {
+    return function winCoupon() {
+      const message = "Guess a number.";
+      for (count = 0; count < 3; count++) {
+        const winItem = ask(message);
+        const userNumber = Number(winItem);
+        const myNumber = 43;
+        const doesMatch = userNumber === myNumber;
+        if (doesMatch) {
+          output("WINNER!!! Promo Code: <b>AG34FR<b><br>");
+        } else {
+          output("You didn't guess right.<br>");
+
+          const isLess = userNumber < myNumber;
+
+          if (isLess) {
+            message += " Your number is less than mine. Guess again.";
+          } else {
+            message += " Your number is greater than mine. Guess again.";
+          }
+        }
+      }
+    };
+  }
 }

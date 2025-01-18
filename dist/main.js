@@ -2032,17 +2032,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NavBar */ "./src/Views/NavBar.js");
-/* harmony import */ var _WinCoupon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./WinCoupon */ "./src/Views/WinCoupon.js");
-/* harmony import */ var _utils_output__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/output */ "./src/utils/output.js");
-/* harmony import */ var _modules_ask__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../modules/ask */ "./src/modules/ask.js");
-/* harmony import */ var _controllers_handleGame__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../controllers/handleGame */ "./src/controllers/handleGame.js");
-
-
+/* harmony import */ var _utils_output__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/output */ "./src/utils/output.js");
+/* harmony import */ var _modules_ask__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../modules/ask */ "./src/modules/ask.js");
 
 
 
 
 function Accessories() {
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavBar__WEBPACK_IMPORTED_MODULE_1__.NavBar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     title: "assorted accessories",
     alt: "accessories",
@@ -2085,12 +2082,12 @@ function Accessories() {
     className: "titleColor"
   }, "PULSE Elite\u2122 wireless headset"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Proin fermentum malesuada imperdiet quam hac sit turpis aptent nam. Faucibus class quam cubilia potenti dolor felis dis! Hendrerit tincidunt ac per, ipsum suscipit consectetur varius aenean. Aenean nibh sagittis accumsan mus dolor vel lectus. Class odio ac lacus; lacinia pellentesque congue. Lobortis non ipsum laoreet taciti mi porta praesent. Quam netus leo morbi eu fames dis mollis. Penatibus habitasse cursus sagittis lacus accumsan faucibus massa orci. Faucibus felis potenti curabitur porttitor torquent aliquet faucibus."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Semper maximus ligula hendrerit tincidunt lobortis pharetra. Dapibus pellentesque nullam torquent vulputate congue faucibus dapibus. Dis ad sapien maximus magna massa duis phasellus. Egestas morbi id est nulla sapien ac tempor lobortis. Tristique ridiculus habitant montes varius tristique. Netus dignissim per posuere dignissim; taciti netus amet. Dis dapibus ultricies habitant amet donec cursus. Scelerisque mollis nec tristique nulla nostra posuere. Eget egestas adipiscing commodo varius cubilia, nisl ultricies convallis. Leo curae consequat curabitur ultrices; maecenas metus quam.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Chance to", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "bold text-primary text-decoration-underline"
-  }, "WIN 25% OFF!!"), "coupon by guessing a number from 0-100.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "You have 3 guesses."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("output", {
-    id: "outputTag"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    onClick: _controllers_handleGame__WEBPACK_IMPORTED_MODULE_5__.handleGame,
+  }, "WIN 25% OFF!!"), "coupon by guessing a number from 0-100.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "You have 3 guesses."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    onClick: componentDidMount,
     type: "button"
-  }, "Click Here to pay"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, "Click Here to play"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("output", {
+    id: "outputTag"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     width: "100%"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row"
@@ -2113,6 +2110,28 @@ function Accessories() {
   }, "PULSE Elite wireless headset")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "creatorName"
   }, "Website created by David Billiot")));
+  function componentDidMount() {
+    return function winCoupon() {
+      const message = "Guess a number.";
+      for (count = 0; count < 3; count++) {
+        const winItem = (0,_modules_ask__WEBPACK_IMPORTED_MODULE_3__.ask)(message);
+        const userNumber = Number(winItem);
+        const myNumber = 43;
+        const doesMatch = userNumber === myNumber;
+        if (doesMatch) {
+          (0,_utils_output__WEBPACK_IMPORTED_MODULE_2__.output)("WINNER!!! Promo Code: <b>AG34FR<b><br>");
+        } else {
+          (0,_utils_output__WEBPACK_IMPORTED_MODULE_2__.output)("You didn't guess right.<br>");
+          const isLess = userNumber < myNumber;
+          if (isLess) {
+            message += " Your number is less than mine. Guess again.";
+          } else {
+            message += " Your number is greater than mine. Guess again.";
+          }
+        }
+      }
+    };
+  }
 }
 
 /***/ }),
@@ -2258,68 +2277,6 @@ __webpack_require__.r(__webpack_exports__);
 
 function SignIn() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavBar__WEBPACK_IMPORTED_MODULE_1__.NavBar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, "Sign In PAGE"));
-}
-
-/***/ }),
-
-/***/ "./src/Views/WinCoupon.js":
-/*!********************************!*\
-  !*** ./src/Views/WinCoupon.js ***!
-  \********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   WinCoupon: () => (/* binding */ WinCoupon)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _modules_ask__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/ask */ "./src/modules/ask.js");
-/* harmony import */ var _utils_output__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/output */ "./src/utils/output.js");
-
-
-
-function WinCoupon() {
-  const message = "Guess my number.";
-  for (let count = 0; count < 3; count++) {
-    const winItem = (0,_modules_ask__WEBPACK_IMPORTED_MODULE_1__.ask)(message);
-    const userNumber = Number(winItem);
-    const myNumber = 43;
-    const doesMatch = userNumber === myNumber;
-    if (doesMatch) {
-      (0,_utils_output__WEBPACK_IMPORTED_MODULE_2__.output)("WINNER!!! Promo Code: <b>AG34FR<b><br/>");
-    } else {
-      (0,_utils_output__WEBPACK_IMPORTED_MODULE_2__.output)("You didn't guess right.<br/>");
-      const isLess = userNumber < myNumber;
-      if (isLess) {
-        message += " Your number is less than mine. Guess again.";
-      } else {
-        message += " Your number is greater than mine. Guess again.";
-      }
-    }
-  }
-}
-
-/***/ }),
-
-/***/ "./src/controllers/handleGame.js":
-/*!***************************************!*\
-  !*** ./src/controllers/handleGame.js ***!
-  \***************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   handleGame: () => (/* binding */ handleGame)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Views_WinCoupon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Views/WinCoupon */ "./src/Views/WinCoupon.js");
-
-
-function handleGame() {
-  return;
-  /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_WinCoupon__WEBPACK_IMPORTED_MODULE_1__.WinCoupon, null);
 }
 
 /***/ }),
