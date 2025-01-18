@@ -18,5 +18,6 @@
         "titleBar.inactiveBackground": "#b2094099",
         "titleBar.inactiveForeground": "#e7e7e799"
     },
-    "peacock.color": "#b20940"
+    "peacock.color": "#b20940",
+    "liveServer.settings.port": 8081
 }
