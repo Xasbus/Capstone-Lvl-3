@@ -19,7 +19,7 @@ export function Contact() {
                   alt="self pic"
                   height="100%"
                   width="125px"
-                  src="/Capstone-Lvl-3/assets/contactphoto.jpg"
+                  src="assets/contactphoto.jpg"
                 />
               </div>
               <div className="col">
