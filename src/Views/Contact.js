@@ -3,7 +3,6 @@ import { NavBar } from "./NavBar";
 import { handleEmail } from "../controllers/contactHtml/email";
 import { handleDate } from "../controllers/contactHtml/date";
 import { handlePhone } from "../controllers/contactHtml/phone";
-import { output } from "../utils/output";
 
 export function Contact() {
   return (
