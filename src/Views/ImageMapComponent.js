@@ -11,7 +11,7 @@ export function ImageMapComponent() {
         width="50%"
         height="30%"
         useMap="#accessoriesMap"
-        src="../assets/accessories-image-map.jpg"
+        src="/assets/accessories-image-map.jpg"
       />
       <map name="accessoriesMap">
         <area
