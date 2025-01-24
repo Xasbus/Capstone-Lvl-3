@@ -14,14 +14,14 @@ export function Contact() {
         <section>
           <div>
             <div className="row">
-              <div className="col">
+              {/* <div className="col">
                 <img
                   alt="self pic"
                   height="100%"
                   width="125px"
                   src="/Capstone-Lvl-3/assets/contactphoto.jpg"
                 />
-              </div>
+              </div> */}
               <div className="col">
                 <h1>Contact Us</h1>
                 ✉️ BlahNonsense283@something.com

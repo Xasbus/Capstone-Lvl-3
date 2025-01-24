@@ -5,14 +5,14 @@ export function ImageMapComponent() {
   useEffect(resizeMap, []);
   return (
     <>
-      <img
+      {/* <img
         title="Various accessories"
         alt="assorted accessories"
         width="50%"
         height="30%"
         useMap="#accessoriesMap"
         src="/Capstone-Lvl-3/assets/accessories-image-map.jpg"
-      />
+      /> */}
       <map name="accessoriesMap">
         <area
           title="Controller Info"
