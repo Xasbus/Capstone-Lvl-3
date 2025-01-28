@@ -2593,7 +2593,14 @@ __webpack_require__.r(__webpack_exports__);
 
 function ImageMapComponent() {
   (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(resizeMap, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement((react__WEBPACK_IMPORTED_MODULE_1___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("map", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement((react__WEBPACK_IMPORTED_MODULE_1___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("img", {
+    title: "Various accessories",
+    alt: "assorted accessories",
+    width: "50%",
+    height: "30%",
+    useMap: "#accessoriesMap",
+    src: "/Capstone-Lvl-3/assets/accessories-image-map.jpg"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("map", {
     name: "accessoriesMap"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("area", {
     title: "Controller Info",
