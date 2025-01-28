@@ -1,6 +1,5 @@
 import React from "react";
 import { NavBar } from "./NavBar";
-// import { ImageMapComponent } from "./ImageMapComponent";
 
 export function Home() {
   return (
@@ -102,9 +101,7 @@ export function Home() {
         </section>
         <section>
           <article>
-            {/* <h3 id="accessories">
-              <ImageMapComponent />
-            </h3> */}
+            <h3 id="accessories">Image Map goes here</h3>
             <h3 className="titleColor">Accessories</h3>
             <p>
               Build your perfect gaming setup with controllers, headsets and
