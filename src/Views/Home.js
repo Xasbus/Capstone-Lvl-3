@@ -1,6 +1,6 @@
 import React from "react";
 import { NavBar } from "./NavBar";
-import { ImageMapComponent } from "./ImageMapComponent";
+// import { ImageMapComponent } from "./ImageMapComponent";
 
 export function Home() {
   return (
