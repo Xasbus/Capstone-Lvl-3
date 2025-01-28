@@ -2,12 +2,22 @@ export default {
   module: {
     rules: [
       {
-        exclude: /\.(jpg|png)/,
+        // exclude: /\.(jpg|png)/,
         use: "babel-loader",
+        test: /\.js/,
+      },
+      {
+        test: /\.(scss|css)/,
+        use: ["style-loader", "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(jpg|png|mp4)/,
+        type: "asset/resource",
       },
     ],
   },
   watch: true,
+  watchOptions: { aggregateTimeout: 1000 },
   mode: "development",
   devtool: "source-map",
 };

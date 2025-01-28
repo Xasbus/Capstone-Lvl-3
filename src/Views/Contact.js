@@ -3,6 +3,7 @@ import { NavBar } from "./NavBar";
 import { handleEmail } from "../controllers/contactHtml/email";
 import { handleDate } from "../controllers/contactHtml/date";
 import { handlePhone } from "../controllers/contactHtml/phone";
+import selfPic from "../../assets/contactphoto.jpg";
 
 export function Contact() {
   return (
@@ -14,14 +15,9 @@ export function Contact() {
         <section>
           <div>
             <div className="row">
-              {/* <div className="col">
-                <img
-                  alt="self pic"
-                  height="100%"
-                  width="125px"
-                  src="/Capstone-Lvl-3/assets/contactphoto.jpg"
-                />
-              </div> */}
+              <div className="col">
+                <img alt="self pic" height="100%" width="125px" src={selfPic} />
+              </div>
               <div className="col">
                 <h1>Contact Us</h1>
                 ✉️ BlahNonsense283@something.com

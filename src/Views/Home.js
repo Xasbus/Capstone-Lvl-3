@@ -102,9 +102,9 @@ export function Home() {
         </section>
         <section>
           <article>
-            <h3 id="accessories">
+            {/* <h3 id="accessories">
               <ImageMapComponent />
-            </h3>
+            </h3> */}
             <h3 className="titleColor">Accessories</h3>
             <p>
               Build your perfect gaming setup with controllers, headsets and

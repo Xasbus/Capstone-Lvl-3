@@ -9,7 +9,8 @@ import { SignIn } from "./Views/SignIn";
 import { About } from "./Views/About";
 import { Contact } from "./Views/Contact";
 
-const root = createRoot(window.bodyTag);
+const bodyTag = document.getElementById("bodyTag");
+const root = createRoot(bodyTag);
 
 root.render(
   <BrowserRouter>
