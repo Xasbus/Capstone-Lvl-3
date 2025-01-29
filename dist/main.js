@@ -2491,6 +2491,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _assets_accessories_image_map_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/accessories-image-map.jpg */ "./assets/accessories-image-map.jpg");
+
 
 function ImageMap() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
@@ -2500,7 +2502,7 @@ function ImageMap() {
     width: "50%",
     height: "30%",
     useMap: "#accessoriesMap",
-    src: "../assets/accessories-image-map.jpg"
+    src: _assets_accessories_image_map_jpg__WEBPACK_IMPORTED_MODULE_1__
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("map", {
     name: "accessoriesMap"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("area", {
@@ -2997,6 +2999,16 @@ __webpack_require__.r(__webpack_exports__);
 function output(message = "", outputTag = "outputTag", shouldAppend = true) {
   if (shouldAppend) window[outputTag].innerHTML += message;else window[outputTag].innerHTML = message;
 }
+
+/***/ }),
+
+/***/ "./assets/accessories-image-map.jpg":
+/*!******************************************!*\
+  !*** ./assets/accessories-image-map.jpg ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "c0c907ce2f3a39dfe9ad.jpg";
 
 /***/ }),
 

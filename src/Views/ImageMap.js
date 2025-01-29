@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import mapImage from "../../assets/accessories-image-map.jpg";
 
 export function ImageMap() {
   useEffect(componentDidMount, []);
@@ -10,7 +11,7 @@ export function ImageMap() {
         width="50%"
         height="30%"
         useMap="#accessoriesMap"
-        src="../assets/accessories-image-map.jpg"
+        src={mapImage}
       />
       <map name="accessoriesMap">
         <area
