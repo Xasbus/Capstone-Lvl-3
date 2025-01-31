@@ -2549,7 +2549,7 @@ __webpack_require__.r(__webpack_exports__);
 function NavBar() {
   const domain = window.location.hostname;
   let rootPath = "";
-  if (domain === "xasbus.github.io") rootPath = "";
+  if (domain === "xasbus.github.io") rootPath = "/Capstone-Lvl-3";
   console.log(`The domain is ${domain}`);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
     className: "nav nav-pills"
