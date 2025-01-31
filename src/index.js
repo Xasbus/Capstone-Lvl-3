@@ -9,23 +9,26 @@ import { SignIn } from "./Views/SignIn";
 import { About } from "./Views/About";
 import { Contact } from "./Views/Contact";
 
+const domain = window.location.hostname;
+let rootPath = "";
+if (domain === "xasbus.github.io") rootPath = "/Capstone-Lvl-3";
+
 const bodyTag = document.getElementById("bodyTag");
 const root = createRoot(bodyTag);
 
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="/index.html" element={<Home />} />
-      <Route path="/404.html" element={<Home />} />
-      <Route path="/Capstone-Lvl-3" element={<Home />} />
-      <Route path="/consoles" element={<Consoles />} />
-      <Route path="/games" element={<Games />} />
-      <Route path="/accessories" element={<Accessories />} />
-      <Route path="/signin" element={<SignIn />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route path={`${rootPath}/`} element={<Home />} />
+      <Route path={`${rootPath}/home`} element={<Home />} />
+      <Route path={`${rootPath}/index.html`} element={<Home />} />
+      <Route path={`${rootPath}/404.html`} element={<Home />} />
+      <Route path={`${rootPath}/consoles`} element={<Consoles />} />
+      <Route path={`${rootPath}/games`} element={<Games />} />
+      <Route path={`${rootPath}/accessories`} element={<Accessories />} />
+      <Route path={`${rootPath}/signin`} element={<SignIn />} />
+      <Route path={`${rootPath}/about`} element={<About />} />
+      <Route path={`${rootPath}/contact`} element={<Contact />} />
     </Routes>
   </BrowserRouter>
 );
