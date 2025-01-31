@@ -18,7 +18,7 @@ root.render(
       <Route path="/" element={<Home />} />
       <Route path="/home" element={<Home />} />
       <Route path="/index.html" element={<Home />} />
-      <Route path="" element={<Home />} />
+      <Route path="/404.html" element={<Home />} />
       <Route path="/Capstone-Lvl-3" element={<Home />} />
       <Route path="/consoles" element={<Consoles />} />
       <Route path="/games" element={<Games />} />
