@@ -5,6 +5,7 @@ import { ImageMap } from "./ImageMap";
 export function Home() {
   useEffect(componentDidMount, []);
   useEffect(componentDidUpdate, []);
+  useEffect(componentDidUnmount, []);
   return (
     <>
       <header>
@@ -167,4 +168,7 @@ function componentDidMount() {
 }
 function componentDidUpdate() {
   setTimeout(console.log("Component Updated."), 2000);
+}
+function componentDidUnmount() {
+  setTimeout(console.log("Component Unmounted"), 2500);
 }
