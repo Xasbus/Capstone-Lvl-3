@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavBar } from "./NavBar";
 import { handleClick } from "../controllers/gamesHtml/handleClick";
 import { TFD } from "./Videos/TFD";
@@ -6,6 +6,9 @@ import { GoW } from "./Videos/GoW";
 import { StellarBlade } from "./Videos/StellarBlade";
 
 export function Games() {
+  useEffect(componentDidUpdate, []);
+  useEffect(compontentDidUnmount, []);
+
   return (
     <>
       <header>
@@ -94,4 +97,11 @@ export function Games() {
       </main>
     </>
   );
+
+  function componentDidUpdate() {
+    setTimeout(console.log("component updated."), 2000);
+  }
+  function compontentDidUnmount() {
+    setTimeout(console.log("component unmounted"), 3000);
+  }
 }

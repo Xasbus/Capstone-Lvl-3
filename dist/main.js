@@ -2353,6 +2353,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Games() {
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(compontentDidUnmount, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavBar__WEBPACK_IMPORTED_MODULE_1__.NavBar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     alt: "various games",
     width: "100%",
@@ -2390,6 +2392,12 @@ function Games() {
   }, "Click here to get questions"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "outputTag"
   })));
+  function componentDidUpdate() {
+    setTimeout(console.log("component updated."), 2000);
+  }
+  function compontentDidUnmount() {
+    setTimeout(console.log("component unmounted"), 3000);
+  }
 }
 
 /***/ }),
@@ -2703,6 +2711,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
 function TFD(props) {
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
   const src = props.src;
   const label = props.label;
   const height = props.height;
@@ -2721,6 +2730,9 @@ function TFD(props) {
     allowFullScreen: true,
     style: depth
   }));
+  function componentDidMount() {
+    console.log("Video Mounted");
+  }
 }
 
 /***/ }),

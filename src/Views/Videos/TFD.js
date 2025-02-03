@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export function TFD(props) {
+  useEffect(componentDidMount, []);
   const src = props.src;
   const label = props.label;
   const height = props.height;
@@ -22,4 +23,7 @@ export function TFD(props) {
       ></iframe>
     </>
   );
+  function componentDidMount() {
+    console.log("Video Mounted");
+  }
 }
