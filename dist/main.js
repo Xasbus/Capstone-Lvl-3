@@ -2014,6 +2014,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function About() {
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(compontentDidUnmount, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavBar__WEBPACK_IMPORTED_MODULE_1__.NavBar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
     className: "list-group"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
@@ -2031,6 +2034,15 @@ function About() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("b", null, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "Lists points of interest in each page")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "list-group-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("b", null, "Contact"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "Contact info, Submit request form"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, "Website is created by David Billiot"));
+  function componentDidMount() {
+    console.log("About phase mounting.");
+  }
+  function componentDidUpdate() {
+    setTimeout(console.log("About Component Updated."), 2000);
+  }
+  function compontentDidUnmount() {
+    setTimeout(console.log("About Component Unmounted."), 3000);
+  }
 }
 
 /***/ }),
