@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavBar } from "./NavBar";
 import { handleEmail } from "../controllers/contactHtml/email";
 import { handleDate } from "../controllers/contactHtml/date";
@@ -6,6 +6,9 @@ import { handlePhone } from "../controllers/contactHtml/phone";
 import selfPic from "../../assets/contactphoto.jpg";
 
 export function Contact() {
+  useEffect(componentDidMount, []);
+  useEffect(componentDidUpdate, []);
+  useEffect(componentDidUnmount, []);
   return (
     <>
       <header>
@@ -87,4 +90,13 @@ export function Contact() {
       </footer>
     </>
   );
+  function componentDidMount() {
+    console.log("Contact Phase component mounted");
+  }
+  function componentDidUpdate() {
+    console.log("Contact component did updated.");
+  }
+  function componentDidUnmount() {
+    console.log("Contact page component unmounted.");
+  }
 }
