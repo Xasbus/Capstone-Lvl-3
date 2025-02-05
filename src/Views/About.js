@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavBar } from "./NavBar";
 
 export function About() {
+  useEffect(componentDidMount, []);
+  useEffect(componentDidUpdate, []);
+  useEffect(compontentDidUnmount, []);
   return (
     <>
       <header>
@@ -60,4 +63,14 @@ export function About() {
       <footer>Website is created by David Billiot</footer>
     </>
   );
+  function componentDidMount() {
+    console.log("About phase mounting.");
+  }
+
+  function componentDidUpdate() {
+    setTimeout(console.log("About Component Updated."), 2000);
+  }
+  function compontentDidUnmount() {
+    setTimeout(console.log("About Component Unmounted."), 3000);
+  }
 }
