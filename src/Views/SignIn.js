@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavBar } from "./NavBar";
-import { output } from "../utils/output";
 
 export function SignIn() {
+  useEffect(componentDidMount, []);
+  useEffect(componentDidUpdate, []);
+  useEffect(compontentDidUnmount, []);
   return (
     <>
       <header>
@@ -66,4 +68,13 @@ export function SignIn() {
       </main>
     </>
   );
+  function componentDidMount() {
+    console.log("sign in phase mounted.");
+  }
+  function componentDidUpdate() {
+    setTimeout(console.log("sign in phase updated."), 1000);
+  }
+  function compontentDidUnmount() {
+    setTimeout(console.log("sign in phase unmounted"), 3000);
+  }
 }
