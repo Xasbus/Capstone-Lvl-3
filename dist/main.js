@@ -2300,6 +2300,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Contact() {
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavBar__WEBPACK_IMPORTED_MODULE_1__.NavBar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -2349,6 +2352,15 @@ function Contact() {
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "creatorName"
   }, "Website created by David Billiot")));
+  function componentDidMount() {
+    console.log("Contact Phase component mounted");
+  }
+  function componentDidUpdate() {
+    console.log("Contact component did updated.");
+  }
+  function componentDidUnmount() {
+    console.log("Contact page component unmounted.");
+  }
 }
 
 /***/ }),
