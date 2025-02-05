@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
 import { NavBar } from "./NavBar";
-import { output } from "../utils/output";
-import { ask } from "../modules/ask";
 import { handleGame } from "../controllers/handleGame";
 
 export function Accessories() {
+  useEffect(componentDidMount, []);
+  useEffect(componentDidUpdate, []);
+  useEffect(compontentDidUnmount, []);
   return (
     <>
       <header>
@@ -159,4 +160,13 @@ export function Accessories() {
       </footer>
     </>
   );
+  function componentDidMount() {
+    console.log("Component for Accessories Mounted.");
+  }
+  function componentDidUpdate() {
+    setTimeout(console.log("Updated accessories component."), 1000);
+  }
+  function compontentDidUnmount() {
+    setTimeout(console.log("Unmounted Accessories component."), 2000);
+  }
 }

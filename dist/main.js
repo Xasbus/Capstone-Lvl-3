@@ -2060,15 +2060,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NavBar */ "./src/Views/NavBar.js");
-/* harmony import */ var _utils_output__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/output */ "./src/utils/output.js");
-/* harmony import */ var _modules_ask__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../modules/ask */ "./src/modules/ask.js");
-/* harmony import */ var _controllers_handleGame__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../controllers/handleGame */ "./src/controllers/handleGame.js");
-
-
+/* harmony import */ var _controllers_handleGame__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/handleGame */ "./src/controllers/handleGame.js");
 
 
 
 function Accessories() {
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(compontentDidUnmount, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavBar__WEBPACK_IMPORTED_MODULE_1__.NavBar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     title: "assorted accessories",
     alt: "accessories",
@@ -2112,7 +2111,7 @@ function Accessories() {
   }, "PULSE Elite\u2122 wireless headset"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Proin fermentum malesuada imperdiet quam hac sit turpis aptent nam. Faucibus class quam cubilia potenti dolor felis dis! Hendrerit tincidunt ac per, ipsum suscipit consectetur varius aenean. Aenean nibh sagittis accumsan mus dolor vel lectus. Class odio ac lacus; lacinia pellentesque congue. Lobortis non ipsum laoreet taciti mi porta praesent. Quam netus leo morbi eu fames dis mollis. Penatibus habitasse cursus sagittis lacus accumsan faucibus massa orci. Faucibus felis potenti curabitur porttitor torquent aliquet faucibus."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Semper maximus ligula hendrerit tincidunt lobortis pharetra. Dapibus pellentesque nullam torquent vulputate congue faucibus dapibus. Dis ad sapien maximus magna massa duis phasellus. Egestas morbi id est nulla sapien ac tempor lobortis. Tristique ridiculus habitant montes varius tristique. Netus dignissim per posuere dignissim; taciti netus amet. Dis dapibus ultricies habitant amet donec cursus. Scelerisque mollis nec tristique nulla nostra posuere. Eget egestas adipiscing commodo varius cubilia, nisl ultricies convallis. Leo curae consequat curabitur ultrices; maecenas metus quam.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Chance to", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "bold text-primary text-decoration-underline"
   }, "WIN 25% OFF!!"), "coupon by guessing a number from 0-100.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "You have 3 guesses."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    onClick: _controllers_handleGame__WEBPACK_IMPORTED_MODULE_4__.handleGame,
+    onClick: _controllers_handleGame__WEBPACK_IMPORTED_MODULE_2__.handleGame,
     type: "button"
   }, "Click Here to play"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("output", {
     id: "outputTag"
@@ -2139,6 +2138,15 @@ function Accessories() {
   }, "PULSE Elite wireless headset")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "creatorName"
   }, "Website created by David Billiot")));
+  function componentDidMount() {
+    console.log("Component for Accessories Mounted.");
+  }
+  function componentDidUpdate() {
+    setTimeout(console.log("Updated accessories component."), 1000);
+  }
+  function compontentDidUnmount() {
+    setTimeout(console.log("Unmounted Accessories component."), 2000);
+  }
 }
 
 /***/ }),
