@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavBar } from "./NavBar";
 import { ImageMap } from "./ImageMap";
 
 export function Home() {
+  useEffect(componentDidMount, []);
+  useEffect(componentDidUpdate, []);
+  useEffect(componentDidUnmount, []);
   return (
     <>
       <header>
@@ -158,4 +161,14 @@ export function Home() {
       </footer>
     </>
   );
+}
+function componentDidMount() {
+  document.title = "Unofficial Playstation Site";
+  console.log("Mounting component");
+}
+function componentDidUpdate() {
+  setTimeout(console.log("Component Updated."), 2000);
+}
+function componentDidUnmount() {
+  setTimeout(console.log("Component Unmounted"), 2500);
 }
