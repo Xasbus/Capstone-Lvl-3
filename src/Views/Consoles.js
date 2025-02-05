@@ -5,7 +5,7 @@ import { cardConverter } from "../modules/cardConverter";
 
 export function Consoles() {
   useEffect(componentDidMount, []);
-  useEffect(componentDidUpdate);
+  useEffect(componentDidUpdate, []);
   useEffect(componentDidUnmount, []);
   return (
     <>
@@ -64,6 +64,7 @@ export function Consoles() {
       </div>`;
       return cardString;
     }
+    console.log("Cards Updated.");
   }
 
   function componentDidMount() {
@@ -121,6 +122,7 @@ export function Consoles() {
       output(stringCard);
       output("</section>");
     }
+    console.log("Mounted Cards");
   }
 
   function componentDidUnmount() {
