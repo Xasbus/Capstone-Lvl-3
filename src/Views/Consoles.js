@@ -6,6 +6,7 @@ import { cardConverter } from "../modules/cardConverter";
 export function Consoles() {
   useEffect(componentDidMount, []);
   useEffect(componentDidUpdate);
+  useEffect(componentDidUnmount, []);
   return (
     <>
       <header>
@@ -120,5 +121,9 @@ export function Consoles() {
       output(stringCard);
       output("</section>");
     }
+  }
+
+  function componentDidUnmount() {
+    console.log("Component Unmounted in Console Page");
   }
 }

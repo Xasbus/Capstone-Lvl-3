@@ -2173,6 +2173,7 @@ __webpack_require__.r(__webpack_exports__);
 function Consoles() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavBar__WEBPACK_IMPORTED_MODULE_1__.NavBar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     title: "PS5",
     alt: "consoles",
@@ -2267,6 +2268,9 @@ function Consoles() {
       (0,_utils_output__WEBPACK_IMPORTED_MODULE_2__.output)(stringCard);
       (0,_utils_output__WEBPACK_IMPORTED_MODULE_2__.output)("</section>");
     }
+  }
+  function componentDidUnmount() {
+    console.log("Component Unmounted in Console Page");
   }
 }
 
