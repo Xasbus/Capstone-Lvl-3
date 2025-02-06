@@ -2035,6 +2035,7 @@ function About() {
     className: "list-group-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("b", null, "Contact"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "Contact info, Submit request form"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, "Website is created by David Billiot"));
   function componentDidMount() {
+    document.title = "Playstation - About Page";
     console.log("About phase mounting.");
   }
   function componentDidUpdate() {
@@ -2139,6 +2140,7 @@ function Accessories() {
     className: "creatorName"
   }, "Website created by David Billiot")));
   function componentDidMount() {
+    document.title = "Playstation - Accessories Page";
     console.log("Component for Accessories Mounted.");
   }
   function componentDidUpdate() {
@@ -2218,6 +2220,7 @@ function Consoles() {
       </div>`;
       return cardString;
     }
+    document.title = "Playstation - Consoles Page";
     console.log("Cards Updated.");
   }
   function componentDidMount() {
@@ -2355,6 +2358,7 @@ function Contact() {
     className: "creatorName"
   }, "Website created by David Billiot")));
   function componentDidMount() {
+    document.title = "Playstation - Contact Page";
     console.log("Contact Phase component mounted");
   }
   function componentDidUpdate() {
@@ -2686,6 +2690,7 @@ function SignIn() {
     type: "button"
   }, "Sign Up")))));
   function componentDidMount() {
+    document.title = "Playstation - Sign In Page";
     console.log("sign in phase mounted.");
   }
   function componentDidUpdate() {
@@ -2804,6 +2809,7 @@ function TFD(props) {
     style: depth
   }));
   function componentDidMount() {
+    document.title = "Playstation - Games Page";
     console.log("Video Mounted");
   }
 }

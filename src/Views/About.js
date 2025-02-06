@@ -64,6 +64,7 @@ export function About() {
     </>
   );
   function componentDidMount() {
+    document.title = "Playstation - About Page";
     console.log("About phase mounting.");
   }
 

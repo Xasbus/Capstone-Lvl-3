@@ -97,7 +97,6 @@ export function Games() {
       </main>
     </>
   );
-
   function componentDidUpdate() {
     setTimeout(console.log("component updated."), 2000);
   }

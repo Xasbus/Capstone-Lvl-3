@@ -24,6 +24,7 @@ export function TFD(props) {
     </>
   );
   function componentDidMount() {
+    document.title = "Playstation - Games Page";
     console.log("Video Mounted");
   }
 }

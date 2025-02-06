@@ -161,6 +161,7 @@ export function Accessories() {
     </>
   );
   function componentDidMount() {
+    document.title = "Playstation - Accessories Page"
     console.log("Component for Accessories Mounted.");
   }
   function componentDidUpdate() {

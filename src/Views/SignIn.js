@@ -69,6 +69,7 @@ export function SignIn() {
     </>
   );
   function componentDidMount() {
+    document.title = "Playstation - Sign In Page";
     console.log("sign in phase mounted.");
   }
   function componentDidUpdate() {

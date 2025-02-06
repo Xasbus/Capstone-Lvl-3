@@ -91,6 +91,7 @@ export function Contact() {
     </>
   );
   function componentDidMount() {
+    document.title = "Playstation - Contact Page";
     console.log("Contact Phase component mounted");
   }
   function componentDidUpdate() {

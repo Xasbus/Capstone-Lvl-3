@@ -64,6 +64,7 @@ export function Consoles() {
       </div>`;
       return cardString;
     }
+    document.title = "Playstation - Consoles Page";
     console.log("Cards Updated.");
   }
 
