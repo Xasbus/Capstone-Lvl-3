@@ -2187,7 +2187,7 @@ function Consoles() {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     id: "playstation5"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("output", {
-    id: "outputTag"
+    id: "myTag"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     width: "100%"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -2432,7 +2432,7 @@ function Games() {
   }, "Game Trivia"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "How well do you know your video game???"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     onClick: _controllers_gamesHtml_handleClick__WEBPACK_IMPORTED_MODULE_2__.handleClick
   }, "Click here to get questions"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    id: "outputTag"
+    id: "myTag"
   })));
   function componentDidUpdate() {
     setTimeout(console.log("component updated."), 2000);
@@ -3178,7 +3178,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   output: () => (/* binding */ output)
 /* harmony export */ });
 function output(message = "", outputTag = "outputTag", shouldAppend = true) {
-  if (shouldAppend) window[outputTag].innerHTML += message;else window[outputTag].innerHTML = message;
+  const myElement = document.getElementById("myTag");
+  if (shouldAppend) myElement.innerHTML += message;else myElement.innerHTML = message;
 }
 
 /***/ }),

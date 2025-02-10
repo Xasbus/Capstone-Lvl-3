@@ -1,8 +1,9 @@
 export function output(
-    message = "",
-    outputTag = "outputTag",
-    shouldAppend = true
+  message = "",
+  outputTag = "outputTag",
+  shouldAppend = true
 ) {
-    if (shouldAppend) window[outputTag].innerHTML += message;
-    else window[outputTag].innerHTML = message;
+  const myElement = document.getElementById("myTag");
+  if (shouldAppend) myElement.innerHTML += message;
+  else myElement.innerHTML = message;
 }

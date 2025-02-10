@@ -24,7 +24,7 @@ export function Consoles() {
         <a id="playstation5"></a>
         <article>
           <a id="playstation5"></a>
-          <output id="outputTag"></output>
+          <output id="myTag"></output>
         </article>
         <br />
         <br />
