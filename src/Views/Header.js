@@ -1,10 +1,10 @@
 import React from "react";
-import { NavBar } from "./NavBar";
+import { CollapsibleNavbar } from "./CollapsibleNavBar";
 
 export function Header() {
   return (
     <header>
-      <NavBar />
+      <CollapsibleNavbar />
     </header>
   );
 }
