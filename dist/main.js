@@ -2170,7 +2170,7 @@ function CollapsibleNavbar() {
   if (domain === "xasbus.github.io") rootPath = "/Capstone-Lvl-3";
   console.log(`The domain is ${domain}`);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
-    className: "nav-pills navbar navbar-expand-lg bg-body-tertiary"
+    className: "nav-pills navbar navbar-expand-md bg-body-tertiary"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "container-fluid"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
@@ -3021,7 +3021,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   cardConverter: () => (/* binding */ cardConverter)
 /* harmony export */ });
 function cardConverter(cardObject) {
-  let cardString = `<div class="card" style="width: 40rem">
+  let cardString = `<div class="card">
     <img class="card-img-top" src="${cardObject.src}">
     <div class="card-body">
     <h3 class="card-title">${cardObject.title}</h3>

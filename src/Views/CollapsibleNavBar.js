@@ -7,7 +7,7 @@ export function CollapsibleNavbar() {
   if (domain === "xasbus.github.io") rootPath = "/Capstone-Lvl-3";
   console.log(`The domain is ${domain}`);
   return (
-    <nav className="nav-pills navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="nav-pills navbar navbar-expand-md bg-body-tertiary">
       <div className="container-fluid">
         <a className="navbar-brand" to="#">
           Navigation
