@@ -11,9 +11,6 @@ export function Games() {
 
   return (
     <>
-      <header>
-        <NavBar />
-      </header>
       <main>
         <img
           alt="various games"

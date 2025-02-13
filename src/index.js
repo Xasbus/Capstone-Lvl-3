@@ -8,6 +8,7 @@ import { Accessories } from "./Views/Accessories";
 import { SignIn } from "./Views/SignIn";
 import { About } from "./Views/About";
 import { Contact } from "./Views/Contact";
+import { Header } from "./Views/Header";
 
 const domain = window.location.hostname;
 let rootPath = "";
@@ -18,6 +19,7 @@ const root = createRoot(bodyTag);
 
 root.render(
   <BrowserRouter>
+    <Header />
     <Routes>
       <Route path={`${rootPath}/`} element={<Home />} />
       <Route path={`${rootPath}/home`} element={<Home />} />

@@ -7,9 +7,6 @@ export function About() {
   useEffect(compontentDidUnmount, []);
   return (
     <>
-      <header>
-        <NavBar />
-      </header>
       <main>
         <ul className="list-group">
           <li className="list-group-item">

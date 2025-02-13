@@ -7,9 +7,6 @@ export function SignIn() {
   useEffect(compontentDidUnmount, []);
   return (
     <>
-      <header>
-        <NavBar />
-      </header>
       <main>
         <img
           alt="PS symbols"

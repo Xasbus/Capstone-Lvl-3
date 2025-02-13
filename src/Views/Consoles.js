@@ -9,9 +9,6 @@ export function Consoles() {
   useEffect(componentDidUnmount, []);
   return (
     <>
-      <header>
-        <NavBar />
-      </header>
       <main>
         <img
           title="PS5"

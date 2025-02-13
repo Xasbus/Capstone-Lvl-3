@@ -8,9 +8,6 @@ export function Accessories() {
   useEffect(compontentDidUnmount, []);
   return (
     <>
-      <header>
-        <NavBar />
-      </header>
       <main>
         <article>
           <img
@@ -161,7 +158,7 @@ export function Accessories() {
     </>
   );
   function componentDidMount() {
-    document.title = "Playstation - Accessories Page"
+    document.title = "Playstation - Accessories Page";
     console.log("Component for Accessories Mounted.");
   }
   function componentDidUpdate() {

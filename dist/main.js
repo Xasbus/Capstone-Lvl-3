@@ -2017,7 +2017,7 @@ function About() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(compontentDidUnmount, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavBar__WEBPACK_IMPORTED_MODULE_1__.NavBar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
     className: "list-group"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "list-group-item"
@@ -2069,7 +2069,7 @@ function Accessories() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(compontentDidUnmount, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavBar__WEBPACK_IMPORTED_MODULE_1__.NavBar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     title: "assorted accessories",
     alt: "accessories",
     width: "100%",
@@ -2176,7 +2176,7 @@ function Consoles() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavBar__WEBPACK_IMPORTED_MODULE_1__.NavBar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     title: "PS5",
     alt: "consoles",
     width: "100%",
@@ -2308,7 +2308,7 @@ function Contact() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavBar__WEBPACK_IMPORTED_MODULE_1__.NavBar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col"
@@ -2397,7 +2397,7 @@ __webpack_require__.r(__webpack_exports__);
 function Games() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(compontentDidUnmount, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavBar__WEBPACK_IMPORTED_MODULE_1__.NavBar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     alt: "various games",
     width: "100%",
     height: "100px",
@@ -2444,6 +2444,27 @@ function Games() {
 
 /***/ }),
 
+/***/ "./src/Views/Header.js":
+/*!*****************************!*\
+  !*** ./src/Views/Header.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Header: () => (/* binding */ Header)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NavBar */ "./src/Views/NavBar.js");
+
+
+function Header() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavBar__WEBPACK_IMPORTED_MODULE_1__.NavBar, null));
+}
+
+/***/ }),
+
 /***/ "./src/Views/Home.js":
 /*!***************************!*\
   !*** ./src/Views/Home.js ***!
@@ -2456,16 +2477,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NavBar */ "./src/Views/NavBar.js");
-/* harmony import */ var _ImageMap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ImageMap */ "./src/Views/ImageMap.js");
-
+/* harmony import */ var _ImageMap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ImageMap */ "./src/Views/ImageMap.js");
 
 
 function Home() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavBar__WEBPACK_IMPORTED_MODULE_1__.NavBar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     title: "Playstation",
     alt: "playstation title",
     width: "100%",
@@ -2499,7 +2518,7 @@ function Home() {
     className: "badge bg-success"
   }, "ON SALE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Discover the games you want, from exclusive blockbusters to innovative indies, all brought to life with the power of the PS5\u2122 console."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Natoque mus curae leo ut commodo, sapien interdum. Dui vel risus erat magna at dui fusce. Malesuada praesent litora vulputate tempor accumsan adipiscing? Dictum classss quisque suscipit aptent vestibulum ipsum semper ad ultrices. Est dui diam ipsum penatibus lacinia posuere metus dui mus. Ultricies praesent elementum primis elementum sollicitudin mus. Sollicitudin torquent magnis fames cubilia eros quis sem. Habitasse consectetur ipsum ultricies inceptos vestibulum per sagittis. Massa enim fringilla; rutrum clwass quis consectetur eros."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Sapien libero mi vehicula mauris; feugiat auctor accumsan. Placerat habitant suspendisse elit donec sed curae phasellus tempus. Congue fermentum consectetur praesent cursus, aenean lobortis tristique. Aliquet ac ac proin condimentum suspendisse a at. Morbi malesuada massa eget id suspendisse. Elit maximus hac montes leo semper varius. Senectus ac aenean taciti penatibus posuere accumsan nullam. Etiam finibus risus neque urna dis tortor. Laoreet turpis dictum clrass sociosqu mi at molestie."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", {
     id: "accessories"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ImageMap__WEBPACK_IMPORTED_MODULE_2__.ImageMap, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ImageMap__WEBPACK_IMPORTED_MODULE_1__.ImageMap, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     className: "titleColor"
   }, "Accessories"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Build your perfect gaming setup with controllers, headsets and other accessories for your PS5\xAE or PS4\u2122 console."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Diam montes euismod orci lobortis hac eleifend mus ridiculus. Proin accumsan phasellus in maximus magna adipiscing sagittis. Venenatis tristique elit malesuada hendrerit inceptos. Malesuada diam suspendisse sollicitudin quisque felis. Montes diam felis elit ipsum quis lectus consectetur ullamcorper. Tempus donec lacinia mus suscipit dignissim et dignissim inceptos? Ad varius nibh iaculis pellentesque lacus cubilia."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Mattis facilisis potenti venenatis magna cubilia ligula venenatis. Consequat tortor fermentum id conubia, primis cras. Dolor maximus enim class posuere vivamus nam volutpat. Sagittis eget laoreet tristique primis, sit massa vehicula. Libero natoque lobortis orci, velit dictumst luctus non. Egestas magnis nulla nulla pharetra massa platea porttitor scelerisque. Hendrerit donec eget; nunc gravida suscipit hac et pretium. Morbi odio class dis; dolor consequat condimentum convallis. Tempor odio odio lacus ligula in lacinia fusce efficitur parturient."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: "#consoles"
@@ -2647,7 +2666,7 @@ function SignIn() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(compontentDidUnmount, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavBar__WEBPACK_IMPORTED_MODULE_1__.NavBar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     alt: "PS symbols",
     width: "100%",
     height: "100px",
@@ -13645,7 +13664,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
-/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/dist/development/chunk-K6AXKMTT.mjs");
+/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/dist/development/chunk-K6AXKMTT.mjs");
 /* harmony import */ var _Views_Home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Views/Home */ "./src/Views/Home.js");
 /* harmony import */ var _Views_Consoles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Views/Consoles */ "./src/Views/Consoles.js");
 /* harmony import */ var _Views_Games__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Views/Games */ "./src/Views/Games.js");
@@ -13653,6 +13672,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Views_SignIn__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Views/SignIn */ "./src/Views/SignIn.js");
 /* harmony import */ var _Views_About__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Views/About */ "./src/Views/About.js");
 /* harmony import */ var _Views_Contact__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Views/Contact */ "./src/Views/Contact.js");
+/* harmony import */ var _Views_Header__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Views/Header */ "./src/Views/Header.js");
+
 
 
 
@@ -13668,34 +13689,34 @@ let rootPath = "";
 if (domain === "xasbus.github.io") rootPath = "/Capstone-Lvl-3";
 const bodyTag = document.getElementById("bodyTag");
 const root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(bodyTag);
-root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_9__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_9__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_9__.Route, {
+root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Header__WEBPACK_IMPORTED_MODULE_9__.Header, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Route, {
   path: `${rootPath}/`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Home__WEBPACK_IMPORTED_MODULE_2__.Home, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_9__.Route, {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Route, {
   path: `${rootPath}/home`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Home__WEBPACK_IMPORTED_MODULE_2__.Home, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_9__.Route, {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Route, {
   path: `${rootPath}/index.html`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Home__WEBPACK_IMPORTED_MODULE_2__.Home, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_9__.Route, {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Route, {
   path: `${rootPath}/404.html`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Home__WEBPACK_IMPORTED_MODULE_2__.Home, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_9__.Route, {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Route, {
   path: `${rootPath}/consoles`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Consoles__WEBPACK_IMPORTED_MODULE_3__.Consoles, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_9__.Route, {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Route, {
   path: `${rootPath}/games`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Games__WEBPACK_IMPORTED_MODULE_4__.Games, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_9__.Route, {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Route, {
   path: `${rootPath}/accessories`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Accessories__WEBPACK_IMPORTED_MODULE_5__.Accessories, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_9__.Route, {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Route, {
   path: `${rootPath}/signin`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_SignIn__WEBPACK_IMPORTED_MODULE_6__.SignIn, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_9__.Route, {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Route, {
   path: `${rootPath}/about`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_About__WEBPACK_IMPORTED_MODULE_7__.About, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_9__.Route, {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Route, {
   path: `${rootPath}/contact`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Contact__WEBPACK_IMPORTED_MODULE_8__.Contact, null)
 }))));

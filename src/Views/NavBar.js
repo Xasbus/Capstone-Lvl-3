@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router";
+import { NavLink } from "react-router";
 
 export function NavBar() {
   const domain = window.location.hostname;

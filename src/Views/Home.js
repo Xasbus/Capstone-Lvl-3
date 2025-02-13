@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { NavBar } from "./NavBar";
 import { ImageMap } from "./ImageMap";
 
 export function Home() {
@@ -8,9 +7,6 @@ export function Home() {
   useEffect(componentDidUnmount, []);
   return (
     <>
-      <header>
-        <NavBar />
-      </header>
       <main>
         <img
           title="Playstation"

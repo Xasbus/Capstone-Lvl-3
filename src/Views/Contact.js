@@ -11,9 +11,6 @@ export function Contact() {
   useEffect(componentDidUnmount, []);
   return (
     <>
-      <header>
-        <NavBar />
-      </header>
       <main>
         <section>
           <div>
