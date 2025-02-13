@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { NavBar } from "./NavBar";
 import { handleClick } from "../controllers/gamesHtml/handleClick";
 import { TFD } from "./Videos/TFD";
 import { GoW } from "./Videos/GoW";

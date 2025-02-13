@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { NavBar } from "./NavBar";
 import { output } from "../utils/output";
 import { cardConverter } from "../modules/cardConverter";
 

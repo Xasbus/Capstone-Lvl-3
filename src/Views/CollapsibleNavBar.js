@@ -44,6 +44,9 @@ export function CollapsibleNavbar() {
             <NavLink className="nav-link" to={`${rootPath}/Contact`}>
               Contact
             </NavLink>
+            <NavLink className="nav-link" to={`${rootPath}/about`}>
+              About
+            </NavLink>
             <NavLink className="nav-link" to={`${rootPath}/signin`}>
               Sign In
             </NavLink>

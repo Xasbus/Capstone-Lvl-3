@@ -2010,8 +2010,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NavBar */ "./src/Views/NavBar.js");
-
 
 function About() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
@@ -2060,9 +2058,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NavBar */ "./src/Views/NavBar.js");
-/* harmony import */ var _controllers_handleGame__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/handleGame */ "./src/controllers/handleGame.js");
-
+/* harmony import */ var _controllers_handleGame__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../controllers/handleGame */ "./src/controllers/handleGame.js");
 
 
 function Accessories() {
@@ -2112,7 +2108,7 @@ function Accessories() {
   }, "PULSE Elite\u2122 wireless headset"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Proin fermentum malesuada imperdiet quam hac sit turpis aptent nam. Faucibus class quam cubilia potenti dolor felis dis! Hendrerit tincidunt ac per, ipsum suscipit consectetur varius aenean. Aenean nibh sagittis accumsan mus dolor vel lectus. Class odio ac lacus; lacinia pellentesque congue. Lobortis non ipsum laoreet taciti mi porta praesent. Quam netus leo morbi eu fames dis mollis. Penatibus habitasse cursus sagittis lacus accumsan faucibus massa orci. Faucibus felis potenti curabitur porttitor torquent aliquet faucibus."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Semper maximus ligula hendrerit tincidunt lobortis pharetra. Dapibus pellentesque nullam torquent vulputate congue faucibus dapibus. Dis ad sapien maximus magna massa duis phasellus. Egestas morbi id est nulla sapien ac tempor lobortis. Tristique ridiculus habitant montes varius tristique. Netus dignissim per posuere dignissim; taciti netus amet. Dis dapibus ultricies habitant amet donec cursus. Scelerisque mollis nec tristique nulla nostra posuere. Eget egestas adipiscing commodo varius cubilia, nisl ultricies convallis. Leo curae consequat curabitur ultrices; maecenas metus quam.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Chance to", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "bold text-primary text-decoration-underline"
   }, "WIN 25% OFF!!"), "coupon by guessing a number from 0-100.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "You have 3 guesses."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    onClick: _controllers_handleGame__WEBPACK_IMPORTED_MODULE_2__.handleGame,
+    onClick: _controllers_handleGame__WEBPACK_IMPORTED_MODULE_1__.handleGame,
     type: "button"
   }, "Click Here to play"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("output", {
     id: "outputTag"
@@ -2213,6 +2209,9 @@ function CollapsibleNavbar() {
     to: `${rootPath}/Contact`
   }, "Contact"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
     className: "nav-link",
+    to: `${rootPath}/about`
+  }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
+    className: "nav-link",
     to: `${rootPath}/signin`
   }, "Sign In"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     className: "nav-link disabled",
@@ -2234,10 +2233,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NavBar */ "./src/Views/NavBar.js");
-/* harmony import */ var _utils_output__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/output */ "./src/utils/output.js");
-/* harmony import */ var _modules_cardConverter__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../modules/cardConverter */ "./src/modules/cardConverter.js");
-
+/* harmony import */ var _utils_output__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/output */ "./src/utils/output.js");
+/* harmony import */ var _modules_cardConverter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../modules/cardConverter */ "./src/modules/cardConverter.js");
 
 
 
@@ -2335,11 +2332,11 @@ function Consoles() {
                         </p>`;
     const cardArray = [cardObject1, cardObject2, cardObject3];
     for (let position = 0; position < cardArray.length; position++) {
-      (0,_utils_output__WEBPACK_IMPORTED_MODULE_2__.output)("<section class='p-5'>");
+      (0,_utils_output__WEBPACK_IMPORTED_MODULE_1__.output)("<section class='p-5'>");
       const cardObject = cardArray[position];
-      const stringCard = (0,_modules_cardConverter__WEBPACK_IMPORTED_MODULE_3__.cardConverter)(cardObject);
-      (0,_utils_output__WEBPACK_IMPORTED_MODULE_2__.output)(stringCard);
-      (0,_utils_output__WEBPACK_IMPORTED_MODULE_2__.output)("</section>");
+      const stringCard = (0,_modules_cardConverter__WEBPACK_IMPORTED_MODULE_2__.cardConverter)(cardObject);
+      (0,_utils_output__WEBPACK_IMPORTED_MODULE_1__.output)(stringCard);
+      (0,_utils_output__WEBPACK_IMPORTED_MODULE_1__.output)("</section>");
     }
     console.log("Mounted Cards");
   }
@@ -2362,12 +2359,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NavBar */ "./src/Views/NavBar.js");
-/* harmony import */ var _controllers_contactHtml_email__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/contactHtml/email */ "./src/controllers/contactHtml/email.js");
-/* harmony import */ var _controllers_contactHtml_date__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../controllers/contactHtml/date */ "./src/controllers/contactHtml/date.js");
-/* harmony import */ var _controllers_contactHtml_phone__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../controllers/contactHtml/phone */ "./src/controllers/contactHtml/phone.js");
-/* harmony import */ var _assets_contactphoto_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/contactphoto.jpg */ "./assets/contactphoto.jpg");
-
+/* harmony import */ var _controllers_contactHtml_email__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../controllers/contactHtml/email */ "./src/controllers/contactHtml/email.js");
+/* harmony import */ var _controllers_contactHtml_date__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/contactHtml/date */ "./src/controllers/contactHtml/date.js");
+/* harmony import */ var _controllers_contactHtml_phone__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../controllers/contactHtml/phone */ "./src/controllers/contactHtml/phone.js");
+/* harmony import */ var _assets_contactphoto_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/contactphoto.jpg */ "./assets/contactphoto.jpg");
 
 
 
@@ -2385,7 +2380,7 @@ function Contact() {
     alt: "self pic",
     height: "100%",
     width: "125px",
-    src: _assets_contactphoto_jpg__WEBPACK_IMPORTED_MODULE_5__
+    src: _assets_contactphoto_jpg__WEBPACK_IMPORTED_MODULE_4__
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Contact Us"), "\u2709\uFE0F BlahNonsense283@something.com", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "\uD83D\uDCDE 985 - 555 - 5555", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
@@ -2393,7 +2388,7 @@ function Contact() {
     width: "4%",
     src: "https://th.bing.com/th?id=OIP.lgict_2VY-2-x2b_kDd_vwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
   }), "@NotRealDavidFB")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, "Contact Customer Service"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
-    onSubmit: _controllers_contactHtml_email__WEBPACK_IMPORTED_MODULE_2__.handleEmail
+    onSubmit: _controllers_contactHtml_email__WEBPACK_IMPORTED_MODULE_1__.handleEmail
   }, "Email: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     id: "emailSize",
     required: true,
@@ -2407,7 +2402,7 @@ function Contact() {
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "submit"
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, "Submit an appointment by phone"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
-    onSubmit: _controllers_contactHtml_phone__WEBPACK_IMPORTED_MODULE_4__.handlePhone
+    onSubmit: _controllers_contactHtml_phone__WEBPACK_IMPORTED_MODULE_3__.handlePhone
   }, "Schedule a phone appointment:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "tel",
     placeholder: "XXX-XXX-XXXX",
@@ -2416,7 +2411,7 @@ function Contact() {
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "submit"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
-    onSubmit: _controllers_contactHtml_date__WEBPACK_IMPORTED_MODULE_3__.handleDate
+    onSubmit: _controllers_contactHtml_date__WEBPACK_IMPORTED_MODULE_2__.handleDate
   }, "Select date and time:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "datetime-local"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
@@ -2452,12 +2447,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NavBar */ "./src/Views/NavBar.js");
-/* harmony import */ var _controllers_gamesHtml_handleClick__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/gamesHtml/handleClick */ "./src/controllers/gamesHtml/handleClick.js");
-/* harmony import */ var _Videos_TFD__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Videos/TFD */ "./src/Views/Videos/TFD.js");
-/* harmony import */ var _Videos_GoW__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Videos/GoW */ "./src/Views/Videos/GoW.js");
-/* harmony import */ var _Videos_StellarBlade__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Videos/StellarBlade */ "./src/Views/Videos/StellarBlade.js");
-
+/* harmony import */ var _controllers_gamesHtml_handleClick__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../controllers/gamesHtml/handleClick */ "./src/controllers/gamesHtml/handleClick.js");
+/* harmony import */ var _Videos_TFD__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Videos/TFD */ "./src/Views/Videos/TFD.js");
+/* harmony import */ var _Videos_GoW__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Videos/GoW */ "./src/Views/Videos/GoW.js");
+/* harmony import */ var _Videos_StellarBlade__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Videos/StellarBlade */ "./src/Views/Videos/StellarBlade.js");
 
 
 
@@ -2474,7 +2467,7 @@ function Games() {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Video Games"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     id: "thefirstdesendant",
     className: "titleColor"
-  }, "The First Desendant"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Videos_TFD__WEBPACK_IMPORTED_MODULE_3__.TFD, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, "The First Desendant"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Videos_TFD__WEBPACK_IMPORTED_MODULE_2__.TFD, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "bold"
   }, "About The First Desendant"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("dialog", {
     open: true,
@@ -2489,17 +2482,17 @@ function Games() {
   }, "FREE LIMITED TIME!!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Leo porttitor diam sollicitudin; elementum luctus commodo! Commodo velit class porttitor elit accumsan luctus nibh porta. Facilisis suscipit egestas penatibus taciti non venenatis consectetur. Volutpat cursus mi pulvinar venenatis lobortis per lacus. Nunc enim efficitur porta at libero nunc. Praesent vitae amet pretium vehicula mattis pretium potenti. Quis suspendisse dis curae arcu facilisis porta libero. Tincidunt risus integer aptent augue etiam dui bibendum gravida. Nibh a porttitor morbi facilisis faucibus orci.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     id: "godofwar",
     className: "titleColor"
-  }, "God of War Ragnarok"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Videos_GoW__WEBPACK_IMPORTED_MODULE_4__.GoW, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+  }, "God of War Ragnarok"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Videos_GoW__WEBPACK_IMPORTED_MODULE_3__.GoW, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "bold"
   }, "About God of War Ragnarok"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Torquent donec vehicula suspendisse nostra integer id parturient tristique. Volutpat nibh elit primis dictum imperdiet dolor pharetra. Habitasse magna adipiscing ridiculus ridiculus varius dolor diam porttitor. Augue pharetra eleifend varius egestas eros; ornare porttitor facilisi. Parturient ultricies praesent ullamcorper et pharetra tortor mollis accumsan. Eros nam viverra adipiscing tempus nulla eros etiam congue in.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     id: "stellarblade",
     className: "titleColor"
-  }, "Stellar Blade"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Videos_StellarBlade__WEBPACK_IMPORTED_MODULE_5__.StellarBlade, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+  }, "Stellar Blade"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Videos_StellarBlade__WEBPACK_IMPORTED_MODULE_4__.StellarBlade, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "bold"
   }, "About Stellar Blade"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Posuere ullamcorper ornare vitae vitae nisl lacinia condimentum fames. Viverra posuere erat eleifend nulla ante velit. Felis porta est elit a tempus netus faucibus eget nam. Urna tempor ad taciti non, mus duis montes. Scelerisque ornare platea orci sit consequat accumsan erat taciti. Proin felis suscipit platea augue ut pellentesque metus. Eleifend lacinia pretium sodales facilisis, nibh elit nullam nisl. Etiam molestie conubia nascetur faucibus penatibus. Maecenas suscipit praesent phasellus mattis odio? Porta neque quisque porta odio rutrum, nullam suspendisse. Porttitor dis fusce maximus aenean ex elit scelerisque in. Potenti non dapibus odio purus amet aliquam sodales. Orci nunc finibus penatibus; donec amet ullamcorper. Neque cursus penatibus purus porttitor fames nascetur tristique. Dignissim vehicula tempor vehicula ex dictum. Sit bibendum dignissim non proin tortor placerat semper. Condimentum nullam elit erat mauris iaculis enim pharetra est aptent.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     className: "titleColor"
   }, "Game Trivia"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "How well do you know your video game???"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    onClick: _controllers_gamesHtml_handleClick__WEBPACK_IMPORTED_MODULE_2__.handleClick
+    onClick: _controllers_gamesHtml_handleClick__WEBPACK_IMPORTED_MODULE_1__.handleClick
   }, "Click here to get questions"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "myTag"
   })));
@@ -2664,58 +2657,6 @@ function ImageMap() {
 
 /***/ }),
 
-/***/ "./src/Views/NavBar.js":
-/*!*****************************!*\
-  !*** ./src/Views/NavBar.js ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   NavBar: () => (/* binding */ NavBar)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/dist/development/chunk-K6AXKMTT.mjs");
-
-
-function NavBar() {
-  const domain = window.location.hostname;
-  let rootPath = "";
-  if (domain === "xasbus.github.io") rootPath = "/Capstone-Lvl-3";
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
-    className: "nav nav-pills"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    title: "PS Logo",
-    alt: "logo",
-    width: "40px",
-    src: "data:image/png;base64,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"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
-    className: "nav-link",
-    to: `${rootPath}/`
-  }, "Home"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
-    className: "nav-link",
-    to: `${rootPath}/consoles`
-  }, "Consoles"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
-    className: "nav-link",
-    to: `${rootPath}/games`
-  }, "Games"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
-    className: "nav-link",
-    to: `${rootPath}/accessories`
-  }, "Accessories"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
-    className: "nav-link",
-    to: `${rootPath}/signin`
-  }, "Sign In"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
-    className: "nav-link",
-    to: `${rootPath}/about`
-  }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
-    className: "nav-link",
-    to: `${rootPath}/contact`
-  }, "Contact")));
-}
-
-/***/ }),
-
 /***/ "./src/Views/SignIn.js":
 /*!*****************************!*\
   !*** ./src/Views/SignIn.js ***!
@@ -2728,8 +2669,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NavBar */ "./src/Views/NavBar.js");
-
 
 function SignIn() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
