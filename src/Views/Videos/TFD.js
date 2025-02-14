@@ -26,5 +26,11 @@ export function TFD(props) {
   function componentDidMount() {
     document.title = "Playstation - Games Page";
     console.log("Video Mounted");
+    const imgTag1 = document.getElementById("caroTooltip1");
+    new bootstrap.Tooltip(imgTag1);
+    const imgTag2 = document.getElementById("caroTooltip2");
+    new bootstrap.Tooltip(imgTag2);
+    const imgTag3 = document.getElementById("caroTooltip3");
+    new bootstrap.Tooltip(imgTag3);
   }
 }

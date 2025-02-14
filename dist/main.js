@@ -2183,23 +2183,32 @@ function Carousel() {
     className: "carousel-item active"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     src: _assets_showcasePic1_png__WEBPACK_IMPORTED_MODULE_1__,
+    id: "caroTooltip1",
     className: "d-block w-100",
     alt: "Exciting Action",
-    style: caroSize
+    style: caroSize,
+    "data-bs-title": "Exciting Action",
+    "data-bs-toggle": "tooltip"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "carousel-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     src: _assets_showcasePic2_jpg__WEBPACK_IMPORTED_MODULE_2__,
+    id: "caroTooltip2",
     className: "d-block w-100",
     alt: "Immersive Gameplay",
-    style: caroSize
+    style: caroSize,
+    "data-bs-title": "Amazing Worlds",
+    "data-bs-toggle": "tooltip"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "carousel-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     src: _assets_showcasePic3_jpg__WEBPACK_IMPORTED_MODULE_3__,
+    id: "caroTooltip3",
     className: "d-block w-100",
     alt: "Great Stories",
-    style: caroSize
+    style: caroSize,
+    "data-bs-title": "Incredible Graphics",
+    "data-bs-toggle": "tooltip"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     className: "carousel-control-prev",
     type: "button",
@@ -2913,6 +2922,12 @@ function TFD(props) {
   function componentDidMount() {
     document.title = "Playstation - Games Page";
     console.log("Video Mounted");
+    const imgTag1 = document.getElementById("caroTooltip1");
+    new bootstrap.Tooltip(imgTag1);
+    const imgTag2 = document.getElementById("caroTooltip2");
+    new bootstrap.Tooltip(imgTag2);
+    const imgTag3 = document.getElementById("caroTooltip3");
+    new bootstrap.Tooltip(imgTag3);
   }
 }
 

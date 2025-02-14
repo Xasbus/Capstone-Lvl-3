@@ -19,25 +19,34 @@ export function Carousel() {
         <div className="carousel-item active">
           <img
             src={Pic1}
+            id="caroTooltip1"
             className="d-block w-100"
             alt="Exciting Action"
             style={caroSize}
+            data-bs-title="Exciting Action"
+            data-bs-toggle="tooltip"
           />
         </div>
         <div className="carousel-item">
           <img
             src={Pic2}
+            id="caroTooltip2"
             className="d-block w-100"
             alt="Immersive Gameplay"
             style={caroSize}
+            data-bs-title="Amazing Worlds"
+            data-bs-toggle="tooltip"
           />
         </div>
         <div className="carousel-item">
           <img
             src={Pic3}
+            id="caroTooltip3"
             className="d-block w-100"
             alt="Great Stories"
             style={caroSize}
+            data-bs-title="Incredible Graphics"
+            data-bs-toggle="tooltip"
           />
         </div>
       </div>
