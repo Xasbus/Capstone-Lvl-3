@@ -2176,7 +2176,7 @@ function CollapsibleNavbar() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     className: "navbar-brand",
     to: "#"
-  }, "Navigation"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     className: "navbar-toggler",
     type: "button",
     "data-bs-toggle": "collapse",
@@ -2213,10 +2213,7 @@ function CollapsibleNavbar() {
   }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
     className: "nav-link",
     to: `${rootPath}/signin`
-  }, "Sign In"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "nav-link disabled",
-    "aria-disabled": "true"
-  }, "Disabled")))));
+  }, "Sign In")))));
 }
 
 /***/ }),

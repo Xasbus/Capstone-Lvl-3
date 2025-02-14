@@ -9,9 +9,7 @@ export function CollapsibleNavbar() {
   return (
     <nav className="nav-pills navbar navbar-expand-md bg-body-tertiary">
       <div className="container-fluid">
-        <a className="navbar-brand" to="#">
-          Navigation
-        </a>
+        <a className="navbar-brand" to="#"></a>
         <button
           className="navbar-toggler"
           type="button"
@@ -50,9 +48,6 @@ export function CollapsibleNavbar() {
             <NavLink className="nav-link" to={`${rootPath}/signin`}>
               Sign In
             </NavLink>
-            <a className="nav-link disabled" aria-disabled="true">
-              Disabled
-            </a>
           </div>
         </div>
       </div>
