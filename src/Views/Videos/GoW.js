@@ -10,7 +10,7 @@ export function GoW(props) {
   return (
     <>
       <iframe
-        width="560"
+        width="80%"
         height="315"
         src="https://www.youtube.com/embed/hfJ4Km46A-0?si=NbSN-jnB6n__DnGD"
         title="YouTube video player"

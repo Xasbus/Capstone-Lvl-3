@@ -11,7 +11,7 @@ export function TFD(props) {
   return (
     <>
       <iframe
-        width="560"
+        width="80%"
         height="315"
         src="https://www.youtube.com/embed/wv5L9U_TUHQ?si=c2BUIg5_6cbfykx7"
         title="YouTube video player"

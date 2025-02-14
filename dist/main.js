@@ -2752,7 +2752,7 @@ function GoW(props) {
     borderRadius: "10px"
   };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("iframe", {
-    width: "560",
+    width: "80%",
     height: "315",
     src: "https://www.youtube.com/embed/hfJ4Km46A-0?si=NbSN-jnB6n__DnGD",
     title: "YouTube video player",
@@ -2788,7 +2788,7 @@ function StellarBlade(props) {
     borderRadius: "10px"
   };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("iframe", {
-    width: "560",
+    width: "80%",
     height: "315",
     src: "https://www.youtube.com/embed/DSznLWimMlU?si=jMDc8l0LZm8tS7ih",
     title: "YouTube video player",
@@ -2825,7 +2825,7 @@ function TFD(props) {
     borderRadius: "10px"
   };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("iframe", {
-    width: "560",
+    width: "80%",
     height: "315",
     src: "https://www.youtube.com/embed/wv5L9U_TUHQ?si=c2BUIg5_6cbfykx7",
     title: "YouTube video player",

@@ -10,7 +10,7 @@ export function StellarBlade(props) {
   return (
     <>
       <iframe
-        width="560"
+        width="80%"
         height="315"
         src="https://www.youtube.com/embed/DSznLWimMlU?si=jMDc8l0LZm8tS7ih"
         title="YouTube video player"
