@@ -3,6 +3,7 @@ import { handleClick } from "../controllers/gamesHtml/handleClick";
 import { TFD } from "./Videos/TFD";
 import { GoW } from "./Videos/GoW";
 import { StellarBlade } from "./Videos/StellarBlade";
+import { Carousel } from "./Carousel";
 
 export function Games() {
   useEffect(componentDidUpdate, []);
@@ -18,6 +19,10 @@ export function Games() {
           src="https://cdn.glitch.global/484456c7-95c6-4c6d-8254-08d84585b7a3/212acd83-fe07-4065-a857-c108902a12af.image.png?v=1722101559396"
         />
         <h1>Video Games</h1>
+        <div>
+          <Carousel />
+        </div>
+
         <article>
           <h3 id="thefirstdesendant" className="titleColor">
             The First Desendant

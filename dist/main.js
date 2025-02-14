@@ -2149,6 +2149,82 @@ function Accessories() {
 
 /***/ }),
 
+/***/ "./src/Views/Carousel.js":
+/*!*******************************!*\
+  !*** ./src/Views/Carousel.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Carousel: () => (/* binding */ Carousel)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _assets_showcasePic1_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/showcasePic1.png */ "./assets/showcasePic1.png");
+/* harmony import */ var _assets_showcasePic2_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/showcasePic2.jpg */ "./assets/showcasePic2.jpg");
+/* harmony import */ var _assets_showcasePic3_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/showcasePic3.jpg */ "./assets/showcasePic3.jpg");
+
+
+
+
+const caroSize = {
+  width: "80%",
+  height: "80%"
+};
+function Carousel() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    id: "carouselAutoplaying",
+    className: "carousel slide",
+    "data-bs-ride": "carousel"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-inner"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-item active"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: _assets_showcasePic1_png__WEBPACK_IMPORTED_MODULE_1__,
+    className: "d-block w-100",
+    alt: "Exciting Action",
+    style: caroSize
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: _assets_showcasePic2_jpg__WEBPACK_IMPORTED_MODULE_2__,
+    className: "d-block w-100",
+    alt: "Immersive Gameplay",
+    style: caroSize
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: _assets_showcasePic3_jpg__WEBPACK_IMPORTED_MODULE_3__,
+    className: "d-block w-100",
+    alt: "Great Stories",
+    style: caroSize
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    className: "carousel-control-prev",
+    type: "button",
+    "data-bs-target": "#carouselAutoplaying",
+    "data-bs-slide": "prev"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "carousel-control-prev-icon",
+    "aria-hidden": "true"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "visually-hidden"
+  }, "Previous")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    className: "carousel-control-next",
+    type: "button",
+    "data-bs-target": "#carouselAutoplaying",
+    "data-bs-slide": "next"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "carousel-control-next-icon",
+    "aria-hidden": "true"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: "visually-hidden"
+  }, "Next")));
+}
+
+/***/ }),
+
 /***/ "./src/Views/CollapsibleNavBar.js":
 /*!****************************************!*\
   !*** ./src/Views/CollapsibleNavBar.js ***!
@@ -2448,6 +2524,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Videos_TFD__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Videos/TFD */ "./src/Views/Videos/TFD.js");
 /* harmony import */ var _Videos_GoW__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Videos/GoW */ "./src/Views/Videos/GoW.js");
 /* harmony import */ var _Videos_StellarBlade__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Videos/StellarBlade */ "./src/Views/Videos/StellarBlade.js");
+/* harmony import */ var _Carousel__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Carousel */ "./src/Views/Carousel.js");
+
 
 
 
@@ -2461,7 +2539,7 @@ function Games() {
     width: "100%",
     height: "100px",
     src: "https://cdn.glitch.global/484456c7-95c6-4c6d-8254-08d84585b7a3/212acd83-fe07-4065-a857-c108902a12af.image.png?v=1722101559396"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Video Games"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Video Games"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Carousel__WEBPACK_IMPORTED_MODULE_5__.Carousel, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     id: "thefirstdesendant",
     className: "titleColor"
   }, "The First Desendant"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Videos_TFD__WEBPACK_IMPORTED_MODULE_2__.TFD, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -3225,6 +3303,36 @@ module.exports = __webpack_require__.p + "c0c907ce2f3a39dfe9ad.jpg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "afbff1e84385bd709077.jpg";
+
+/***/ }),
+
+/***/ "./assets/showcasePic1.png":
+/*!*********************************!*\
+  !*** ./assets/showcasePic1.png ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "f5078774b336b511054f.png";
+
+/***/ }),
+
+/***/ "./assets/showcasePic2.jpg":
+/*!*********************************!*\
+  !*** ./assets/showcasePic2.jpg ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "73408d68f1ada8af0de1.jpg";
+
+/***/ }),
+
+/***/ "./assets/showcasePic3.jpg":
+/*!*********************************!*\
+  !*** ./assets/showcasePic3.jpg ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "430fce442cf3809a91f5.jpg";
 
 /***/ }),
 
