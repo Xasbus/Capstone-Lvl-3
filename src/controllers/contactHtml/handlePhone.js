@@ -2,8 +2,6 @@ import { output } from "../../utils/output.js";
 import { getServerResponse2 } from "../../modules/getServerRespone/getServerResponse2.js";
 import { parseResponse } from "../../modules/parseResponse.js";
 
-window.handlePhone = handlePhone;
-
 export function handlePhone(event) {
   event.preventDefault();
   // const phoneForm = event.target;

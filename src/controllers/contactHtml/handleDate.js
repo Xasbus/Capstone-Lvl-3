@@ -2,8 +2,6 @@ import { output } from "../../utils/output.js";
 import { getServerResponse3 } from "../../modules/getServerRespone/getServerResponse3.js";
 import { parseResponse } from "../../modules/parseResponse.js";
 
-window.handleDate = handleDate;
-
 export function handleDate(event) {
   event.preventDefault();
   // const dateForm = event.target;

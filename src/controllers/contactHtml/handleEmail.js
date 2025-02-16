@@ -2,8 +2,6 @@ import { output } from "../../utils/output.js";
 import { getServerResponse1 } from "../../modules/getServerRespone/getServerResponse1.js";
 import { parseResponse } from "../../modules/parseResponse.js";
 
-window.handleEmail = handleEmail;
-
 export function handleEmail(event) {
   event.preventDefault();
   output(` <br>Submitting your concerns. . . `);
