@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 
 export function About() {
   useEffect(componentDidMount, []);
-  useEffect(componentDidUpdate, []);
-  useEffect(compontentDidUnmount, []);
+  useEffect(componentDidUpdate);
+  useEffect(compontentDidUnmount);
   return (
     <>
       <main>
@@ -61,13 +61,13 @@ export function About() {
   );
   function componentDidMount() {
     document.title = "Playstation - About Page";
-    console.log("About phase mounting.");
+    console.log("Title mounted");
   }
 
   function componentDidUpdate() {
-    setTimeout(console.log("About Component Updated."), 2000);
+    setTimeout(console.log("Nothing to update."), 2000);
   }
   function compontentDidUnmount() {
-    setTimeout(console.log("About Component Unmounted."), 3000);
+    setTimeout(console.log("Nothing to unmount."), 3000);
   }
 }

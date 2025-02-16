@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import { output } from "../utils/output";
-import { cardConverter } from "../modules/cardConverter";
+import { cardConverter } from "../utils/cardConverter";
 
 export function Consoles() {
   useEffect(componentDidMount, []);
-  useEffect(componentDidUpdate, []);
-  useEffect(componentDidUnmount, []);
+  useEffect(componentDidUpdate);
+  useEffect(componentDidUnmount);
   return (
     <>
       <main>
@@ -123,6 +123,6 @@ export function Consoles() {
   }
 
   function componentDidUnmount() {
-    console.log("Component Unmounted in Console Page");
+    console.log("Nothing to unmount");
   }
 }

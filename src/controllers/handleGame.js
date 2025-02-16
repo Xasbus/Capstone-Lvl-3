@@ -1,6 +1,4 @@
-import React from "react";
-
-import { ask } from "../modules/ask";
+import { ask } from "../utils/ask";
 import { output } from "../utils/output";
 
 export function handleGame() {

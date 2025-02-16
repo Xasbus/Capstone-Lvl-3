@@ -3,8 +3,8 @@ import { ImageMap } from "./ImageMap";
 
 export function Home() {
   useEffect(componentDidMount, []);
-  useEffect(componentDidUpdate, []);
-  useEffect(componentDidUnmount, []);
+  useEffect(componentDidUpdate);
+  useEffect(componentDidUnmount);
   return (
     <>
       <main>
@@ -160,11 +160,11 @@ export function Home() {
 }
 function componentDidMount() {
   document.title = "Unofficial Playstation Site";
-  console.log("Mounting component");
+  console.log("Title mounted");
 }
 function componentDidUpdate() {
-  setTimeout(console.log("Component Updated."), 2000);
+  setTimeout(console.log("Nothing to update"), 2000);
 }
 function componentDidUnmount() {
-  setTimeout(console.log("Component Unmounted"), 2500);
+  setTimeout(console.log("Nothing to unmount"), 2500);
 }

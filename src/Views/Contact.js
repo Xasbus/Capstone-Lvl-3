@@ -1,13 +1,14 @@
 import React, { useEffect } from "react";
-import { handleEmail } from "../controllers/contactHtml/email";
-import { handleDate } from "../controllers/contactHtml/date";
-import { handlePhone } from "../controllers/contactHtml/phone";
+
 import selfPic from "../../assets/contactphoto.jpg";
+import { handlePhone } from "../controllers/contactHtml/handlePhone";
+import { handleEmail } from "../controllers/contactHtml/handleEmail";
+import { handleDate } from "../controllers/contactHtml/handleDate";
 
 export function Contact() {
   useEffect(componentDidMount, []);
   useEffect(componentDidUpdate);
-  useEffect(componentDidUnmount, []);
+  useEffect(componentDidUnmount);
   return (
     <>
       <main>
@@ -88,12 +89,12 @@ export function Contact() {
   );
   function componentDidMount() {
     document.title = "Playstation - Contact Page";
-    console.log("Contact Phase component mounted");
+    console.log("Title mounted");
   }
   function componentDidUpdate() {
-    console.log("Contact component did updated.");
+    setTimeout(console.log("Nothing to update."), 2000);
   }
   function componentDidUnmount() {
-    console.log("Contact page component unmounted.");
+    console.log("Nothing to unmount");
   }
 }

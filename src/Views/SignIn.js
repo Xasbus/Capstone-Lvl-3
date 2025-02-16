@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 
 export function SignIn() {
   useEffect(componentDidMount, []);
-  useEffect(componentDidUpdate, []);
-  useEffect(compontentDidUnmount, []);
+  useEffect(componentDidUpdate);
+  useEffect(compontentDidUnmount);
   return (
     <main>
       <img
@@ -64,12 +64,12 @@ export function SignIn() {
   );
   function componentDidMount() {
     document.title = "Playstation - Sign In Page";
-    console.log("sign in phase mounted.");
+    console.log("Title mounted");
   }
   function componentDidUpdate() {
-    setTimeout(console.log("sign in phase updated."), 1000);
+    setTimeout(console.log("Nothing to update."), 1000);
   }
   function compontentDidUnmount() {
-    setTimeout(console.log("sign in phase unmounted"), 3000);
+    setTimeout(console.log("Nothing to unmount"), 3000);
   }
 }

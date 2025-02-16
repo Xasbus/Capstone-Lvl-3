@@ -6,8 +6,8 @@ import { StellarBlade } from "./Videos/StellarBlade";
 import { Carousel } from "./Carousel";
 
 export function Games() {
-  useEffect(componentDidUpdate, []);
-  useEffect(compontentDidUnmount, []);
+  useEffect(componentDidUpdate);
+  useEffect(compontentDidUnmount);
 
   return (
     <main>

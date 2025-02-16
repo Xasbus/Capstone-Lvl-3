@@ -2013,8 +2013,8 @@ __webpack_require__.r(__webpack_exports__);
 
 function About() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, []);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(compontentDidUnmount, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(compontentDidUnmount);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
     className: "list-group"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
@@ -2034,13 +2034,13 @@ function About() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("b", null, "Contact"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "Contact info, Submit request form"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, "Website is created by David Billiot"));
   function componentDidMount() {
     document.title = "Playstation - About Page";
-    console.log("About phase mounting.");
+    console.log("Title mounted");
   }
   function componentDidUpdate() {
-    setTimeout(console.log("About Component Updated."), 2000);
+    setTimeout(console.log("Nothing to update."), 2000);
   }
   function compontentDidUnmount() {
-    setTimeout(console.log("About Component Unmounted."), 3000);
+    setTimeout(console.log("Nothing to unmount."), 3000);
   }
 }
 
@@ -2063,8 +2063,8 @@ __webpack_require__.r(__webpack_exports__);
 
 function Accessories() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, []);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(compontentDidUnmount, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(compontentDidUnmount);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     title: "assorted accessories",
     alt: "accessories",
@@ -2137,13 +2137,13 @@ function Accessories() {
   }, "Website created by David Billiot")));
   function componentDidMount() {
     document.title = "Playstation - Accessories Page";
-    console.log("Component for Accessories Mounted.");
+    console.log("Title Mounted");
   }
   function componentDidUpdate() {
-    setTimeout(console.log("Updated accessories component."), 1000);
+    setTimeout(console.log("Nothing to update"), 1000);
   }
   function compontentDidUnmount() {
-    setTimeout(console.log("Unmounted Accessories component."), 2000);
+    setTimeout(console.log("Nothing to undate."), 2000);
   }
 }
 
@@ -2316,14 +2316,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _utils_output__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/output */ "./src/utils/output.js");
-/* harmony import */ var _modules_cardConverter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../modules/cardConverter */ "./src/modules/cardConverter.js");
+/* harmony import */ var _utils_cardConverter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/cardConverter */ "./src/utils/cardConverter.js");
 
 
 
 function Consoles() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, []);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     title: "PS5",
     alt: "consoles",
@@ -2416,14 +2416,14 @@ function Consoles() {
     for (let position = 0; position < cardArray.length; position++) {
       (0,_utils_output__WEBPACK_IMPORTED_MODULE_1__.output)("<section class='p-5'>");
       const cardObject = cardArray[position];
-      const stringCard = (0,_modules_cardConverter__WEBPACK_IMPORTED_MODULE_2__.cardConverter)(cardObject);
+      const stringCard = (0,_utils_cardConverter__WEBPACK_IMPORTED_MODULE_2__.cardConverter)(cardObject);
       (0,_utils_output__WEBPACK_IMPORTED_MODULE_1__.output)(stringCard);
       (0,_utils_output__WEBPACK_IMPORTED_MODULE_1__.output)("</section>");
     }
     console.log("Mounted Cards");
   }
   function componentDidUnmount() {
-    console.log("Component Unmounted in Console Page");
+    console.log("Nothing to unmount");
   }
 }
 
@@ -2441,10 +2441,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _controllers_contactHtml_email__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../controllers/contactHtml/email */ "./src/controllers/contactHtml/email.js");
-/* harmony import */ var _controllers_contactHtml_date__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/contactHtml/date */ "./src/controllers/contactHtml/date.js");
-/* harmony import */ var _controllers_contactHtml_phone__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../controllers/contactHtml/phone */ "./src/controllers/contactHtml/phone.js");
-/* harmony import */ var _assets_contactphoto_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/contactphoto.jpg */ "./assets/contactphoto.jpg");
+/* harmony import */ var _assets_contactphoto_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/contactphoto.jpg */ "./assets/contactphoto.jpg");
+/* harmony import */ var _controllers_contactHtml_handlePhone__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/contactHtml/handlePhone */ "./src/controllers/contactHtml/handlePhone.js");
+/* harmony import */ var _controllers_contactHtml_handleEmail__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../controllers/contactHtml/handleEmail */ "./src/controllers/contactHtml/handleEmail.js");
+/* harmony import */ var _controllers_contactHtml_handleDate__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../controllers/contactHtml/handleDate */ "./src/controllers/contactHtml/handleDate.js");
 
 
 
@@ -2452,8 +2452,8 @@ __webpack_require__.r(__webpack_exports__);
 
 function Contact() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, []);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -2462,7 +2462,7 @@ function Contact() {
     alt: "self pic",
     height: "100%",
     width: "125px",
-    src: _assets_contactphoto_jpg__WEBPACK_IMPORTED_MODULE_4__
+    src: _assets_contactphoto_jpg__WEBPACK_IMPORTED_MODULE_1__
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Contact Us"), "\u2709\uFE0F BlahNonsense283@something.com", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "\uD83D\uDCDE 985 - 555 - 5555", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
@@ -2470,7 +2470,7 @@ function Contact() {
     width: "4%",
     src: "https://th.bing.com/th?id=OIP.lgict_2VY-2-x2b_kDd_vwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
   }), "@NotRealDavidFB")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, "Contact Customer Service"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
-    onSubmit: _controllers_contactHtml_email__WEBPACK_IMPORTED_MODULE_1__.handleEmail
+    onSubmit: _controllers_contactHtml_handleEmail__WEBPACK_IMPORTED_MODULE_3__.handleEmail
   }, "Email: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     id: "emailSize",
     required: true,
@@ -2484,7 +2484,7 @@ function Contact() {
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "submit"
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, "Submit an appointment by phone"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
-    onSubmit: _controllers_contactHtml_phone__WEBPACK_IMPORTED_MODULE_3__.handlePhone
+    onSubmit: _controllers_contactHtml_handlePhone__WEBPACK_IMPORTED_MODULE_2__.handlePhone
   }, "Schedule a phone appointment:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "tel",
     placeholder: "XXX-XXX-XXXX",
@@ -2493,7 +2493,7 @@ function Contact() {
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "submit"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
-    onSubmit: _controllers_contactHtml_date__WEBPACK_IMPORTED_MODULE_2__.handleDate
+    onSubmit: _controllers_contactHtml_handleDate__WEBPACK_IMPORTED_MODULE_4__.handleDate
   }, "Select date and time:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "datetime-local"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
@@ -2505,13 +2505,13 @@ function Contact() {
   }, "Website created by David Billiot")));
   function componentDidMount() {
     document.title = "Playstation - Contact Page";
-    console.log("Contact Phase component mounted");
+    console.log("Title mounted");
   }
   function componentDidUpdate() {
-    console.log("Contact component did updated.");
+    setTimeout(console.log("Nothing to update."), 2000);
   }
   function componentDidUnmount() {
-    console.log("Contact page component unmounted.");
+    console.log("Nothing to unmount");
   }
 }
 
@@ -2541,9 +2541,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Games() {
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, []);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(compontentDidUnmount, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(compontentDidUnmount);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     alt: "various games",
     width: "100%",
     height: "100px",
@@ -2579,7 +2579,7 @@ function Games() {
     onClick: _controllers_gamesHtml_handleClick__WEBPACK_IMPORTED_MODULE_1__.handleClick
   }, "Click here to get questions"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "myTag"
-  })));
+  }));
   function componentDidUpdate() {
     setTimeout(console.log("component updated."), 2000);
   }
@@ -2628,8 +2628,8 @@ __webpack_require__.r(__webpack_exports__);
 
 function Home() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, []);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     title: "Playstation",
     alt: "playstation title",
@@ -2678,13 +2678,13 @@ function Home() {
 }
 function componentDidMount() {
   document.title = "Unofficial Playstation Site";
-  console.log("Mounting component");
+  console.log("Title mounted");
 }
 function componentDidUpdate() {
-  setTimeout(console.log("Component Updated."), 2000);
+  setTimeout(console.log("Nothing to update"), 2000);
 }
 function componentDidUnmount() {
-  setTimeout(console.log("Component Unmounted"), 2500);
+  setTimeout(console.log("Nothing to unmount"), 2500);
 }
 
 /***/ }),
@@ -2756,9 +2756,9 @@ __webpack_require__.r(__webpack_exports__);
 
 function SignIn() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, []);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(compontentDidUnmount, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(compontentDidUnmount);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     alt: "PS symbols",
     width: "100%",
     height: "100px",
@@ -2799,16 +2799,16 @@ function SignIn() {
     type: "radio"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     type: "button"
-  }, "Sign Up")))));
+  }, "Sign Up"))));
   function componentDidMount() {
     document.title = "Playstation - Sign In Page";
-    console.log("sign in phase mounted.");
+    console.log("Title mounted");
   }
   function componentDidUpdate() {
-    setTimeout(console.log("sign in phase updated."), 1000);
+    setTimeout(console.log("Nothing to update."), 1000);
   }
   function compontentDidUnmount() {
-    setTimeout(console.log("sign in phase unmounted"), 3000);
+    setTimeout(console.log("Nothing to unmount"), 3000);
   }
 }
 
@@ -2933,10 +2933,10 @@ function TFD(props) {
 
 /***/ }),
 
-/***/ "./src/controllers/contactHtml/date.js":
-/*!*********************************************!*\
-  !*** ./src/controllers/contactHtml/date.js ***!
-  \*********************************************/
+/***/ "./src/controllers/contactHtml/handleDate.js":
+/*!***************************************************!*\
+  !*** ./src/controllers/contactHtml/handleDate.js ***!
+  \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2949,7 +2949,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-window.handleDate = handleDate;
 function handleDate(event) {
   event.preventDefault();
   // const dateForm = event.target;
@@ -2962,10 +2961,10 @@ function handleDate(event) {
 
 /***/ }),
 
-/***/ "./src/controllers/contactHtml/email.js":
-/*!**********************************************!*\
-  !*** ./src/controllers/contactHtml/email.js ***!
-  \**********************************************/
+/***/ "./src/controllers/contactHtml/handleEmail.js":
+/*!****************************************************!*\
+  !*** ./src/controllers/contactHtml/handleEmail.js ***!
+  \****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2978,7 +2977,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-window.handleEmail = handleEmail;
 function handleEmail(event) {
   event.preventDefault();
   (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)(` <br>Submitting your concerns. . . `);
@@ -2988,10 +2986,10 @@ function handleEmail(event) {
 
 /***/ }),
 
-/***/ "./src/controllers/contactHtml/phone.js":
-/*!**********************************************!*\
-  !*** ./src/controllers/contactHtml/phone.js ***!
-  \**********************************************/
+/***/ "./src/controllers/contactHtml/handlePhone.js":
+/*!****************************************************!*\
+  !*** ./src/controllers/contactHtml/handlePhone.js ***!
+  \****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3004,7 +3002,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-window.handlePhone = handlePhone;
 function handlePhone(event) {
   event.preventDefault();
   // const phoneForm = event.target;
@@ -3029,7 +3026,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _modules_parseResp_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../modules/parseResp.js */ "./src/modules/parseResp.js");
 
-window.handleClick = handleClick;
 function handleClick() {
   const promise = fetch("https://opentdb.com/api.php?amount=3&category=15&type=multiple");
   promise.then(_modules_parseResp_js__WEBPACK_IMPORTED_MODULE_0__.parseResp);
@@ -3047,24 +3043,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   handleGame: () => (/* binding */ handleGame)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _modules_ask__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/ask */ "./src/modules/ask.js");
-/* harmony import */ var _utils_output__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/output */ "./src/utils/output.js");
-
+/* harmony import */ var _utils_ask__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/ask */ "./src/utils/ask.js");
+/* harmony import */ var _utils_output__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/output */ "./src/utils/output.js");
 
 
 function handleGame() {
   let message = "Guess my number.";
   for (let count = 0; count < 3; count++) {
-    const winItem = (0,_modules_ask__WEBPACK_IMPORTED_MODULE_1__.ask)(message);
+    const winItem = (0,_utils_ask__WEBPACK_IMPORTED_MODULE_0__.ask)(message);
     const userNumber = Number(winItem);
     const myNumber = 43;
     const doesMatch = userNumber === myNumber;
     if (doesMatch) {
-      (0,_utils_output__WEBPACK_IMPORTED_MODULE_2__.output)("WINNER!!! Promo Code: <b>AG34FR<b><br/>");
+      (0,_utils_output__WEBPACK_IMPORTED_MODULE_1__.output)("WINNER!!! Promo Code: <b>AG34FR<b><br/>");
     } else {
-      (0,_utils_output__WEBPACK_IMPORTED_MODULE_2__.output)("You didn't guess right.<br/>");
+      (0,_utils_output__WEBPACK_IMPORTED_MODULE_1__.output)("You didn't guess right.<br/>");
       const isLess = userNumber < myNumber;
       if (isLess) {
         message += " Your number is less than mine. Guess again.";
@@ -3073,52 +3066,6 @@ function handleGame() {
       }
     }
   }
-}
-
-/***/ }),
-
-/***/ "./src/modules/ask.js":
-/*!****************************!*\
-  !*** ./src/modules/ask.js ***!
-  \****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   ask: () => (/* binding */ ask)
-/* harmony export */ });
-function ask(message) {
-  const userText = prompt(message);
-  const userNumber = Number(userText);
-  const isNotNumber = isNaN(userNumber);
-  if (isNotNumber) {
-    return userText;
-  } else {
-    return userNumber;
-  }
-}
-
-/***/ }),
-
-/***/ "./src/modules/cardConverter.js":
-/*!**************************************!*\
-  !*** ./src/modules/cardConverter.js ***!
-  \**************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   cardConverter: () => (/* binding */ cardConverter)
-/* harmony export */ });
-function cardConverter(cardObject) {
-  let cardString = `<div class="card">
-    <img class="card-img-top" src="${cardObject.src}">
-    <div class="card-body">
-    <h3 class="card-title">${cardObject.title}</h3>
-    ${cardObject.summary}
-    </div>
-    </div>`;
-  return cardString;
 }
 
 /***/ }),
@@ -3280,6 +3227,52 @@ function viewResp(resolveValue) {
             <li>${incorrects3[2]}</li>
         </ol>`;
   (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)(trivia);
+}
+
+/***/ }),
+
+/***/ "./src/utils/ask.js":
+/*!**************************!*\
+  !*** ./src/utils/ask.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ask: () => (/* binding */ ask)
+/* harmony export */ });
+function ask(message) {
+  const userText = prompt(message);
+  const userNumber = Number(userText);
+  const isNotNumber = isNaN(userNumber);
+  if (isNotNumber) {
+    return userText;
+  } else {
+    return userNumber;
+  }
+}
+
+/***/ }),
+
+/***/ "./src/utils/cardConverter.js":
+/*!************************************!*\
+  !*** ./src/utils/cardConverter.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   cardConverter: () => (/* binding */ cardConverter)
+/* harmony export */ });
+function cardConverter(cardObject) {
+  let cardString = `<div class="card">
+    <img class="card-img-top" src="${cardObject.src}">
+    <div class="card-body">
+    <h3 class="card-title">${cardObject.title}</h3>
+    ${cardObject.summary}
+    </div>
+    </div>`;
+  return cardString;
 }
 
 /***/ }),
