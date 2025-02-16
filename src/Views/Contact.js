@@ -6,7 +6,7 @@ import selfPic from "../../assets/contactphoto.jpg";
 
 export function Contact() {
   useEffect(componentDidMount, []);
-  useEffect(componentDidUpdate, []);
+  useEffect(componentDidUpdate);
   useEffect(componentDidUnmount, []);
   return (
     <>
