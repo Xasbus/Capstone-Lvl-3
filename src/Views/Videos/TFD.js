@@ -9,10 +9,10 @@ export function TFD(props) {
   const depth = { borderRadius: "10px" };
 
   return (
-    <>
+    <div style={{ width: "60vw", height: "40vw" }}>
       <iframe
-        width="80%"
-        height="315"
+        width="100%"
+        height="100%"
         src="https://www.youtube.com/embed/wv5L9U_TUHQ?si=c2BUIg5_6cbfykx7"
         title="YouTube video player"
         frameBorder="0"
@@ -21,7 +21,7 @@ export function TFD(props) {
         allowFullScreen
         style={depth}
       ></iframe>
-    </>
+    </div>
   );
   function componentDidMount() {
     document.title = "Playstation - Games Page";

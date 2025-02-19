@@ -1,11 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { output } from "../utils/output";
 import { cardConverter } from "../utils/cardConverter";
 
 export function Consoles() {
+  const [cards, setCards] = useState(<></>);
   useEffect(componentDidMount, []);
   useEffect(componentDidUpdate);
-  useEffect(componentDidUnmount);
+  useEffect(componentDidUnmount, []);
   return (
     <>
       <main>
@@ -20,7 +21,8 @@ export function Consoles() {
         <a id="playstation5"></a>
         <article>
           <a id="playstation5"></a>
-          <output id="myTag"></output>
+          {cards}
+          {/* <output id="myTag"></output> */}
         </article>
         <br />
         <br />
@@ -50,16 +52,6 @@ export function Consoles() {
   );
 
   function componentDidUpdate() {
-    function cardConverter(cardObject) {
-      let cardString = `<div class="card">
-      <img class="card-img-top" src="${cardObject.src}">
-      <div class="card-body">
-      <h3 class="card-title">${cardObject.title}</h3>
-      ${cardObject.summary}
-      </div>
-      </div>`;
-      return cardString;
-    }
     document.title = "Playstation - Consoles Page";
     console.log("Cards Updated.");
   }
@@ -112,13 +104,19 @@ export function Consoles() {
                         </p>`;
 
     const cardArray = [cardObject1, cardObject2, cardObject3];
+    debugger;
+    let tempCards = "";
     for (let position = 0; position < cardArray.length; position++) {
-      output("<section class='p-5'>");
+      // output("<section class='p-5'>");
+      tempCards += "<section class='p-5'>";
       const cardObject = cardArray[position];
       const stringCard = cardConverter(cardObject);
-      output(stringCard);
-      output("</section>");
+      tempCards += stringCard;
+      tempCards += "</section>";
+      // output(stringCard);
+      // output("</section>");
     }
+    setCards(tempCards);
     console.log("Mounted Cards");
   }
 

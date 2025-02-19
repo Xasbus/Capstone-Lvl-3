@@ -2321,9 +2321,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Consoles() {
+  const [cards, setCards] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null));
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     title: "PS5",
     alt: "consoles",
@@ -2334,9 +2335,7 @@ function Consoles() {
     id: "playstation5"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     id: "playstation5"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("output", {
-    id: "myTag"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }), cards), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     width: "100%"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row"
@@ -2358,16 +2357,6 @@ function Consoles() {
     className: "creatorName"
   }, "Website created by David Billiot")));
   function componentDidUpdate() {
-    function cardConverter(cardObject) {
-      let cardString = `<div class="card">
-      <img class="card-img-top" src="${cardObject.src}">
-      <div class="card-body">
-      <h3 class="card-title">${cardObject.title}</h3>
-      ${cardObject.summary}
-      </div>
-      </div>`;
-      return cardString;
-    }
     document.title = "Playstation - Consoles Page";
     console.log("Cards Updated.");
   }
@@ -2413,13 +2402,19 @@ function Consoles() {
                             Id vivamus felis est a eros. Facilisis pulvinar senectus nascetur nostra vel non tincidunt lectus. Diam ultrices nascetur himenaeos tincidunt, laoreet interdum nam!
                         </p>`;
     const cardArray = [cardObject1, cardObject2, cardObject3];
+    debugger;
+    let tempCards = "";
     for (let position = 0; position < cardArray.length; position++) {
-      (0,_utils_output__WEBPACK_IMPORTED_MODULE_1__.output)("<section class='p-5'>");
+      // output("<section class='p-5'>");
+      tempCards += "<section class='p-5'>";
       const cardObject = cardArray[position];
       const stringCard = (0,_utils_cardConverter__WEBPACK_IMPORTED_MODULE_2__.cardConverter)(cardObject);
-      (0,_utils_output__WEBPACK_IMPORTED_MODULE_1__.output)(stringCard);
-      (0,_utils_output__WEBPACK_IMPORTED_MODULE_1__.output)("</section>");
+      tempCards += stringCard;
+      tempCards += "</section>";
+      // output(stringCard);
+      // output("</section>");
     }
+    setCards(tempCards);
     console.log("Mounted Cards");
   }
   function componentDidUnmount() {
@@ -2840,7 +2835,7 @@ function GoW(props) {
   const depth = {
     borderRadius: "10px"
   };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("iframe", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("iframe", {
     width: "80%",
     height: "315",
     src: "https://www.youtube.com/embed/hfJ4Km46A-0?si=NbSN-jnB6n__DnGD",
@@ -2850,7 +2845,7 @@ function GoW(props) {
     referrerPolicy: "strict-origin-when-cross-origin",
     allowFullScreen: true,
     style: depth
-  }));
+  });
 }
 
 /***/ }),
@@ -2876,7 +2871,7 @@ function StellarBlade(props) {
   const depth = {
     borderRadius: "10px"
   };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("iframe", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("iframe", {
     width: "80%",
     height: "315",
     src: "https://www.youtube.com/embed/DSznLWimMlU?si=jMDc8l0LZm8tS7ih",
@@ -2886,7 +2881,7 @@ function StellarBlade(props) {
     referrerPolicy: "strict-origin-when-cross-origin",
     allowFullScreen: true,
     style: depth
-  }));
+  });
 }
 
 /***/ }),
@@ -2913,9 +2908,14 @@ function TFD(props) {
   const depth = {
     borderRadius: "10px"
   };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("iframe", {
-    width: "80%",
-    height: "315",
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    style: {
+      width: "60vw",
+      height: "40vw"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("iframe", {
+    width: "100%",
+    height: "100%",
     src: "https://www.youtube.com/embed/wv5L9U_TUHQ?si=c2BUIg5_6cbfykx7",
     title: "YouTube video player",
     frameBorder: "0",
