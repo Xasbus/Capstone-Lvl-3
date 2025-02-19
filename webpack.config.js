@@ -4,6 +4,7 @@ export default {
       {
         // exclude: /\.(jpg|png)/,
         use: "babel-loader",
+        exclude: /\.(scss|css|otf|ttf|json)/,
         test: /\.js/,
       },
       {

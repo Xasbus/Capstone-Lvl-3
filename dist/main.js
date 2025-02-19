@@ -2548,7 +2548,12 @@ function Games() {
     width: "100%",
     height: "100px",
     src: "https://cdn.glitch.global/484456c7-95c6-4c6d-8254-08d84585b7a3/212acd83-fe07-4065-a857-c108902a12af.image.png?v=1722101559396"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Video Games"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Carousel__WEBPACK_IMPORTED_MODULE_5__.Carousel, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Video Games"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    style: {
+      width: "65%",
+      margin: "auto"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Carousel__WEBPACK_IMPORTED_MODULE_5__.Carousel, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     id: "thefirstdesendant",
     className: "titleColor"
   }, "The First Desendant"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Videos_TFD__WEBPACK_IMPORTED_MODULE_2__.TFD, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {

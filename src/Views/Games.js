@@ -18,7 +18,7 @@ export function Games() {
         src="https://cdn.glitch.global/484456c7-95c6-4c6d-8254-08d84585b7a3/212acd83-fe07-4065-a857-c108902a12af.image.png?v=1722101559396"
       />
       <h1>Video Games</h1>
-      <div>
+      <div style={{ width: "65%", margin: "auto" }}>
         <Carousel />
       </div>
 
