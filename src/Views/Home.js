@@ -4,7 +4,7 @@ import { ImageMap } from "./ImageMap";
 export function Home() {
   useEffect(componentDidMount, []);
   useEffect(componentDidUpdate);
-  useEffect(componentDidUnmount);
+  useEffect(componentDidUnmount, []);
   return (
     <>
       <main>

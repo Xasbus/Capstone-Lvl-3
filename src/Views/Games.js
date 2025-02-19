@@ -7,7 +7,7 @@ import { Carousel } from "./Carousel";
 
 export function Games() {
   useEffect(componentDidUpdate);
-  useEffect(compontentDidUnmount);
+  useEffect(compontentDidUnmount, []);
 
   return (
     <main>

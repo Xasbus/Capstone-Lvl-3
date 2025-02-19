@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 export function About() {
   useEffect(componentDidMount, []);
   useEffect(componentDidUpdate);
-  useEffect(compontentDidUnmount);
+  useEffect(compontentDidUnmount, []);
   return (
     <>
       <main>

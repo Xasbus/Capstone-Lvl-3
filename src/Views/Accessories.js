@@ -4,7 +4,7 @@ import { handleGame } from "../controllers/handleGame";
 export function Accessories() {
   useEffect(componentDidMount, []);
   useEffect(componentDidUpdate);
-  useEffect(compontentDidUnmount);
+  useEffect(compontentDidUnmount, []);
   return (
     <>
       <main>

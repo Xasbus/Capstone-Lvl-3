@@ -5,7 +5,6 @@ import { Home } from "./Views/Home";
 import { Consoles } from "./Views/Consoles";
 import { Games } from "./Views/Games";
 import { Accessories } from "./Views/Accessories";
-import { SignIn } from "./Views/SignIn";
 import { About } from "./Views/About";
 import { Contact } from "./Views/Contact";
 import { Header } from "./Views/Header";
@@ -28,7 +27,6 @@ root.render(
       <Route path={`${rootPath}/consoles`} element={<Consoles />} />
       <Route path={`${rootPath}/games`} element={<Games />} />
       <Route path={`${rootPath}/accessories`} element={<Accessories />} />
-      <Route path={`${rootPath}/signin`} element={<SignIn />} />
       <Route path={`${rootPath}/about`} element={<About />} />
       <Route path={`${rootPath}/contact`} element={<Contact />} />
     </Routes>

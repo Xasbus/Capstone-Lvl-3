@@ -8,7 +8,7 @@ import { handleDate } from "../controllers/contactHtml/handleDate";
 export function Contact() {
   useEffect(componentDidMount, []);
   useEffect(componentDidUpdate);
-  useEffect(componentDidUnmount);
+  useEffect(componentDidUnmount, []);
   return (
     <>
       <main>
