@@ -5,7 +5,7 @@ export function SignInModal() {
     <>
       <button
         type="button"
-        className="btn btn-primary"
+        className="btn btn-primary modalColor"
         data-bs-toggle="modal"
         data-bs-target="#staticBackdrop"
       >
@@ -22,10 +22,10 @@ export function SignInModal() {
         aria-hidden="true"
       >
         <div className="modal-dialog">
-          <div className="modal-content">
+          <div className="modal-content modalColor">
             <div className="modal-header">
               <h1 className="modal-title fs-5" id="staticBackdropLabel">
-                Log In
+                Login
               </h1>
               <button
                 type="button"
@@ -34,17 +34,17 @@ export function SignInModal() {
                 aria-label="Close"
               ></button>
             </div>
-            <div className="modal-body">...</div>
+            <div className="modal-body">Log into your account?</div>
             <div className="modal-footer">
               <button
                 type="button"
                 className="btn btn-secondary"
                 data-bs-dismiss="modal"
               >
-                Close
+                Cancel
               </button>
               <button type="button" className="btn btn-primary">
-                Login
+                Log In
               </button>
             </div>
           </div>

@@ -94,3 +94,11 @@ p u {
 ul {
   background-image: linear-gradient(rgba(30, 30, 30, 0.7), rgba(72, 2, 164, 0.7), rgba(68, 77, 4, 0.7));
 }
+
+.modalColor {
+  background-color: rgb(44, 6, 85);
+}
+
+.NavColor {
+  background-color: rgb(44, 6, 85);
+}
