@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router";
 import { SignInModal } from "./SignInModal";
 import { SignOutModal } from "./SignOutModal";
+import { SignInArea } from "./SignInArea";
 
 export function CollapsibleNavbar() {
   const domain = window.location.hostname;
@@ -56,8 +57,7 @@ export function CollapsibleNavbar() {
             <NavLink className="nav-link navTextColor" to={`${rootPath}/about`}>
               About
             </NavLink>
-            <SignInModal />
-            <SignOutModal />
+            <SignInArea />
           </div>
         </div>
       </div>

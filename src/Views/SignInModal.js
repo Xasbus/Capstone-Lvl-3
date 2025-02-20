@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { SignInContent } from "./SignInContent";
 import { handleSignIn } from "../controllers/handleSignIn";
 
-export function SignInModal() {
+export function SignInModal(props) {
+  const onSignIn = props.onSignIn;
   const [errorMessage, setErrorMessage] = useState("");
   return (
     <>
@@ -61,6 +62,6 @@ export function SignInModal() {
   );
 
   function handleSubmit(event) {
-    handleSignIn(event, setErrorMessage);
+    handleSignIn(event, setErrorMessage, onSignIn);
   }
 }

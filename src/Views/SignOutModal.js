@@ -1,6 +1,7 @@
 import React from "react";
 
-export function SignOutModal() {
+export function SignOutModal(props) {
+  const onSignOut = props.onSignOut;
   return (
     <>
       <button
@@ -12,7 +13,8 @@ export function SignOutModal() {
         Log Out
       </button>
 
-      <div
+      <form
+        onSubmit={handleSubmit}
         className="modal fade"
         id="signOutModal"
         data-bs-backdrop="static"
@@ -24,7 +26,7 @@ export function SignOutModal() {
         <div className="modal-dialog">
           <div className="modal-content modalColor">
             <div className="modal-header">
-              <h1 className="modal-title fs-5" id="signOutModal">
+              <h1 className="modal-title fs-5" id="signOutModalLabel">
                 Log Out
               </h1>
               <button
@@ -43,13 +45,21 @@ export function SignOutModal() {
               >
                 Stay Online
               </button>
-              <button type="button" className="btn btn-primary">
+              <button type="submit" className="btn btn-primary">
                 Log Out
               </button>
             </div>
           </div>
         </div>
-      </div>
+      </form>
     </>
   );
+  function handleSubmit(event = new Event()) {
+    event.preventDefault();
+    const inputs = event.target;
+    const closeButton = inputs[1];
+
+    closeButton.click();
+    onSignOut();
+  }
 }
