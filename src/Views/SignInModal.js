@@ -1,4 +1,5 @@
 import React from "react";
+import { SignInContent } from "./SignInContent";
 
 export function SignInModal() {
   return (
@@ -12,7 +13,8 @@ export function SignInModal() {
         Log In
       </button>
 
-      <div
+      <form
+        onSubmit={handleSubmit}
         className="modal fade"
         id="signInModal"
         data-bs-backdrop="static"
@@ -34,22 +36,39 @@ export function SignInModal() {
                 aria-label="Close"
               ></button>
             </div>
-            <div className="modal-body">Log into your account?</div>
+            <div className="modal-body">
+              <SignInContent />
+            </div>
             <div className="modal-footer">
               <button
+                id="cancelButton"
                 type="button"
                 className="btn btn-secondary"
                 data-bs-dismiss="modal"
               >
                 Cancel
               </button>
-              <button type="button" className="btn btn-primary">
+              <button type="submit" className="btn btn-primary">
                 Let's Go!
               </button>
             </div>
           </div>
         </div>
-      </div>
+      </form>
     </>
   );
+}
+
+function handleSubmit(event = new Event()) {
+  event.preventDefault();
+  const inputs = event.target;
+  const emailInput = inputs[1];
+  const passwordInput = inputs[2];
+
+  const email = emailInput.value;
+  const password = passwordInput.value;
+
+  const closeButton = document.getElementById("cancelButton");
+  closeButton.click();
+  inputs.reset();
 }

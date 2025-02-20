@@ -2259,14 +2259,14 @@ function CollapsibleNavbar() {
   if (domain === "xasbus.github.io") rootPath = "/Capstone-Lvl-3";
   console.log(`The domain is ${domain}`);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
-    className: "nav-pills navbar navbar-expand-md bg-body-tertiary NavColor"
+    className: "nav-pills navbar navbar-expand-md bg-body-tertiary colNavBarColor"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "container-fluid NavColor"
+    className: "container-fluid navColor"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     className: "navbar-brand",
     to: "#"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    className: "navbar-toggler",
+    className: "navbar-toggler colNavBarColor",
     type: "button",
     "data-bs-toggle": "collapse",
     "data-bs-target": "#navbarNavAltMarkup",
@@ -2274,30 +2274,30 @@ function CollapsibleNavbar() {
     "aria-expanded": "false",
     "aria-label": "Toggle navigation"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    className: "navbar-toggler-icon"
+    className: "navbar-toggler-icon "
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "collapse navbar-collapse",
     id: "navbarNavAltMarkup"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "navbar-nav"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_3__.NavLink, {
-    className: "nav-link",
+    className: "nav-link navTextColor",
     "aria-current": "page",
     to: `${rootPath}/`
   }, "Home"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_3__.NavLink, {
-    className: "nav-link",
+    className: "nav-link navTextColor navTextColor",
     to: `${rootPath}/consoles`
   }, "Consoles"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_3__.NavLink, {
-    className: "nav-link",
+    className: "nav-link navTextColor",
     to: `${rootPath}/games`
   }, "Games"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_3__.NavLink, {
-    className: "nav-link",
+    className: "nav-link navTextColor",
     to: `${rootPath}/accessories`
   }, "Accessories"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_3__.NavLink, {
-    className: "nav-link",
+    className: "nav-link navTextColor",
     to: `${rootPath}/Contact`
   }, "Contact"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_3__.NavLink, {
-    className: "nav-link",
+    className: "nav-link navTextColor",
     to: `${rootPath}/about`
   }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SignInModal__WEBPACK_IMPORTED_MODULE_1__.SignInModal, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SignOutModal__WEBPACK_IMPORTED_MODULE_2__.SignOutModal, null)))));
 }
@@ -2742,6 +2742,33 @@ function ImageMap() {
 
 /***/ }),
 
+/***/ "./src/Views/SignInContent.js":
+/*!************************************!*\
+  !*** ./src/Views/SignInContent.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   SignInContent: () => (/* binding */ SignInContent)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function SignInContent() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "bold"
+  }, "Would you like to log in?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "Email: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    type: "email",
+    required: true
+  }), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "Password: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    type: "password",
+    required: true
+  }));
+}
+
+/***/ }),
+
 /***/ "./src/Views/SignInModal.js":
 /*!**********************************!*\
   !*** ./src/Views/SignInModal.js ***!
@@ -2754,6 +2781,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _SignInContent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SignInContent */ "./src/Views/SignInContent.js");
+
 
 function SignInModal() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
@@ -2761,7 +2790,8 @@ function SignInModal() {
     className: "btn btn-primary modalColor",
     "data-bs-toggle": "modal",
     "data-bs-target": "#signInModal"
-  }, "Log In"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, "Log In"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
+    onSubmit: handleSubmit,
     className: "modal fade",
     id: "signInModal",
     "data-bs-backdrop": "static",
@@ -2785,16 +2815,28 @@ function SignInModal() {
     "aria-label": "Close"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "modal-body"
-  }, "Log into your account?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SignInContent__WEBPACK_IMPORTED_MODULE_1__.SignInContent, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "modal-footer"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    id: "cancelButton",
     type: "button",
     className: "btn btn-secondary",
     "data-bs-dismiss": "modal"
   }, "Cancel"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    type: "button",
+    type: "submit",
     className: "btn btn-primary"
   }, "Let's Go!"))))));
+}
+function handleSubmit(event = new Event()) {
+  event.preventDefault();
+  const inputs = event.target;
+  const emailInput = inputs[1];
+  const passwordInput = inputs[2];
+  const email = emailInput.value;
+  const password = passwordInput.value;
+  const closeButton = document.getElementById("cancelButton");
+  closeButton.click();
+  inputs.reset();
 }
 
 /***/ }),

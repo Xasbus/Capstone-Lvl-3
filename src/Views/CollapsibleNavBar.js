@@ -9,11 +9,11 @@ export function CollapsibleNavbar() {
   if (domain === "xasbus.github.io") rootPath = "/Capstone-Lvl-3";
   console.log(`The domain is ${domain}`);
   return (
-    <nav className="nav-pills navbar navbar-expand-md bg-body-tertiary NavColor">
-      <div className="container-fluid NavColor">
+    <nav className="nav-pills navbar navbar-expand-md bg-body-tertiary colNavBarColor">
+      <div className="container-fluid navColor">
         <a className="navbar-brand" to="#"></a>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler colNavBarColor"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"
@@ -21,30 +21,39 @@ export function CollapsibleNavbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon "></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
             <NavLink
-              className="nav-link"
+              className="nav-link navTextColor"
               aria-current="page"
               to={`${rootPath}/`}
             >
               Home
             </NavLink>
-            <NavLink className="nav-link" to={`${rootPath}/consoles`}>
+            <NavLink
+              className="nav-link navTextColor navTextColor"
+              to={`${rootPath}/consoles`}
+            >
               Consoles
             </NavLink>
-            <NavLink className="nav-link" to={`${rootPath}/games`}>
+            <NavLink className="nav-link navTextColor" to={`${rootPath}/games`}>
               Games
             </NavLink>
-            <NavLink className="nav-link" to={`${rootPath}/accessories`}>
+            <NavLink
+              className="nav-link navTextColor"
+              to={`${rootPath}/accessories`}
+            >
               Accessories
             </NavLink>
-            <NavLink className="nav-link" to={`${rootPath}/Contact`}>
+            <NavLink
+              className="nav-link navTextColor"
+              to={`${rootPath}/Contact`}
+            >
               Contact
             </NavLink>
-            <NavLink className="nav-link" to={`${rootPath}/about`}>
+            <NavLink className="nav-link navTextColor" to={`${rootPath}/about`}>
               About
             </NavLink>
             <SignInModal />
