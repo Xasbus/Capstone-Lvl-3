@@ -2755,7 +2755,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
-function SignInContent() {
+function SignInContent(props) {
+  const errorMessage = props.errorMessage;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "bold"
   }, "Would you like to log in?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "Email: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
@@ -2764,7 +2765,11 @@ function SignInContent() {
   }), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "Password: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "password",
     required: true
-  }));
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    style: {
+      color: "red"
+    }
+  }, errorMessage));
 }
 
 /***/ }),
@@ -2782,9 +2787,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _SignInContent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SignInContent */ "./src/Views/SignInContent.js");
+/* harmony import */ var _controllers_handleSignIn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/handleSignIn */ "./src/controllers/handleSignIn.js");
+
 
 
 function SignInModal() {
+  const [errorMessage, setErrorMessage] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("");
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     type: "button",
     className: "btn btn-primary modalColor",
@@ -2815,7 +2823,9 @@ function SignInModal() {
     "aria-label": "Close"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "modal-body"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SignInContent__WEBPACK_IMPORTED_MODULE_1__.SignInContent, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SignInContent__WEBPACK_IMPORTED_MODULE_1__.SignInContent, {
+    errorMessage: errorMessage
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "modal-footer"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     id: "cancelButton",
@@ -2826,17 +2836,9 @@ function SignInModal() {
     type: "submit",
     className: "btn btn-primary"
   }, "Let's Go!"))))));
-}
-function handleSubmit(event = new Event()) {
-  event.preventDefault();
-  const inputs = event.target;
-  const emailInput = inputs[1];
-  const passwordInput = inputs[2];
-  const email = emailInput.value;
-  const password = passwordInput.value;
-  const closeButton = document.getElementById("cancelButton");
-  closeButton.click();
-  inputs.reset();
+  function handleSubmit(event) {
+    (0,_controllers_handleSignIn__WEBPACK_IMPORTED_MODULE_2__.handleSignIn)(event, setErrorMessage);
+  }
 }
 
 /***/ }),
@@ -3159,6 +3161,35 @@ function handleGame() {
 
 /***/ }),
 
+/***/ "./src/controllers/handleSignIn.js":
+/*!*****************************************!*\
+  !*** ./src/controllers/handleSignIn.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   handleSignIn: () => (/* binding */ handleSignIn)
+/* harmony export */ });
+/* harmony import */ var _modules_loginAuthentication_authenticationSim__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../modules/loginAuthentication/authenticationSim */ "./src/modules/loginAuthentication/authenticationSim.js");
+
+function handleSignIn(event = new Event(), setErrorMessage) {
+  event.preventDefault();
+  const inputs = event.target;
+  const emailInput = inputs[1];
+  const passwordInput = inputs[2];
+  const email = emailInput.value;
+  const password = passwordInput.value;
+  const isAuthenticated = (0,_modules_loginAuthentication_authenticationSim__WEBPACK_IMPORTED_MODULE_0__.authenticationSim)(email, password);
+  if (isAuthenticated) {
+    const closeButton = document.getElementById("cancelButton");
+    closeButton.click();
+    inputs.reset();
+  } else setErrorMessage("The email and password is incorrect.");
+}
+
+/***/ }),
+
 /***/ "./src/modules/getServerRespone/getServerResponse1.js":
 /*!************************************************************!*\
   !*** ./src/modules/getServerRespone/getServerResponse1.js ***!
@@ -3225,6 +3256,49 @@ function getServerResponse3(resolve) {
     resolve(resolveValue);
   }
 }
+
+/***/ }),
+
+/***/ "./src/modules/loginAuthentication/authenticationSim.js":
+/*!**************************************************************!*\
+  !*** ./src/modules/loginAuthentication/authenticationSim.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   authenticationSim: () => (/* binding */ authenticationSim)
+/* harmony export */ });
+/* harmony import */ var _logins__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./logins */ "./src/modules/loginAuthentication/logins.js");
+
+function authenticationSim(email = "", password = "") {
+  for (const login of _logins__WEBPACK_IMPORTED_MODULE_0__.logins) {
+    const currentEmail = login.email;
+    const currentPassword = login.password;
+    if (email === currentEmail && password === currentPassword) return true;
+  }
+  return false;
+}
+
+/***/ }),
+
+/***/ "./src/modules/loginAuthentication/logins.js":
+/*!***************************************************!*\
+  !*** ./src/modules/loginAuthentication/logins.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   logins: () => (/* binding */ logins)
+/* harmony export */ });
+const logins = [{
+  email: "aaa@aaa.com",
+  password: "aaa"
+}, {
+  email: "bbb@bbb.com",
+  password: "bbb"
+}];
 
 /***/ }),
 

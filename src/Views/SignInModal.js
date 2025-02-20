@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { SignInContent } from "./SignInContent";
+import { handleSignIn } from "../controllers/handleSignIn";
 
 export function SignInModal() {
+  const [errorMessage, setErrorMessage] = useState("");
   return (
     <>
       <button
@@ -37,7 +39,7 @@ export function SignInModal() {
               ></button>
             </div>
             <div className="modal-body">
-              <SignInContent />
+              <SignInContent errorMessage={errorMessage} />
             </div>
             <div className="modal-footer">
               <button
@@ -57,18 +59,8 @@ export function SignInModal() {
       </form>
     </>
   );
-}
 
-function handleSubmit(event = new Event()) {
-  event.preventDefault();
-  const inputs = event.target;
-  const emailInput = inputs[1];
-  const passwordInput = inputs[2];
-
-  const email = emailInput.value;
-  const password = passwordInput.value;
-
-  const closeButton = document.getElementById("cancelButton");
-  closeButton.click();
-  inputs.reset();
+  function handleSubmit(event) {
+    handleSignIn(event, setErrorMessage);
+  }
 }
