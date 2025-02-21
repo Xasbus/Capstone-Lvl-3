@@ -26950,8 +26950,9 @@ async function authenticationAWS(email = "", password = "") {
       secretAccessKey: _aws_credentials__WEBPACK_IMPORTED_MODULE_0__.secretAccessKey
     }
   };
+  debugger;
   const client = new _aws_sdk_client_dynamodb__WEBPACK_IMPORTED_MODULE_2__.DynamoDB(apiKey);
-  const niceClient = new _aws_sdk_lib_dynamodb__WEBPACK_IMPORTED_MODULE_1__.DynamoDBDocument.from(client);
+  const niceClient = _aws_sdk_lib_dynamodb__WEBPACK_IMPORTED_MODULE_1__.DynamoDBDocument.from(client);
   const request = {
     TableName: "logins",
     Key: {
