@@ -1,6 +1,10 @@
-import { authenticationSim } from "../modules/loginAuthentication/authenticationSim";
+import { authenticationAWS } from "../modules/loginAuthentication/authenticationAWS";
 
-export function handleSignIn(event = new Event(), setErrorMessage, onSignIn) {
+export async function handleSignIn(
+  event = new Event(),
+  setErrorMessage,
+  onSignIn
+) {
   event.preventDefault();
   const inputs = event.target;
   const emailInput = inputs[1];
@@ -9,7 +13,7 @@ export function handleSignIn(event = new Event(), setErrorMessage, onSignIn) {
   const email = emailInput.value;
   const password = passwordInput.value;
 
-  const isAuthenticated = authenticationSim(email, password);
+  const isAuthenticated = await authenticationAWS(email, password);
   if (isAuthenticated) {
     const closeButton = document.getElementById("cancelButton");
     closeButton.click();
