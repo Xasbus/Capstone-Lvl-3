@@ -18,7 +18,7 @@ export default {
     ],
   },
   watch: true,
-  watchOptions: { aggregateTimeout: 3000 },
+  watchOptions: { aggregateTimeout: 3500 },
   mode: "development",
   devtool: "source-map",
 };
