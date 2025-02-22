@@ -1,5 +1,5 @@
 export function getServerResponse1(resolve) {
-  setTimeout(activateResolve, 5000);
+  setTimeout(activateResolve, 4000);
 
   function activateResolve() {
     const response = {
