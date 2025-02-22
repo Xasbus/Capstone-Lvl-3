@@ -4,9 +4,6 @@ import { CollapsibleNavbar } from "./CollapsibleNavBar";
 export function Consoles() {
   return (
     <>
-      <header>
-        <CollapsibleNavbar />
-      </header>
       <main>
         <img
           title="PS5"
