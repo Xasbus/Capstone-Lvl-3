@@ -35148,32 +35148,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-<<<<<<< HEAD
-/* harmony import */ var _CollapsibleNavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CollapsibleNavBar */ "./src/Views/CollapsibleNavBar.js");
-
 
 function Consoles() {
-=======
-/* harmony import */ var _utils_output__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/output */ "./src/utils/output.js");
-/* harmony import */ var _utils_cardConverter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/cardConverter */ "./src/utils/cardConverter.js");
-function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
-function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
-function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
-function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
-
-
-
-function Consoles() {
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null)),
-    _useState2 = _slicedToArray(_useState, 2),
-    cards = _useState2[0],
-    setCards = _useState2[1];
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
->>>>>>> testBranch
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     title: "PS5",
     alt: "consoles",
@@ -35308,45 +35284,6 @@ function Consoles() {
   }, "PlayStation VR2")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "creatorName"
   }, "Website created by David Billiot")));
-<<<<<<< HEAD
-=======
-  function componentDidUpdate() {
-    document.title = "Playstation - Consoles Page";
-    console.log("Cards Updated.");
-  }
-  function componentDidMount() {
-    var cardObject1 = {};
-    cardObject1.src = "https://media.direct.playstation.com/is/image/sierialto/PS5-Disc-Slim-New-Hero-1?$Background_Large$";
-    cardObject1.title = "PlayStation 5";
-    cardObject1.summary = "<p>\n                            Experience lightning-fast loading with an ultra-high speed SSD, deeper immersion with support for haptic feedback1, adaptive triggers1 and 3D Audio*, and an all-new generation of incredible PlayStation games.\n                        </p>\n                        <p>\n                            Tristique cubilia nostra penatibus bibendum quis placerat. Lobortis velit posuere elementum ullamcorper laoreet. Maximus facilisi massa amet; congue consectetur litora. Sollicitudin elit purus natoque, tempus tincidunt quam pulvinar? Dui volutpat urna\n                            ante tristique nascetur. Praesent nam tortor sollicitudin congue interdum vehicula adipiscing. Vivamus congue magnis molestie aliquam mattis aliquet in aliquam. Molestie vel laoreet enim accumsan viverra varius quam; placerat\n                            integer. Habitant enim tempus accumsan; senectus penatibus lorem egestas bibendum. Torquent vulputate himenaeos pretium lacinia erat magnis torquent.\n                        </p>";
-    var cardObject2 = {};
-    cardObject2.src = "https://gmedia.playstation.com/is/image/SIEPDC/ps4-pro-image-block-01-en-24jul20?$1600px--t$";
-    cardObject2.title = "PlayStation 4";
-    cardObject2.summary = "<p>\n                            Ornare sem class magnis in consectetur consequat sed aliquam. Aenean proin sociosqu ornare pharetra lacus. Dictum convallis venenatis potenti proin pretium tincidunt dui ad interdum. Nascetur aenean fermentum est risus, neque iaculis.\n                            <span>Semper sodales morbi nam ullamcorper sociosqu natoque a lacus.\n                            </span> Ipsum torquent ultricies ac vivamus, vivamus felis. Augue scelerisque curabitur mauris hac feugiat potenti id. Eu consequat tempor velit tristique mauris leo id fames.\n                        </p>\n                        <p>\n                            Cras sodales venenatis ac platea aliquam dictum eleifend. Parturient erat pulvinar inceptos dis nostra viverra luctus suscipit. Ultricies nisl placerat dis primis amet posuere porttitor nibh. Bibendum iaculis ante et; quisque metus phasellus. Habitasse\n                            venenatis ligula cubilia ante tortor pharetra quis. Elit vehicula elit fringilla tristique vel sapien tristique. Consequat aliquet dignissim porta suspendisse taciti porta taciti maximus lacus. Sed platea rhoncus in magnis\n                            nulla. Morbi taciti lobortis feugiat lacus varius ridiculus nisi turpis.\n                        </p>\n                        <p>\n                            Molestie sit vulputate ridiculus lorem sollicitudin lacinia scelerisque laoreet. Nascetur pellentesque non consectetur duis luctus litora egestas venenatis nibh. Etiam iaculis non habitasse penatibus ex commodo. Tellus etiam cras blandit; libero interdum\n                            diam venenatis. Ut blandit justo eu magnis ridiculus litora posuere. Natoque magnis justo tempus; curabitur maximus dictum. Litora congue eget porta volutpat cursus lectus; dictumst suscipit. In cursus sapien penatibus; eleifend\n                            vivamus maximus?\n                        </p>";
-    var cardObject3 = {};
-    cardObject3.src = "https://th.bing.com/th/id/OIP.y_Z4aw_Mlmv2zwIpOshDcwHaEK?w=202&h=113&c=7&r=0&o=5&dpr=1.3&pid=1.7";
-    cardObject3.title = "PlayStation VR";
-    cardObject3.summary = "<p>\n                            Dictum senectus convallis tortor sed tincidunt maecenas consectetur luctus ex. Ad in mi eu turpis class. Potenti posuere vehicula praesent tellus himenaeos. Eget aliquam augue diam tempus magnis vehicula porta. Nisl mollis etiam quam phasellus nisl. Platea\n                            et nisi pellentesque; vel morbi leo. Tortor sociosqu senectus rutrum; est primis nibh ex. Gravida dictumst habitant orci faucibus mus cras. Taciti fames iaculis sociosqu magna cras lobortis.\n                        </p>\n                        <p>\n                            Netus porta dignissim fames, conubia fames nunc. Rhoncus nibh metus lobortis facilisi quisque maximus, elit quis tristique. Tempor tristique curabitur condimentum volutpat quis sociosqu id. Habitasse mi phasellus maximus sapien aenean ad consectetur.\n                            Id vivamus felis est a eros. Facilisis pulvinar senectus nascetur nostra vel non tincidunt lectus. Diam ultrices nascetur himenaeos tincidunt, laoreet interdum nam!\n                        </p>";
-    var cardArray = [cardObject1, cardObject2, cardObject3];
-    debugger;
-    var tempCards = "";
-    for (var position = 0; position < cardArray.length; position++) {
-      // output("<section class='p-5'>");
-      tempCards += "<section class='p-5'>";
-      var cardObject = cardArray[position];
-      var stringCard = (0,_utils_cardConverter__WEBPACK_IMPORTED_MODULE_2__.cardConverter)(cardObject);
-      tempCards += stringCard;
-      tempCards += "</section>";
-      // output(stringCard);
-      // output("</section>");
-    }
-    setCards(tempCards);
-    console.log("Mounted Cards");
-  }
-  function componentDidUnmount() {
-    console.log("Nothing to unmount");
-  }
->>>>>>> testBranch
 }
 
 /***/ }),
@@ -36323,7 +36260,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   getServerResponse1: () => (/* binding */ getServerResponse1)
 /* harmony export */ });
 function getServerResponse1(resolve) {
-  setTimeout(activateResolve, 5000);
+  setTimeout(activateResolve, 4000);
   function activateResolve() {
     var response = {
       message: "Successfully received. Will get back to you ASAP. "
@@ -36575,27 +36512,6 @@ function ask(message) {
 
 /***/ }),
 
-<<<<<<< HEAD
-=======
-/***/ "./src/utils/cardConverter.js":
-/*!************************************!*\
-  !*** ./src/utils/cardConverter.js ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   cardConverter: () => (/* binding */ cardConverter)
-/* harmony export */ });
-function cardConverter(cardObject) {
-  var cardString = "<div class=\"card\">\n    <img class=\"card-img-top\" src=\"".concat(cardObject.src, "\">\n    <div class=\"card-body\">\n    <h3 class=\"card-title\">").concat(cardObject.title, "</h3>\n    ").concat(cardObject.summary, "\n    </div>\n    </div>");
-  return cardString;
-}
-
-/***/ }),
-
->>>>>>> testBranch
 /***/ "./src/utils/output.js":
 /*!*****************************!*\
   !*** ./src/utils/output.js ***!

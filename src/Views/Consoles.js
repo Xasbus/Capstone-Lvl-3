@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { CollapsibleNavbar } from "./CollapsibleNavBar";
 
 export function Consoles() {
   return (
