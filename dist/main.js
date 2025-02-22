@@ -35700,13 +35700,13 @@ function SignInContent(props) {
   var errorMessage = props.errorMessage;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "bold"
-  }, "Would you like to log in?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "Email: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+  }, "Would you like to log in?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "Email: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "email",
     required: true
-  }), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "Password: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "Password: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "password",
     required: true
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     style: {
       color: "red"
     }
@@ -36295,11 +36295,16 @@ function authenticationAWS() {
   return _authenticationAWS.apply(this, arguments);
 }
 
-// const client = new Database(apiKey);
-// const resolveValue = await client.getData(logins, email);
-// const matchingLogin = resolveValue;
-// const isAuthenticated = password === matchingLogin.password;
-// return isAuthenticated;
+// function handleSubmit(event) {
+//   handleSignIn(event, setErrorMessage, onSignIn);
+// }
+
+// if (matchingLogin === !undefined) {
+//   console.log("not an email");
+// } else {
+//   const isAuthenticated = password === matchingLogin.password;
+//   return isAuthenticated;
+// }
 function _authenticationAWS() {
   _authenticationAWS = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
     var email,
@@ -36324,7 +36329,6 @@ function _authenticationAWS() {
               secretAccessKey: _aws_credentials__WEBPACK_IMPORTED_MODULE_0__.secretAccessKey
             }
           };
-          debugger;
           client = new _aws_sdk_client_dynamodb__WEBPACK_IMPORTED_MODULE_2__.DynamoDB(apiKey);
           niceClient = _aws_sdk_lib_dynamodb__WEBPACK_IMPORTED_MODULE_1__.DynamoDBDocument.from(client);
           request = {
@@ -36333,14 +36337,22 @@ function _authenticationAWS() {
               email: email
             }
           };
-          _context.next = 9;
+          _context.next = 8;
           return niceClient.get(request);
-        case 9:
+        case 8:
           response = _context.sent;
           matchingLogin = response.Item;
+          if (!(matchingLogin === undefined)) {
+            _context.next = 14;
+            break;
+          }
+          console.log("not an email");
+          _context.next = 16;
+          break;
+        case 14:
           isAuthenticated = password === matchingLogin.password;
           return _context.abrupt("return", isAuthenticated);
-        case 13:
+        case 16:
         case "end":
           return _context.stop();
       }

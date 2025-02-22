@@ -14,7 +14,7 @@ export async function authenticationAWS(email = "", password = "") {
       secretAccessKey: secretAccessKey,
     },
   };
-  debugger;
+
   const client = new DynamoDB(apiKey);
   const niceClient = DynamoDBDocument.from(client);
 
@@ -25,12 +25,21 @@ export async function authenticationAWS(email = "", password = "") {
 
   const response = await niceClient.get(request);
   const matchingLogin = response.Item;
-  const isAuthenticated = password === matchingLogin.password;
-  return isAuthenticated;
+  if (matchingLogin === undefined) {
+    console.log("not an email");
+  } else {
+    const isAuthenticated = password === matchingLogin.password;
+    return isAuthenticated;
+  }
 }
 
-// const client = new Database(apiKey);
-// const resolveValue = await client.getData(logins, email);
-// const matchingLogin = resolveValue;
-// const isAuthenticated = password === matchingLogin.password;
-// return isAuthenticated;
+// function handleSubmit(event) {
+//   handleSignIn(event, setErrorMessage, onSignIn);
+// }
+
+// if (matchingLogin === !undefined) {
+//   console.log("not an email");
+// } else {
+//   const isAuthenticated = password === matchingLogin.password;
+//   return isAuthenticated;
+// }
