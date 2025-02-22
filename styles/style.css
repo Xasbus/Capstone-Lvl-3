@@ -90,3 +90,7 @@ p span {
 p u {
   color: white;
 }
+
+.transparent {
+  opacity: 0.6;
+}
