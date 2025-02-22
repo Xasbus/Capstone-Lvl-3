@@ -9,7 +9,13 @@ export function TFD(props) {
   const depth = { borderRadius: "10px" };
 
   return (
-    <div style={{ width: "60vw", height: "40vw" }}>
+    <div
+      className="containerVideo"
+      style={{
+        width: "60vw",
+        height: "30vw",
+      }}
+    >
       <iframe
         width="100%"
         height="100%"

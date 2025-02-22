@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 export function Consoles() {
   return (
@@ -28,10 +28,10 @@ export function Consoles() {
             />
 
             <div className="card-img-overlay">
-              <h3 className="card-title" style={{ color: "red" }}>
+              <h3 className="card-title" style={{ color: "gold" }}>
                 Playstation 5
               </h3>
-              <div className="card-text" style={{ color: "red" }}>
+              <div className="card-text" style={{ color: "gold" }}>
                 Experience lightning-fast loading with an ultra-high speed SSD,
                 deeper immersion with support for haptic feedback1, adaptive
                 triggers1 and 3D Audio*, and an all-new generation of incredible
@@ -39,7 +39,7 @@ export function Consoles() {
               </div>
               <div
                 className="card-text"
-                style={{ color: "red", fontSize: "auto" }}
+                style={{ color: "gold", fontSize: "auto" }}
               >
                 <small>
                   Tristique cubilia nostra penatibus bibendum quis placerat.
@@ -90,11 +90,11 @@ export function Consoles() {
             <div className="card-img-overlay">
               <h3
                 className="card-title"
-                style={{ color: "red", fontSize: "auto" }}
+                style={{ color: "gold", fontSize: "auto" }}
               >
                 Playstation 4
               </h3>
-              <div className="card-text" style={{ color: "red" }}>
+              <div className="card-text" style={{ color: "gold" }}>
                 Incredible games & non-stop entertainment The PS4 console,
                 delivering awesome gaming power, incredible entertainment and
                 vibrant HDR technology.
@@ -105,7 +105,7 @@ export function Consoles() {
                   Black and more colors.
                 </div>
               </div>
-              <div className="card-text" style={{ color: "red" }}>
+              <div className="card-text" style={{ color: "gold" }}>
                 <small>
                   <div>
                     Cras sodales venenatis ac platea aliquam dictum eleifend.
@@ -151,17 +151,17 @@ export function Consoles() {
             />
 
             <div className="card-img-overlay">
-              <h3 className="card-title" style={{ color: "red" }}>
+              <h3 className="card-title" style={{ color: "gold" }}>
                 Playstation VR
               </h3>
-              <div className="card-text" style={{ color: "red" }}>
+              <div className="card-text" style={{ color: "gold" }}>
                 Immerse yourself in epic worlds that go beyond reality
                 Experience the next generation of virtual reality play with
                 stunning 4K HDR visuals, genre-defining games, and unique
                 sensations from the ground-breaking PlayStation VR2 headset and
                 PlayStation VR2 Sense ™ controller.
               </div>
-              <div className="card-text" style={{ color: "red" }}>
+              <div className="card-text" style={{ color: "gold" }}>
                 <small>
                   <div>
                     Dictum senectus convallis tortor sed tincidunt maecenas

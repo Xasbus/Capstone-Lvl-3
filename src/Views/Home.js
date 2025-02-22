@@ -105,7 +105,10 @@ export function Home() {
               <ImageMap />
             </h4>
 
-            <h3 className="titleColor">Accessories</h3>
+            <h3 className="titleColor">
+              Accessories <i className="bi bi-controller"></i>
+            </h3>
+
             <p>
               Build your perfect gaming setup with controllers, headsets and
               other accessories for your PS5® or PS4™ console.

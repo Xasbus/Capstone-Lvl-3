@@ -7,7 +7,8 @@ export function SignInContent(props) {
       <div className="bold">Would you like to log in?</div>
       <br />
       <div>
-        Email: <input type="email" required />
+        Email <i className="bi bi-envelope-at"></i> :
+        <input type="email" required />
       </div>
       <div>
         Password: <input type="password" required />

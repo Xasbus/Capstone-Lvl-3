@@ -114,3 +114,8 @@ ul {
 .navTextColor {
   color: rgb(180, 180, 180);
 }
+
+.containerVideo {
+  justify-content: center;
+  margin-left: 7vw;
+}
