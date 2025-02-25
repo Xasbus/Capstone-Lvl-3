@@ -3,7 +3,7 @@ import { NavBar } from "./NavBar";
 
 export function SignIn() {
   useEffect(componentDidMount, []);
-  useEffect(componentDidUpdate, []);
+  useEffect(componentDidUpdate);
   useEffect(compontentDidUnmount, []);
   return (
     <>
@@ -69,12 +69,13 @@ export function SignIn() {
     </>
   );
   function componentDidMount() {
-    console.log("sign in phase mounted.");
+    document.title = "Playstation - SignIn Page";
+    console.log("Title mounted");
   }
   function componentDidUpdate() {
-    setTimeout(console.log("sign in phase updated."), 1000);
+    setTimeout(console.log("Nothing to update."), 1000);
   }
   function compontentDidUnmount() {
-    setTimeout(console.log("sign in phase unmounted"), 3000);
+    setTimeout(console.log("No unmounts done."), 3000);
   }
 }
