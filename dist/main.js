@@ -35850,9 +35850,13 @@ function SignInModal(props) {
     className: "btn btn-primary"
   }, "Let's Go!"))))));
   function handleSubmit(event) {
-    var setErrorMessage = (0,_controllers_handleSignIn__WEBPACK_IMPORTED_MODULE_2__.handleSignIn)(event);
-    if (errorMessage) setErrorMessage(errorMessage);else onSignIn();
+    var theSignIn = (0,_controllers_handleSignIn__WEBPACK_IMPORTED_MODULE_2__.handleSignIn)(event);
+    if (errorMessage) setErrorMessage;else onSignIn;
   }
+
+  // function handleSubmit(event) {
+  //   handleSignIn(event, setErrorMessage, onSignIn);
+  // }
 }
 
 /***/ }),
