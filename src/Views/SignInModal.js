@@ -62,6 +62,8 @@ export function SignInModal(props) {
   );
 
   function handleSubmit(event) {
-    handleSignIn(event, setErrorMessage, onSignIn);
+    const setErrorMessage = handleSignIn(event);
+    if (errorMessage) setErrorMessage(errorMessage);
+    else onSignIn();
   }
 }
