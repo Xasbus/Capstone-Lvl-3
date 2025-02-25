@@ -4,7 +4,7 @@ import { handleGame } from "../controllers/handleGame";
 
 export function Accessories() {
   useEffect(componentDidMount, []);
-  useEffect(componentDidUpdate, []);
+  useEffect(componentDidUpdate);
   useEffect(compontentDidUnmount, []);
   return (
     <>
@@ -161,12 +161,13 @@ export function Accessories() {
     </>
   );
   function componentDidMount() {
-    console.log("Component for Accessories Mounted.");
+    document.title = "Playstation - Accessorires Page";
+    console.log("Title mounted");
   }
   function componentDidUpdate() {
-    setTimeout(console.log("Updated accessories component."), 1000);
+    setTimeout(console.log("No updates. Log is tracking update"), 1000);
   }
   function compontentDidUnmount() {
-    setTimeout(console.log("Unmounted Accessories component."), 2000);
+    setTimeout(console.log("Nothing unmounted."), 2000);
   }
 }

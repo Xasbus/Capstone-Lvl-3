@@ -1,9 +1,6 @@
 import React from "react";
 import { NavBar } from "./NavBar";
 import { handleClick } from "../controllers/gamesHtml/handleClick";
-import { output } from "../utils/output";
-import { viewResp } from "../modules/viewResp";
-import { parseResp } from "../modules/parseResp";
 
 export function Games() {
   return (
