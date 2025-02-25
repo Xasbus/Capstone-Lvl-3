@@ -37,36 +37,25 @@ export function CollapsibleNavbar() {
             <NavLink
               className="nav-link navTextColor navTextColor"
               to={`${rootPath}/consoles`}
-              end
             >
               Consoles
             </NavLink>
-            <NavLink
-              className="nav-link navTextColor"
-              to={`${rootPath}/games`}
-              end
-            >
+            <NavLink className="nav-link navTextColor" to={`${rootPath}/games`}>
               Games
             </NavLink>
             <NavLink
               className="nav-link navTextColor"
               to={`${rootPath}/accessories`}
-              end
             >
               Accessories
             </NavLink>
             <NavLink
               className="nav-link navTextColor"
               to={`${rootPath}/Contact`}
-              end
             >
               Contact
             </NavLink>
-            <NavLink
-              className="nav-link navTextColor"
-              to={`${rootPath}/about`}
-              end
-            >
+            <NavLink className="nav-link navTextColor" to={`${rootPath}/about`}>
               About
             </NavLink>
             <SignInArea />

@@ -35115,7 +35115,8 @@ function CollapsibleNavbar() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_2__.NavLink, {
     className: "nav-link navTextColor",
     "aria-current": "page",
-    to: "".concat(rootPath, "/")
+    to: "".concat(rootPath, "/"),
+    end: true
   }, "Home"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_2__.NavLink, {
     className: "nav-link navTextColor navTextColor",
     to: "".concat(rootPath, "/consoles")
@@ -35151,6 +35152,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
 function Consoles() {
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     title: "PS5",
     alt: "consoles",
@@ -35285,6 +35287,10 @@ function Consoles() {
   }, "PlayStation VR2")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "creatorName"
   }, "Website created by David Billiot")));
+  function componentDidMount() {
+    document.title = "Playstation - Console Page";
+    console.log("Title mounted");
+  }
 }
 
 /***/ }),
@@ -35844,7 +35850,8 @@ function SignInModal(props) {
     className: "btn btn-primary"
   }, "Let's Go!"))))));
   function handleSubmit(event) {
-    (0,_controllers_handleSignIn__WEBPACK_IMPORTED_MODULE_2__.handleSignIn)(event, setErrorMessage, onSignIn);
+    var setErrorMessage = (0,_controllers_handleSignIn__WEBPACK_IMPORTED_MODULE_2__.handleSignIn)(event);
+    if (errorMessage) setErrorMessage(errorMessage);else onSignIn();
   }
 }
 
