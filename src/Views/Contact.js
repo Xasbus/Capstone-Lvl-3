@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import { NavBar } from "./NavBar";
-import { handleEmail } from "../controllers/contactHtml/email";
-import { handleDate } from "../controllers/contactHtml/date";
-import { handlePhone } from "../controllers/contactHtml/phone";
+import { handleEmail } from "../controllers/contactHtml/handleEmail";
+import { handleDate } from "../controllers/contactHtml/handleDate";
+import { handlePhone } from "../controllers/contactHtml/handlePhone";
 import selfPic from "../../assets/contactphoto.jpg";
 
 export function Contact() {
   useEffect(componentDidMount, []);
-  useEffect(componentDidUpdate, []);
+  useEffect(componentDidUpdate);
   useEffect(componentDidUnmount, []);
   return (
     <>
@@ -42,7 +42,6 @@ export function Contact() {
           <form onSubmit={handleEmail}>
             Email: <br />
             <input
-              id="emailSize"
               required
               name="myEmail"
               type="email"
@@ -51,7 +50,7 @@ export function Contact() {
             <p>
               Summary of Issue:
               <br />
-              <input id="emailSize" type="text" placeholder="Text Here" />
+              <input type="text" placeholder="Text Here" />
             </p>
             <p>
               <input type="submit" />
@@ -91,12 +90,13 @@ export function Contact() {
     </>
   );
   function componentDidMount() {
-    console.log("Contact Phase component mounted");
+    document.title = "Playstation - Contact Page";
+    console.log("Title mounted");
   }
   function componentDidUpdate() {
-    console.log("Contact component did updated.");
+    console.log("Nothing to updated.");
   }
   function componentDidUnmount() {
-    console.log("Contact page component unmounted.");
+    console.log("Nothing to unmounted.");
   }
 }

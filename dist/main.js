@@ -2265,9 +2265,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NavBar */ "./src/Views/NavBar.js");
-/* harmony import */ var _controllers_contactHtml_email__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/contactHtml/email */ "./src/controllers/contactHtml/email.js");
-/* harmony import */ var _controllers_contactHtml_date__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../controllers/contactHtml/date */ "./src/controllers/contactHtml/date.js");
-/* harmony import */ var _controllers_contactHtml_phone__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../controllers/contactHtml/phone */ "./src/controllers/contactHtml/phone.js");
+/* harmony import */ var _controllers_contactHtml_handleEmail__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/contactHtml/handleEmail */ "./src/controllers/contactHtml/handleEmail.js");
+/* harmony import */ var _controllers_contactHtml_handleDate__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../controllers/contactHtml/handleDate */ "./src/controllers/contactHtml/handleDate.js");
+/* harmony import */ var _controllers_contactHtml_handlePhone__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../controllers/contactHtml/handlePhone */ "./src/controllers/contactHtml/handlePhone.js");
 /* harmony import */ var _assets_contactphoto_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/contactphoto.jpg */ "./assets/contactphoto.jpg");
 
 
@@ -2277,7 +2277,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function Contact() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavBar__WEBPACK_IMPORTED_MODULE_1__.NavBar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row"
@@ -2295,21 +2295,19 @@ function Contact() {
     width: "4%",
     src: "https://th.bing.com/th?id=OIP.lgict_2VY-2-x2b_kDd_vwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
   }), "@NotRealDavidFB")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, "Contact Customer Service"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
-    onSubmit: _controllers_contactHtml_email__WEBPACK_IMPORTED_MODULE_2__.handleEmail
+    onSubmit: _controllers_contactHtml_handleEmail__WEBPACK_IMPORTED_MODULE_2__.handleEmail
   }, "Email: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
-    id: "emailSize",
     required: true,
     name: "myEmail",
     type: "email",
     placeholder: "Enter Your Email"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Summary of Issue:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
-    id: "emailSize",
     type: "text",
     placeholder: "Text Here"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "submit"
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, "Submit an appointment by phone"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
-    onSubmit: _controllers_contactHtml_phone__WEBPACK_IMPORTED_MODULE_4__.handlePhone
+    onSubmit: _controllers_contactHtml_handlePhone__WEBPACK_IMPORTED_MODULE_4__.handlePhone
   }, "Schedule a phone appointment:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "tel",
     placeholder: "XXX-XXX-XXXX",
@@ -2318,7 +2316,7 @@ function Contact() {
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "submit"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
-    onSubmit: _controllers_contactHtml_date__WEBPACK_IMPORTED_MODULE_3__.handleDate
+    onSubmit: _controllers_contactHtml_handleDate__WEBPACK_IMPORTED_MODULE_3__.handleDate
   }, "Select date and time:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "datetime-local"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
@@ -2329,13 +2327,14 @@ function Contact() {
     className: "creatorName"
   }, "Website created by David Billiot")));
   function componentDidMount() {
-    console.log("Contact Phase component mounted");
+    document.title = "Playstation - Contact Page";
+    console.log("Title mounted");
   }
   function componentDidUpdate() {
-    console.log("Contact component did updated.");
+    console.log("Nothing to updated.");
   }
   function componentDidUnmount() {
-    console.log("Contact page component unmounted.");
+    console.log("Nothing to unmounted.");
   }
 }
 
@@ -2647,10 +2646,10 @@ function SignIn() {
 
 /***/ }),
 
-/***/ "./src/controllers/contactHtml/date.js":
-/*!*********************************************!*\
-  !*** ./src/controllers/contactHtml/date.js ***!
-  \*********************************************/
+/***/ "./src/controllers/contactHtml/handleDate.js":
+/*!***************************************************!*\
+  !*** ./src/controllers/contactHtml/handleDate.js ***!
+  \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2676,10 +2675,10 @@ function handleDate(event) {
 
 /***/ }),
 
-/***/ "./src/controllers/contactHtml/email.js":
-/*!**********************************************!*\
-  !*** ./src/controllers/contactHtml/email.js ***!
-  \**********************************************/
+/***/ "./src/controllers/contactHtml/handleEmail.js":
+/*!****************************************************!*\
+  !*** ./src/controllers/contactHtml/handleEmail.js ***!
+  \****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2702,10 +2701,10 @@ function handleEmail(event) {
 
 /***/ }),
 
-/***/ "./src/controllers/contactHtml/phone.js":
-/*!**********************************************!*\
-  !*** ./src/controllers/contactHtml/phone.js ***!
-  \**********************************************/
+/***/ "./src/controllers/contactHtml/handlePhone.js":
+/*!****************************************************!*\
+  !*** ./src/controllers/contactHtml/handlePhone.js ***!
+  \****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
