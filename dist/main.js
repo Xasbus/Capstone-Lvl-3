@@ -35851,14 +35851,16 @@ function SignInModal(props) {
     type: "submit",
     className: "btn btn-primary"
   }, "Let's Go!"))))));
-  function handleSubmit(event) {
-    var theSignIn = (0,_controllers_handleSignIn__WEBPACK_IMPORTED_MODULE_2__.handleSignIn)(event);
-    if (errorMessage) setErrorMessage;else onSignIn;
-  }
 
   // function handleSubmit(event) {
-  //   handleSignIn(event, setErrorMessage, onSignIn);
+  //   const theSignIn = handleSignIn(event);
+  //   if (errorMessage) setErrorMessage;
+  //   else onSignIn;
   // }
+
+  function handleSubmit(event) {
+    (0,_controllers_handleSignIn__WEBPACK_IMPORTED_MODULE_2__.handleSignIn)(event, setErrorMessage, onSignIn);
+  }
 }
 
 /***/ }),
