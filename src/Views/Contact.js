@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavBar } from "./NavBar";
 import { handleEmail } from "../controllers/contactHtml/email";
 import { handleDate } from "../controllers/contactHtml/date";
@@ -6,6 +6,9 @@ import { handlePhone } from "../controllers/contactHtml/phone";
 import selfPic from "../../assets/contactphoto.jpg";
 
 export function Contact() {
+  useEffect(componentDidMount, []);
+  useEffect(componentDidUpdate);
+  useEffect(componentDidUnmount, []);
   return (
     <>
       <header>
@@ -87,4 +90,14 @@ export function Contact() {
       </footer>
     </>
   );
+  function componentDidMount() {
+    document.title = "Playstation - Home Page";
+    console.log("Title mounted");
+  }
+  function componentDidUpdate() {
+    console.log("No updates, tracking update phase");
+  }
+  function componentDidUnmount() {
+    console.log("Nothing to unmount. Tracking unmount phase");
+  }
 }
