@@ -2353,7 +2353,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Games() {
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(compontentDidUnmount, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NavBar__WEBPACK_IMPORTED_MODULE_1__.NavBar, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     alt: "various games",
@@ -2393,10 +2393,10 @@ function Games() {
     id: "outputTag"
   })));
   function componentDidUpdate() {
-    setTimeout(console.log("component updated."), 2000);
+    setTimeout(console.log("No updates."), 2000);
   }
   function compontentDidUnmount() {
-    setTimeout(console.log("component unmounted"), 3000);
+    setTimeout(console.log("tracking unmount phase."), 3000);
   }
 }
 
@@ -2719,7 +2719,7 @@ function TFD(props) {
   const depth = {
     borderRadius: "10px"
   };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("iframe", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("iframe", {
     width: "560",
     height: "315",
     src: "https://www.youtube.com/embed/wv5L9U_TUHQ?si=c2BUIg5_6cbfykx7",
@@ -2729,9 +2729,9 @@ function TFD(props) {
     referrerPolicy: "strict-origin-when-cross-origin",
     allowFullScreen: true,
     style: depth
-  }));
+  });
   function componentDidMount() {
-    console.log("Video Mounted");
+    console.log("Video Mounted, tracking fom TFD component.");
   }
 }
 

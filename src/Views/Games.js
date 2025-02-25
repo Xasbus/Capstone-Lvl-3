@@ -6,7 +6,7 @@ import { GoW } from "./Videos/GoW";
 import { StellarBlade } from "./Videos/StellarBlade";
 
 export function Games() {
-  useEffect(componentDidUpdate, []);
+  useEffect(componentDidUpdate);
   useEffect(compontentDidUnmount, []);
 
   return (
@@ -99,9 +99,9 @@ export function Games() {
   );
 
   function componentDidUpdate() {
-    setTimeout(console.log("component updated."), 2000);
+    setTimeout(console.log("No updates."), 2000);
   }
   function compontentDidUnmount() {
-    setTimeout(console.log("component unmounted"), 3000);
+    setTimeout(console.log("tracking unmount phase."), 3000);
   }
 }
