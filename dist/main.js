@@ -2289,10 +2289,10 @@ function Consoles() {
     console.log("Title mounted");
   }
   function componentDidUpdate() {
-    console.log("No updates to watch.");
+    console.log("No updates to watch. Tracking update phase.");
   }
   function componentDidUnmount() {
-    console.log("Nothing to unmount.");
+    console.log("Nothing to unmount Tracking unmount phase.");
   }
 }
 
