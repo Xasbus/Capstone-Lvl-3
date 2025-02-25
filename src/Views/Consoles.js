@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export function Consoles() {
+  useEffect(componentDidMount, []);
   return (
     <>
       <main>
@@ -216,4 +217,9 @@ export function Consoles() {
       </footer>
     </>
   );
+
+  function componentDidMount() {
+    document.title = "Playstation - Console Page";
+    console.log("Title mounted");
+  }
 }
