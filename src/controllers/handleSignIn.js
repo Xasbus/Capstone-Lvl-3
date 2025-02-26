@@ -12,12 +12,13 @@ export async function handleSignIn(
 
   const email = emailInput.value;
   const password = passwordInput.value;
-  debugger;
+
   const isAuthenticated = await authenticationAWS(email, password);
   debugger;
   if (isAuthenticated) {
     debugger;
     const closeButton = document.getElementById("cancelButton");
+    debugger;
     closeButton.click();
     inputs.reset();
     // onSignIn();
