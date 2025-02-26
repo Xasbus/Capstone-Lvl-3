@@ -14,7 +14,6 @@ export async function handleSignIn(
   const password = passwordInput.value;
 
   const isAuthenticated = await authenticationAWS(email, password);
-  debugger;
   if (isAuthenticated) {
     debugger;
     const closeButton = document.getElementById("cancelButton");

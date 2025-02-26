@@ -17,6 +17,7 @@ export async function authenticationAWS(email = "", password = "") {
 
   const client = new DynamoDB(apiKey);
   const niceClient = DynamoDBDocument.from(client);
+
   const request = {
     TableName: "logins",
     Key: { email: email },

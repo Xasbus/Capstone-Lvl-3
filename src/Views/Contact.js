@@ -45,7 +45,7 @@ export function Contact() {
             <p>
               Summary of Issue:
               <br />
-              <input id="emailSize" type="text" placeholder="Text Here" />
+              <input id="emailSize2" type="text" placeholder="Text Here" />
             </p>
             <p>
               <input type="submit" />
@@ -77,7 +77,7 @@ export function Contact() {
             <input type="submit" />
           </form>
         </section>
-        <output id="outputTag"></output>
+        <output id="myTag"></output>
       </main>
       <footer>
         <p className="creatorName">Website created by David Billiot</p>

@@ -35345,7 +35345,7 @@ function Contact() {
     type: "email",
     placeholder: "Enter Your Email"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Summary of Issue:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
-    id: "emailSize",
+    id: "emailSize2",
     type: "text",
     placeholder: "Text Here"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
@@ -35366,7 +35366,7 @@ function Contact() {
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "submit"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("output", {
-    id: "outputTag"
+    id: "myTag"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "creatorName"
   }, "Website created by David Billiot")));
@@ -36277,26 +36277,25 @@ function _handleSignIn() {
           passwordInput = inputs[2];
           email = emailInput.value;
           password = passwordInput.value;
-          debugger;
-          _context.next = 10;
+          _context.next = 9;
           return (0,_modules_loginAuthentication_authenticationAWS__WEBPACK_IMPORTED_MODULE_0__.authenticationAWS)(email, password);
-        case 10:
+        case 9:
           isAuthenticated = _context.sent;
-          debugger;
           if (!isAuthenticated) {
-            _context.next = 19;
+            _context.next = 18;
             break;
           }
           debugger;
           closeButton = document.getElementById("cancelButton");
+          debugger;
           closeButton.click();
           inputs.reset();
           // onSignIn();
-          _context.next = 20;
+          _context.next = 19;
           break;
-        case 19:
+        case 18:
           return _context.abrupt("return", "The email and password are incorrect.");
-        case 20:
+        case 19:
         case "end":
           return _context.stop();
       }

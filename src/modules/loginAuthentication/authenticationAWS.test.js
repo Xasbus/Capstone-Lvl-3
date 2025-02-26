@@ -9,6 +9,10 @@ describe("The authenticationAWS function", () => {
     emptyPassword
   );
   it(
+    "doesn't authenticate when email is wrong and password is correct",
+    rightPassword
+  );
+  it(
     "doesn't authenticates when email and password are incorrect",
     noMatchingCredentials
   );
@@ -27,7 +31,7 @@ async function correctCrenentials() {
 async function unlistedEmail() {
   // Arrange
   const email = "nothing@email.com";
-  const password = "1test1";
+  const password = "aaa";
   // ACT
   const isAuthenticated = await authenticationAWS(email, password);
   // ASSERT
@@ -38,6 +42,16 @@ async function emptyPassword() {
   // Arrange
   const email = "test@email.com";
   const password = "";
+  // ACT
+  const isAuthenticated = await authenticationAWS(email, password);
+  // ASSERT
+  expect(isAuthenticated).toBe(false);
+}
+
+async function rightPassword() {
+  // Arrange
+  const email = "testtt@email.com";
+  const password = "test";
   // ACT
   const isAuthenticated = await authenticationAWS(email, password);
   // ASSERT
