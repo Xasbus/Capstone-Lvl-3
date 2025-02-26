@@ -107,22 +107,22 @@ export function Contact() {
 
   // Handlers inside so they can have access to the setOutputMessage.
   // Extracted them from controllers, adjusted, and moved old files to Archives.
-  async function handleEmail(event) {
+  function handleEmail(event) {
     event.preventDefault();
     setOutputMessage(` <br>Submitting your concerns. . . `);
-    const response = await getServerResponse1;
-    parseResponse(response);
+    const promise = new Promise(getServerResponse1);
+    promise.then(parseResponse);
   }
-  async function handleDate(event) {
+  function handleDate(event) {
     event.preventDefault();
     setOutputMessage(` <br>Sumbitting appointment. . .  <br>`);
-    const response = await getServerResponse3;
-    parseResponse(response);
+    const promise = new Promise(getServerResponse3);
+    promise.then(parseResponse);
   }
-  async function handlePhone(event) {
+  function handlePhone(event) {
     event.preventDefault();
     setOutputMessage(` <br>Your info is being processed. . .<br>`);
-    const response = await getServerResponse2;
-    parseResponse(response);
+    const promise = new Promise(getServerResponse2);
+    promise.then(parseResponse);
   }
 }

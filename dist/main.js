@@ -35388,11 +35388,16 @@ function Contact() {
   function componentDidUnmount() {
     console.log("Nothing to unmount");
   }
+
+  // Moved parseResponse inside so the handlers can have access to it.
   function parseResponse(resolveValue) {
     var response = JSON.parse(resolveValue);
     var message = response.message;
     setOutputMessage(message);
   }
+
+  // Handlers inside so they can have access to the setOutputMessage.
+  // Extracted them from controllers, adjusted, and moved old files to Archives.
   function handleEmail(event) {
     event.preventDefault();
     setOutputMessage(" <br>Submitting your concerns. . . ");
