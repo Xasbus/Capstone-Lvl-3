@@ -31,7 +31,7 @@ async function unlistedEmail() {
   // ACT
   const isAuthenticated = await authenticationAWS(email, password);
   // ASSERT
-  expect(isAuthenticated).toBe(undefined);
+  expect(isAuthenticated).toBe(false);
 }
 
 async function emptyPassword() {

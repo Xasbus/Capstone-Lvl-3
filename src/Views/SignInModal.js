@@ -66,7 +66,6 @@ export function SignInModal(props) {
     if (errorMessage)
       setErrorMessage(errorMessage); //Set an errorMessage if there is one.
     else {
-      debugger;
       onSignIn();
     } // If there isn't errorMessage. Let it signIn with onSignIn. onSignIn is a prop at the top.
   }

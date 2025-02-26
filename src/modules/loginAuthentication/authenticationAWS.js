@@ -17,16 +17,15 @@ export async function authenticationAWS(email = "", password = "") {
 
   const client = new DynamoDB(apiKey);
   const niceClient = DynamoDBDocument.from(client);
-
   const request = {
     TableName: "logins",
     Key: { email: email },
   };
-
   const response = await niceClient.get(request);
   const matchingLogin = response.Item;
   if (matchingLogin === undefined) {
     console.log("not an email");
+    return false;
   } else {
     const isAuthenticated = password === matchingLogin.password;
     return isAuthenticated;

@@ -35872,7 +35872,6 @@ function SignInModal(props) {
             errorMessage = _context.sent;
             if (errorMessage) setErrorMessage(errorMessage); //Set an errorMessage if there is one.
             else {
-              debugger;
               onSignIn();
             } // If there isn't errorMessage. Let it signIn with onSignIn. onSignIn is a prop at the top.
           case 4:
@@ -36278,23 +36277,26 @@ function _handleSignIn() {
           passwordInput = inputs[2];
           email = emailInput.value;
           password = passwordInput.value;
-          _context.next = 9;
+          debugger;
+          _context.next = 10;
           return (0,_modules_loginAuthentication_authenticationAWS__WEBPACK_IMPORTED_MODULE_0__.authenticationAWS)(email, password);
-        case 9:
+        case 10:
           isAuthenticated = _context.sent;
+          debugger;
           if (!isAuthenticated) {
-            _context.next = 16;
+            _context.next = 19;
             break;
           }
+          debugger;
           closeButton = document.getElementById("cancelButton");
           closeButton.click();
           inputs.reset();
           // onSignIn();
-          _context.next = 17;
+          _context.next = 20;
           break;
-        case 16:
-          return _context.abrupt("return", "The email and password is incorrect.");
-        case 17:
+        case 19:
+          return _context.abrupt("return", "The email and password are incorrect.");
+        case 20:
         case "end":
           return _context.stop();
       }
@@ -36450,16 +36452,15 @@ function _authenticationAWS() {
           response = _context.sent;
           matchingLogin = response.Item;
           if (!(matchingLogin === undefined)) {
-            _context.next = 14;
+            _context.next = 15;
             break;
           }
           console.log("not an email");
-          _context.next = 16;
-          break;
-        case 14:
+          return _context.abrupt("return", false);
+        case 15:
           isAuthenticated = password === matchingLogin.password;
           return _context.abrupt("return", isAuthenticated);
-        case 16:
+        case 17:
         case "end":
           return _context.stop();
       }
