@@ -61,13 +61,17 @@ export function SignInModal(props) {
     </>
   );
 
-  // function handleSubmit(event) {
-  //   const theSignIn = handleSignIn(event);
-  //   if (errorMessage) setErrorMessage;
-  //   else onSignIn;
-  // }
-
-  function handleSubmit(event) {
-    handleSignIn(event, setErrorMessage, onSignIn);
+  async function handleSubmit(event) {
+    const errorMessage = await handleSignIn(event);
+    if (errorMessage)
+      setErrorMessage(errorMessage); //Set an errorMessage if there is one.
+    else {
+      debugger;
+      onSignIn();
+    } // If there isn't errorMessage. Let it signIn with onSignIn. onSignIn is a prop at the top.
   }
+
+  // function handleSubmit(event) {
+  //   handleSignIn(event, setErrorMessage, onSignIn);
+  // }
 }

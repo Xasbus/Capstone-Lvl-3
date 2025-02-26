@@ -1,9 +1,8 @@
 import { authenticationAWS } from "../modules/loginAuthentication/authenticationAWS";
 
 export async function handleSignIn(
-  event = new Event(),
-  setErrorMessage,
-  onSignIn
+  event = new Event()
+  // onSignIn
 ) {
   event.preventDefault();
   const inputs = event.target;
@@ -18,6 +17,8 @@ export async function handleSignIn(
     const closeButton = document.getElementById("cancelButton");
     closeButton.click();
     inputs.reset();
-    onSignIn();
-  } else setErrorMessage("The email and password is incorrect.");
+    // onSignIn();
+  } else return "The email and password is incorrect.";
+  //Instead of setting the errorMessage. It can just return it.
+  // Setting the errorMessage from handleSubmit.
 }
