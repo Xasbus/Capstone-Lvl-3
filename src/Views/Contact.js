@@ -98,28 +98,31 @@ export function Contact() {
     console.log("Nothing to unmount");
   }
 
+  // Moved parseResponse inside so the handlers can have access to it.
   function parseResponse(resolveValue) {
     const response = JSON.parse(resolveValue);
     const message = response.message;
     setOutputMessage(message);
   }
 
-  function handleEmail(event) {
+  // Handlers inside so they can have access to the setOutputMessage.
+  // Extracted them from controllers, adjusted, and moved old files to Archives.
+  async function handleEmail(event) {
     event.preventDefault();
     setOutputMessage(` <br>Submitting your concerns. . . `);
-    const promise = new Promise(getServerResponse1);
-    promise.then(parseResponse);
+    const response = await getServerResponse1;
+    parseResponse(response);
   }
-  function handleDate(event) {
+  async function handleDate(event) {
     event.preventDefault();
     setOutputMessage(` <br>Sumbitting appointment. . .  <br>`);
-    const promise = new Promise(getServerResponse3);
-    promise.then(parseResponse);
+    const response = await getServerResponse3;
+    parseResponse(response);
   }
-  function handlePhone(event) {
+  async function handlePhone(event) {
     event.preventDefault();
     setOutputMessage(` <br>Your info is being processed. . .<br>`);
-    const promise = new Promise(getServerResponse2);
-    promise.then(parseResponse);
+    const response = await getServerResponse2;
+    parseResponse(response);
   }
 }
