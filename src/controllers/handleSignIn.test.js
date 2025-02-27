@@ -1,6 +1,5 @@
 import { describe, expect, it } from "@jest/globals";
 import { handleSignIn } from "./handleSignIn";
-import { authenticationAWS } from "../modules/loginAuthentication/authenticationAWS";
 
 describe("The handleSignIn", () => {
   it(

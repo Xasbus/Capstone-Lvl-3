@@ -125,4 +125,8 @@ export function Contact() {
     const promise = new Promise(getServerResponse2);
     promise.then(parseResponse);
   }
+  // Made function for sole purpose of testing. Intakes another function.
+  async function handleEmailTest(event) {
+    const response = await handleEmail(event);
+  }
 }
