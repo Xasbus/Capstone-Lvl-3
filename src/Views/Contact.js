@@ -1,14 +1,16 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 import selfPic from "../../assets/contactphoto.jpg";
-import { handlePhone } from "../controllers/contactHtml/handlePhone";
-import { handleEmail } from "../controllers/contactHtml/handleEmail";
-import { handleDate } from "../controllers/contactHtml/handleDate";
+import { getServerResponse1 } from "../modules/getServerRespone/getServerResponse1.js";
+import { getServerResponse3 } from "../modules/getServerRespone/getServerResponse3.js";
+import { getServerResponse2 } from "../modules/getServerRespone/getServerResponse2.js";
 
 export function Contact() {
   useEffect(componentDidMount, []);
   useEffect(componentDidUpdate);
   useEffect(componentDidUnmount, []);
+
+  const [outputMessage, setOutputMessage] = useState("");
   return (
     <>
       <main>
@@ -77,13 +79,14 @@ export function Contact() {
             <input type="submit" />
           </form>
         </section>
-        <output id="myTag"></output>
+        <output>{outputMessage}</output>
       </main>
       <footer>
         <p className="creatorName">Website created by David Billiot</p>
       </footer>
     </>
   );
+
   function componentDidMount() {
     document.title = "Playstation - Contact Page";
     console.log("Title mounted");
@@ -93,5 +96,33 @@ export function Contact() {
   }
   function componentDidUnmount() {
     console.log("Nothing to unmount");
+  }
+
+  // Moved parseResponse inside so the handlers can have access to it.
+  function parseResponse(resolveValue) {
+    const response = JSON.parse(resolveValue);
+    const message = response.message;
+    setOutputMessage(message);
+  }
+
+  // Handlers inside so they can have access to the setOutputMessage.
+  // Extracted them from controllers, adjusted, and moved old files to Archives.
+  function handleEmail(event) {
+    event.preventDefault();
+    setOutputMessage(` <br>Submitting your concerns. . . `);
+    const promise = new Promise(getServerResponse1);
+    promise.then(parseResponse);
+  }
+  function handleDate(event) {
+    event.preventDefault();
+    setOutputMessage(` <br>Sumbitting appointment. . .  <br>`);
+    const promise = new Promise(getServerResponse3);
+    promise.then(parseResponse);
+  }
+  function handlePhone(event) {
+    event.preventDefault();
+    setOutputMessage(` <br>Your info is being processed. . .<br>`);
+    const promise = new Promise(getServerResponse2);
+    promise.then(parseResponse);
   }
 }
