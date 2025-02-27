@@ -35309,9 +35309,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _assets_contactphoto_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/contactphoto.jpg */ "./assets/contactphoto.jpg");
-/* harmony import */ var _controllers_contactHtml_handlePhone__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/contactHtml/handlePhone */ "./src/controllers/contactHtml/handlePhone.js");
-/* harmony import */ var _controllers_contactHtml_handleEmail__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../controllers/contactHtml/handleEmail */ "./src/controllers/contactHtml/handleEmail.js");
-/* harmony import */ var _controllers_contactHtml_handleDate__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../controllers/contactHtml/handleDate */ "./src/controllers/contactHtml/handleDate.js");
+/* harmony import */ var _modules_getServerRespone_getServerResponse1_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../modules/getServerRespone/getServerResponse1.js */ "./src/modules/getServerRespone/getServerResponse1.js");
+/* harmony import */ var _modules_getServerRespone_getServerResponse3_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../modules/getServerRespone/getServerResponse3.js */ "./src/modules/getServerRespone/getServerResponse3.js");
+/* harmony import */ var _modules_getServerRespone_getServerResponse2_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../modules/getServerRespone/getServerResponse2.js */ "./src/modules/getServerRespone/getServerResponse2.js");
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 
@@ -35321,6 +35327,10 @@ function Contact() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+    _useState2 = _slicedToArray(_useState, 2),
+    outputMessage = _useState2[0],
+    setOutputMessage = _useState2[1];
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -35337,7 +35347,7 @@ function Contact() {
   }), " ", "BlahNonsense283@something.com", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "\uD83D\uDCDE 985 - 555 - 5555", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
     className: "bi bi-facebook"
   }), "@NotRealDavidFB")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, "Contact Customer Service"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
-    onSubmit: _controllers_contactHtml_handleEmail__WEBPACK_IMPORTED_MODULE_3__.handleEmail
+    onSubmit: handleEmail
   }, "Email: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     id: "emailSize",
     required: true,
@@ -35351,7 +35361,7 @@ function Contact() {
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "submit"
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, "Submit an appointment by phone"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
-    onSubmit: _controllers_contactHtml_handlePhone__WEBPACK_IMPORTED_MODULE_2__.handlePhone
+    onSubmit: handlePhone
   }, "Schedule a phone appointment:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "tel",
     placeholder: "XXX-XXX-XXXX",
@@ -35360,14 +35370,12 @@ function Contact() {
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "submit"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
-    onSubmit: _controllers_contactHtml_handleDate__WEBPACK_IMPORTED_MODULE_4__.handleDate
+    onSubmit: handleDate
   }, "Select date and time:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "datetime-local"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "submit"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("output", {
-    id: "myTag"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("output", null, outputMessage)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "creatorName"
   }, "Website created by David Billiot")));
   function componentDidMount() {
@@ -35379,6 +35387,34 @@ function Contact() {
   }
   function componentDidUnmount() {
     console.log("Nothing to unmount");
+  }
+
+  // Moved parseResponse inside so the handlers can have access to it.
+  function parseResponse(resolveValue) {
+    var response = JSON.parse(resolveValue);
+    var message = response.message;
+    setOutputMessage(message);
+  }
+
+  // Handlers inside so they can have access to the setOutputMessage.
+  // Extracted them from controllers, adjusted, and moved old files to Archives.
+  function handleEmail(event) {
+    event.preventDefault();
+    setOutputMessage(" <br>Submitting your concerns. . . ");
+    var promise = new Promise(_modules_getServerRespone_getServerResponse1_js__WEBPACK_IMPORTED_MODULE_2__.getServerResponse1);
+    promise.then(parseResponse);
+  }
+  function handleDate(event) {
+    event.preventDefault();
+    setOutputMessage(" <br>Sumbitting appointment. . .  <br>");
+    var promise = new Promise(_modules_getServerRespone_getServerResponse3_js__WEBPACK_IMPORTED_MODULE_3__.getServerResponse3);
+    promise.then(parseResponse);
+  }
+  function handlePhone(event) {
+    event.preventDefault();
+    setOutputMessage(" <br>Your info is being processed. . .<br>");
+    var promise = new Promise(_modules_getServerRespone_getServerResponse2_js__WEBPACK_IMPORTED_MODULE_4__.getServerResponse2);
+    promise.then(parseResponse);
   }
 }
 
@@ -36094,90 +36130,6 @@ function TFD(props) {
 
 /***/ }),
 
-/***/ "./src/controllers/contactHtml/handleDate.js":
-/*!***************************************************!*\
-  !*** ./src/controllers/contactHtml/handleDate.js ***!
-  \***************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   handleDate: () => (/* binding */ handleDate)
-/* harmony export */ });
-/* harmony import */ var _utils_output_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utils/output.js */ "./src/utils/output.js");
-/* harmony import */ var _modules_getServerRespone_getServerResponse3_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../modules/getServerRespone/getServerResponse3.js */ "./src/modules/getServerRespone/getServerResponse3.js");
-/* harmony import */ var _modules_parseResponse_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../modules/parseResponse.js */ "./src/modules/parseResponse.js");
-
-
-
-function handleDate(event) {
-  event.preventDefault();
-  // const dateForm = event.target;
-  // const dateInput = dateForm[0];
-  // const dateValue = dateInput.value;
-  (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)(" <br>Sumbitting appointment. . .  <br>");
-  var promise = new Promise(_modules_getServerRespone_getServerResponse3_js__WEBPACK_IMPORTED_MODULE_1__.getServerResponse3);
-  promise.then(_modules_parseResponse_js__WEBPACK_IMPORTED_MODULE_2__.parseResponse);
-}
-
-/***/ }),
-
-/***/ "./src/controllers/contactHtml/handleEmail.js":
-/*!****************************************************!*\
-  !*** ./src/controllers/contactHtml/handleEmail.js ***!
-  \****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   handleEmail: () => (/* binding */ handleEmail)
-/* harmony export */ });
-/* harmony import */ var _utils_output_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utils/output.js */ "./src/utils/output.js");
-/* harmony import */ var _modules_getServerRespone_getServerResponse1_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../modules/getServerRespone/getServerResponse1.js */ "./src/modules/getServerRespone/getServerResponse1.js");
-/* harmony import */ var _modules_parseResponse_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../modules/parseResponse.js */ "./src/modules/parseResponse.js");
-
-
-
-function handleEmail(event) {
-  event.preventDefault();
-  (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)(" <br>Submitting your concerns. . . ");
-  var promise = new Promise(_modules_getServerRespone_getServerResponse1_js__WEBPACK_IMPORTED_MODULE_1__.getServerResponse1);
-  promise.then(_modules_parseResponse_js__WEBPACK_IMPORTED_MODULE_2__.parseResponse);
-}
-
-/***/ }),
-
-/***/ "./src/controllers/contactHtml/handlePhone.js":
-/*!****************************************************!*\
-  !*** ./src/controllers/contactHtml/handlePhone.js ***!
-  \****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   handlePhone: () => (/* binding */ handlePhone)
-/* harmony export */ });
-/* harmony import */ var _utils_output_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utils/output.js */ "./src/utils/output.js");
-/* harmony import */ var _modules_getServerRespone_getServerResponse2_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../modules/getServerRespone/getServerResponse2.js */ "./src/modules/getServerRespone/getServerResponse2.js");
-/* harmony import */ var _modules_parseResponse_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../modules/parseResponse.js */ "./src/modules/parseResponse.js");
-
-
-
-function handlePhone(event) {
-  event.preventDefault();
-  // const phoneForm = event.target;
-  // const phoneInput = phoneForm[0];
-  // const phoneValue = phoneInput.value;
-  (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)(" <br>Your info is being processed. . .<br>");
-  var promise = new Promise(_modules_getServerRespone_getServerResponse2_js__WEBPACK_IMPORTED_MODULE_1__.getServerResponse2);
-  promise.then(_modules_parseResponse_js__WEBPACK_IMPORTED_MODULE_2__.parseResponse);
-}
-
-/***/ }),
-
 /***/ "./src/controllers/gamesHtml/handleClick.js":
 /*!**************************************************!*\
   !*** ./src/controllers/gamesHtml/handleClick.js ***!
@@ -36486,27 +36438,6 @@ __webpack_require__.r(__webpack_exports__);
 function parseResp(resolveValue) {
   var promise = resolveValue.text();
   promise.then(_viewResp_js__WEBPACK_IMPORTED_MODULE_0__.viewResp);
-}
-
-/***/ }),
-
-/***/ "./src/modules/parseResponse.js":
-/*!**************************************!*\
-  !*** ./src/modules/parseResponse.js ***!
-  \**************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   parseResponse: () => (/* binding */ parseResponse)
-/* harmony export */ });
-/* harmony import */ var _utils_output_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/output.js */ "./src/utils/output.js");
-
-function parseResponse(resolveValue) {
-  var response = JSON.parse(resolveValue);
-  var message = response.message;
-  (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)(message);
 }
 
 /***/ }),
