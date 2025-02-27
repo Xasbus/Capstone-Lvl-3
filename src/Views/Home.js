@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { ImageMap } from "./ImageMap";
+import "./Home.scss";
 
+// import styles directly
 export function Home() {
   useEffect(componentDidMount, []);
   useEffect(componentDidUpdate);
@@ -171,3 +173,8 @@ function componentDidUpdate() {
 function componentDidUnmount() {
   setTimeout(console.log("Nothing to unmount"), 2500);
 }
+
+// grids can be used to respond to the size of the screen.
+// row-cols-1 to 6
+// can also use # to set max columns based on size of screen, such as sm or xl
+// row-cols-sm-3, row-cols   then add the size of screen, followed by max number

@@ -10,6 +10,7 @@ export function Contact() {
   useEffect(componentDidUpdate);
   useEffect(componentDidUnmount, []);
 
+  // State variables affects whats rendered.
   const [outputMessage, setOutputMessage] = useState("");
   return (
     <>
@@ -36,22 +37,26 @@ export function Contact() {
         <section>
           <h3>Contact Customer Service</h3>
           <form onSubmit={handleEmail}>
-            Email: <br />
-            <input
-              id="emailSize"
-              required
-              name="myEmail"
-              type="email"
-              placeholder="Enter Your Email"
-            />
-            <p>
-              Summary of Issue:
-              <br />
-              <input id="emailSize2" type="text" placeholder="Text Here" />
-            </p>
-            <p>
-              <input type="submit" />
-            </p>
+            <fieldset id="emailSize">
+              <legend>
+                Email: <br />
+              </legend>
+
+              <input
+                required
+                name="myEmail"
+                type="email"
+                placeholder="Enter Your Email"
+              />
+              <legend>
+                Summary of Issue:
+                <br />
+                <input type="text" placeholder="Text Here" />
+              </legend>
+              <p>
+                <input type="submit" />
+              </p>
+            </fieldset>
           </form>
         </section>
         <section>
@@ -112,6 +117,8 @@ export function Contact() {
     setOutputMessage(` <br>Submitting your concerns. . . `);
     const promise = new Promise(getServerResponse1);
     promise.then(parseResponse);
+    // Promise are classes that run callback functions. getServerResponse1
+    // .then lets the code know it has to run after the resolve is done.
   }
   function handleDate(event) {
     event.preventDefault();

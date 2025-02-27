@@ -14,7 +14,9 @@ export async function authenticationAWS(email = "", password = "") {
       secretAccessKey: secretAccessKey,
     },
   };
-
+  // Constructor creates an object from a class.
+  // Use new -class name- with () after it.
+  // Always starts with Capital letter.
   const client = new DynamoDB(apiKey);
   const niceClient = DynamoDBDocument.from(client);
 
