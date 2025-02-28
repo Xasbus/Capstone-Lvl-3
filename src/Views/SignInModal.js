@@ -66,6 +66,11 @@ export function SignInModal(props) {
     if (errorMessage)
       setErrorMessage(errorMessage); //Set an errorMessage if there is one.
     else {
+      event.target;
+
+      const closeButton = document.getElementById("cancelButton");
+      closeButton.click();
+      inputs.reset();
       onSignIn();
     } // If there isn't errorMessage. Let it signIn with onSignIn. onSignIn is a prop at the top.
   }
