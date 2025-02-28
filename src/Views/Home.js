@@ -9,7 +9,7 @@ export function Home() {
   useEffect(componentDidUnmount, []);
   return (
     <>
-      <main>
+      <main id="homeMain">
         <img
           title="Playstation"
           alt="playstation title"

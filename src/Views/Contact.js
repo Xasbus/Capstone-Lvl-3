@@ -6,11 +6,13 @@ import { getServerResponse3 } from "../modules/getServerRespone/getServerRespons
 import { getServerResponse2 } from "../modules/getServerRespone/getServerResponse2.js";
 
 export function Contact() {
+  // search isolate
   useEffect(componentDidMount, []);
   useEffect(componentDidUpdate);
   useEffect(componentDidUnmount, []);
 
   // State variables affects whats rendered.
+  // search variables
   const [outputMessage, setOutputMessage] = useState("");
   return (
     <>
@@ -48,15 +50,14 @@ export function Contact() {
                 type="email"
                 placeholder="Enter Your Email"
               />
-              <legend>
-                Summary of Issue:
-                <br />
-                <input type="text" placeholder="Text Here" />
-              </legend>
-              <p>
-                <input type="submit" />
-              </p>
             </fieldset>
+            <label hmtlFor="summary">Summary of Issue:</label>
+
+            <br />
+            <input type="text" placeholder="Text Here" id="summary" />
+            <p>
+              <input type="submit" />
+            </p>
           </form>
         </section>
         <section>

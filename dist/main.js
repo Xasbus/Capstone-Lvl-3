@@ -32112,42 +32112,6 @@ module.exports = function (cssWithMappingToString) {
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
-/*!********************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
-  \********************************************************/
-/***/ ((module) => {
-
-"use strict";
-
-
-module.exports = function (url, options) {
-  if (!options) {
-    options = {};
-  }
-  if (!url) {
-    return url;
-  }
-  url = String(url.__esModule ? url["default"] : url);
-
-  // If url is already wrapped in quotes, remove them
-  if (/^['"].*['"]$/.test(url)) {
-    url = url.slice(1, -1);
-  }
-  if (options.hash) {
-    url += options.hash;
-  }
-
-  // Should url be wrapped?
-  // See https://drafts.csswg.org/css-values-3/#urls
-  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
-    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
-  }
-  return url;
-};
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/dist/runtime/sourceMaps.js":
 /*!************************************************************!*\
   !*** ./node_modules/css-loader/dist/runtime/sourceMaps.js ***!
@@ -35514,12 +35478,15 @@ function Contact() {
     name: "myEmail",
     type: "email",
     placeholder: "Enter Your Email"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("legend", null, "Summary of Issue:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    hmtlFor: "summary"
+  }, "Summary of Issue:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "text",
-    placeholder: "Text Here"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    placeholder: "Text Here",
+    id: "summary"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "submit"
-  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, "Submit an appointment by phone"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
+  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, "Submit an appointment by phone"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
     onSubmit: handlePhone
   }, "Schedule a phone appointment:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "tel",
@@ -35621,7 +35588,9 @@ function Games() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Carousel__WEBPACK_IMPORTED_MODULE_5__.Carousel, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     id: "thefirstdesendant",
     className: "titleColor"
-  }, "The First Desendant"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Videos_TFD__WEBPACK_IMPORTED_MODULE_2__.TFD, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, "The First Desendant"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Videos_TFD__WEBPACK_IMPORTED_MODULE_2__.TFD, {
+    src: "https://www.youtube.com/embed/wv5L9U_TUHQ?si=c2BUIg5_6cbfykx7"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "bold"
   }, "About The First Desendant"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("dialog", {
     open: true,
@@ -35761,7 +35730,9 @@ function Home() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
+    id: "homeMain"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     title: "Playstation",
     alt: "playstation title",
     width: "100%",
@@ -36278,7 +36249,7 @@ function TFD(props) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("iframe", {
     width: "100%",
     height: "100%",
-    src: "https://www.youtube.com/embed/wv5L9U_TUHQ?si=c2BUIg5_6cbfykx7",
+    src: src,
     title: "YouTube video player",
     frameBorder: "0",
     allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
@@ -36708,33 +36679,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
-
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/Game Of Squids.ttf */ "./assets/Game Of Squids.ttf"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../../assets/PS5-background-image.png */ "./assets/PS5-background-image.png"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
-var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `@font-face {
-  font-family: "GoS";
-  src: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
-}
-.italic {
+___CSS_LOADER_EXPORT___.push([module.id, `.italic {
   font-style: italic;
 }
 
 .bold {
   font-weight: bold;
-}
-
-body {
-  color: rgb(180, 180, 180);
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_1___});
 }
 
 .titleColor {
@@ -36764,14 +36719,6 @@ h1:hover {
   color: rgb(252, 0, 0);
 }
 
-main {
-  font-family: cursive;
-  text-align: center;
-  margin-left: 5vw;
-  margin-right: 5vw;
-  background-image: linear-gradient(rgba(30, 30, 30, 0.7), rgba(72, 2, 164, 0.7), rgba(68, 77, 4, 0.7));
-}
-
 footer {
   text-align: center !important;
   font-size: 15px;
@@ -36793,10 +36740,6 @@ a {
   border-color: rgba(0, 147, 0, 0.8);
   padding: 10px;
   margin: 10px;
-}
-
-p span {
-  color: rgb(255, 166, 0);
 }
 
 #eleShad:hover {
@@ -36831,7 +36774,18 @@ ul {
 
 .navTextColor {
   color: rgb(180, 180, 180);
-}`, "",{"version":3,"sources":["webpack://./src/Views/Home.scss"],"names":[],"mappings":"AASA;EACI,kBAAA;EACA,4CAAA;AARJ;AAuBA;EACI,kBAAA;AArBJ;;AAwBA;EACI,iBAAA;AArBJ;;AAwBA;EACI,yBAlCQ;EAmCR,yDAAA;AArBJ;;AAwBA;EACI,uBAtCQ;AAiBZ;;AAwBA;EACI,wBAzCS;AAoBb;;AAwBA;EACI,kBAAA;AArBJ;;AAwBA;EACI,kBAAA;EACA,mBAAA;EACA,wBAAA;AArBJ;AAsBI;EACI,kBAAA;AApBR;AAsBI;EACI,kBAAA;EACA,qBAAA;EACA,gBAAA;EACA,qBA9DG;AA0CX;;AAwBA;EACI,oBA5DU;EA6DV,kBAAA;EACA,gBAAA;EACA,iBAAA;EACA,qGAAA;AArBJ;;AAwBA;EACI,6BAAA;EACA,eAAA;AArBJ;;AAwBA;EACI,qBAAA;AArBJ;AAsBI;EACI,yBA9EG;AA0DX;;AAwBA;EACI,eAAA;AArBJ;;AAwBA;EACI,mBAAA;EACA,kCAvFS;EAwFT,aAAA;EACA,YAAA;AArBJ;;AA0BI;EACI,uBA9FG;AAuEX;;AA2BA;EAzFI,uBAAA;EAIA,qCAAA;EAIA,4BAAA;AA4DJ;;AA6BI;EACI,YAHK;AAvBb;;AA8BA;EACI,YAAA;AA3BJ;;AA8BA;EACI,qGAAA;AA3BJ;;AA8BA;EACI,gCAAA;AA3BJ;;AA8BA;EACI,gCAAA;AA3BJ;;AA8BA;EACI,8CAAA;AA3BJ;;AA6BA;EACI,yBAxIQ;AA8GZ","sourcesContent":["$redHover: rgb(252, 0, 0, 1);\r\n$colorBody: rgb(180, 180, 180, 1);\r\n$subTitles: rgb(204, 204, 0, 1);\r\n$greenHover: rgba(12, 167, 113, 1);\r\n$colorNav: rgba(180, 100, 100, 1);\r\n$formBorder: rgba(0, 147, 0, .8);\r\n$textSpan: rgba(255, 166, 0, 1);\r\n$primaryFont: cursive;\r\n$titleFont: \"GoS\";\r\n@font-face {\r\n    font-family: \"GoS\";\r\n    src: url(\"../../assets/Game\\ Of\\ Squids.ttf\");\r\n}\r\n\r\n@mixin shadowsBox {\r\n    box-shadow: 2px 2px red;\r\n}\r\n\r\n@mixin shadowText {\r\n    text-shadow: 1.5px 1.5px rgb(0, 0, 0);\r\n}\r\n\r\n@mixin bg-Color {\r\n    background-color: aquamarine;\r\n}\r\n\r\n.italic {\r\n    font-style: italic;\r\n}\r\n\r\n.bold {\r\n    font-weight: bold;\r\n}\r\n\r\nbody {\r\n    color: $colorBody;\r\n    background-image: url(../../assets/PS5-background-image.png);\r\n}\r\n\r\n.titleColor {\r\n    color: $subTitles;\r\n}\r\n\r\nh3:hover {\r\n    color: $greenHover;\r\n}\r\n\r\nh3 {\r\n    font-family: serif;\r\n}\r\n\r\nh1 {\r\n    text-align: center;\r\n    transform: scale(1);\r\n    transition: transform 1s;\r\n    & {\r\n        font-family: \"GoS\"\r\n    }\r\n    &:hover {\r\n        text-align: center;\r\n        transform: scale(1.5);\r\n        transition: 1.5s;\r\n        color: $redHover;\r\n    }\r\n}\r\n\r\nmain {\r\n    font-family: $primaryFont;\r\n    text-align: center;\r\n    margin-left: 5vw;\r\n    margin-right: 5vw;\r\n    background-image: linear-gradient(rgba(30, 30, 30, 0.7), rgba(72, 2, 164, 0.7), rgba(68, 77, 4, 0.7));\r\n}\r\n\r\nfooter {\r\n    text-align: center !important;\r\n    font-size: 15px;\r\n}\r\n\r\na {\r\n    text-decoration: none;\r\n    & {\r\n        color: $colorNav;\r\n    }\r\n}\r\n\r\n.creatorName {\r\n    font-size: 10px\r\n}\r\n\r\n.formClass {\r\n    border-style: solid;\r\n    border-color: $formBorder;\r\n    padding: 10px;\r\n    margin: 10px;\r\n}\r\n\r\n\r\np {\r\n    span {\r\n        color: $textSpan;\r\n    }\r\n}\r\n\r\n#eleShad:hover {\r\n    @include shadowsBox();\r\n    @include shadowText();\r\n    @include bg-Color();\r\n}\r\n\r\n$whiteColor: white;\r\np {\r\n    u {\r\n        color: $whiteColor;\r\n    }\r\n}\r\n\r\n.transparent {\r\n    opacity: 0.6;\r\n}\r\n\r\nul {  \r\n    background-image: linear-gradient(rgba(30, 30, 30, 0.7), rgba(72, 2, 164, 0.7), rgba(68, 77, 4, 0.7));  \r\n}\r\n\r\n.modalColor {\r\n    background-color: rgb(44, 6, 85);\r\n}\r\n\r\n.navColor {\r\n    background-color: rgb(44, 6, 85);\r\n}\r\n\r\n.colNavBarColor {\r\n    background-color:rgb(32, 112, 182)!important\r\n}\r\n.navTextColor {\r\n    color: $colorBody;\r\n}\r\n"],"sourceRoot":""}]);
+}
+
+#homeMain {
+  font-family: cursive;
+  text-align: center;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  background-image: linear-gradient(rgba(30, 30, 30, 0.7), rgba(72, 2, 164, 0.7), rgba(68, 77, 4, 0.7));
+}
+#homeMain p span {
+  color: rgb(255, 166, 0);
+}`, "",{"version":3,"sources":["webpack://./src/Views/Home.scss"],"names":[],"mappings":"AAsBA;EACE,kBAAA;AArBF;;AAwBA;EACE,iBAAA;AArBF;;AAwBA;EACE,uBA7BU;AAQZ;;AAwBA;EACE,wBAhCW;AAWb;;AAwBA;EACE,kBAAA;AArBF;;AAwBA;EACE,kBAAA;EACA,mBAAA;EACA,wBAAA;AArBF;AAsBE;EACE,kBAAA;AApBJ;AAsBE;EACE,kBAAA;EACA,qBAAA;EACA,gBAAA;EACA,qBArDO;AAiCX;;AAwBA;EACE,6BAAA;EACA,eAAA;AArBF;;AAwBA;EACE,qBAAA;AArBF;AAsBE;EACE,yBA7DO;AAyCX;;AAwBA;EACE,eAAA;AArBF;;AAwBA;EACE,mBAAA;EACA,kCAtEW;EAuEX,aAAA;EACA,YAAA;AArBF;;AAwBA;EArEE,uBAAA;EAIA,qCAAA;EAIA,4BAAA;AA2CF;;AA0BE;EACE,YAHS;AApBb;;AA2BA;EACE,YAAA;AAxBF;;AA2BA;EACE,qGAAA;AAxBF;;AA+BA;EACE,gCAAA;AA5BF;;AA+BA;EACE,gCAAA;AA5BF;;AA+BA;EACE,8CAAA;AA5BF;;AA8BA;EACE,yBApHU;AAyFZ;;AA6BA;EACE,oBAjHY;EAkHZ,kBAAA;EACA,gBAAA;EACA,iBAAA;EACA,qGAAA;AA1BF;AAgCI;EACE,uBA7HK;AA+FX","sourcesContent":["$redHover: rgb(252, 0, 0, 1);\r\n$colorBody: rgb(180, 180, 180, 1);\r\n$subTitles: rgb(204, 204, 0, 1);\r\n$greenHover: rgba(12, 167, 113, 1);\r\n$colorNav: rgba(180, 100, 100, 1);\r\n$formBorder: rgba(0, 147, 0, 0.8);\r\n$textSpan: rgba(255, 166, 0, 1);\r\n$primaryFont: cursive;\r\n$titleFont: \"GoS\";\r\n\r\n@mixin shadowsBox {\r\n  box-shadow: 2px 2px red;\r\n}\r\n\r\n@mixin shadowText {\r\n  text-shadow: 1.5px 1.5px rgb(0, 0, 0);\r\n}\r\n\r\n@mixin bg-Color {\r\n  background-color: aquamarine;\r\n}\r\n\r\n.italic {\r\n  font-style: italic;\r\n}\r\n\r\n.bold {\r\n  font-weight: bold;\r\n}\r\n\r\n.titleColor {\r\n  color: $subTitles;\r\n}\r\n\r\nh3:hover {\r\n  color: $greenHover;\r\n}\r\n\r\nh3 {\r\n  font-family: serif;\r\n}\r\n\r\nh1 {\r\n  text-align: center;\r\n  transform: scale(1);\r\n  transition: transform 1s;\r\n  & {\r\n    font-family: \"GoS\";\r\n  }\r\n  &:hover {\r\n    text-align: center;\r\n    transform: scale(1.5);\r\n    transition: 1.5s;\r\n    color: $redHover;\r\n  }\r\n}\r\n\r\nfooter {\r\n  text-align: center !important;\r\n  font-size: 15px;\r\n}\r\n\r\na {\r\n  text-decoration: none;\r\n  & {\r\n    color: $colorNav;\r\n  }\r\n}\r\n\r\n.creatorName {\r\n  font-size: 10px;\r\n}\r\n\r\n.formClass {\r\n  border-style: solid;\r\n  border-color: $formBorder;\r\n  padding: 10px;\r\n  margin: 10px;\r\n}\r\n\r\n#eleShad:hover {\r\n  @include shadowsBox();\r\n  @include shadowText();\r\n  @include bg-Color();\r\n}\r\n\r\n$whiteColor: white;\r\np {\r\n  u {\r\n    color: $whiteColor;\r\n  }\r\n}\r\n\r\n.transparent {\r\n  opacity: 0.6;\r\n}\r\n\r\nul {\r\n  background-image: linear-gradient(\r\n    rgba(30, 30, 30, 0.7),\r\n    rgba(72, 2, 164, 0.7),\r\n    rgba(68, 77, 4, 0.7)\r\n  );\r\n}\r\n\r\n.modalColor {\r\n  background-color: rgb(44, 6, 85);\r\n}\r\n\r\n.navColor {\r\n  background-color: rgb(44, 6, 85);\r\n}\r\n\r\n.colNavBarColor {\r\n  background-color: rgb(32, 112, 182) !important;\r\n}\r\n.navTextColor {\r\n  color: $colorBody;\r\n}\r\n#homeMain {\r\n  font-family: $primaryFont;\r\n  text-align: center;\r\n  margin-left: 5vw;\r\n  margin-right: 5vw;\r\n  background-image: linear-gradient(\r\n    rgba(30, 30, 30, 0.7),\r\n    rgba(72, 2, 164, 0.7),\r\n    rgba(68, 77, 4, 0.7)\r\n  );\r\n  p {\r\n    span {\r\n      color: $textSpan;\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -37161,28 +37115,6 @@ function styleTagTransform(css, styleElement) {
   }
 }
 module.exports = styleTagTransform;
-
-/***/ }),
-
-/***/ "./assets/Game Of Squids.ttf":
-/*!***********************************!*\
-  !*** ./assets/Game Of Squids.ttf ***!
-  \***********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "e0727d0bce17b79e412d.ttf";
-
-/***/ }),
-
-/***/ "./assets/PS5-background-image.png":
-/*!*****************************************!*\
-  !*** ./assets/PS5-background-image.png ***!
-  \*****************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "5ef55a8aedb74aede5b5.png";
 
 /***/ }),
 
@@ -48058,9 +47990,6 @@ module.exports = /*#__PURE__*/JSON.parse('{"partitions":[{"id":"aws","outputs":{
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = __webpack_modules__;
-/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -48146,32 +48075,6 @@ module.exports = /*#__PURE__*/JSON.parse('{"partitions":[{"id":"aws","outputs":{
 /******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/jsonp chunk loading */
-/******/ 	(() => {
-/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
-/******/ 		
-/******/ 		// object to store loaded and loading chunks
-/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
-/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
-/******/ 		var installedChunks = {
-/******/ 			"main": 0
-/******/ 		};
-/******/ 		
-/******/ 		// no chunk on demand loading
-/******/ 		
-/******/ 		// no prefetching
-/******/ 		
-/******/ 		// no preloaded
-/******/ 		
-/******/ 		// no HMR
-/******/ 		
-/******/ 		// no HMR manifest
-/******/ 		
-/******/ 		// no on chunks loaded
-/******/ 		
-/******/ 		// no jsonp function
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/nonce */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nc = undefined;
@@ -48217,7 +48120,7 @@ if (domain === "xasbus.github.io") rootPath = "/Capstone-Lvl-3";
 
 var bodyTag = document.getElementById("bodyTag");
 var root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(bodyTag);
-root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_HandleRefresh__WEBPACK_IMPORTED_MODULE_9__.HandleRefresh, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Header__WEBPACK_IMPORTED_MODULE_8__.Header, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Route, {
+root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_HandleRefresh__WEBPACK_IMPORTED_MODULE_9__.HandleRefresh, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Header__WEBPACK_IMPORTED_MODULE_8__.Header, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Route, {
   path: "".concat(rootPath, "/"),
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Home__WEBPACK_IMPORTED_MODULE_2__.Home, null)
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Route, {
@@ -48244,7 +48147,7 @@ root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElem
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_10__.Route, {
   path: "".concat(rootPath, "/contact"),
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Contact__WEBPACK_IMPORTED_MODULE_7__.Contact, null)
-}))));
+})))));
 })();
 
 /******/ })()

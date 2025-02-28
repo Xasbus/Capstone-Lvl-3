@@ -27,7 +27,7 @@ export function Games() {
           <h3 id="thefirstdesendant" className="titleColor">
             The First Desendant
           </h3>
-          <TFD />
+          <TFD src="https://www.youtube.com/embed/wv5L9U_TUHQ?si=c2BUIg5_6cbfykx7" />
           <div className="bold">About The First Desendant</div>
           <dialog open className="alert alert-success">
             Free Limited Time!!

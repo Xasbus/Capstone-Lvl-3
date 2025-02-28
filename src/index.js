@@ -21,18 +21,19 @@ const root = createRoot(bodyTag);
 
 root.render(
   <BrowserRouter>
-    <HandleRefresh />
-    <Header />
-    <Routes>
-      <Route path={`${rootPath}/`} element={<Home />} />
-      <Route path={`${rootPath}/home`} element={<Home />} />
-      <Route path={`${rootPath}/index.html`} element={<Home />} />
-      <Route path={`${rootPath}/404.html`} element={<Home />} />
-      <Route path={`${rootPath}/consoles`} element={<Consoles />} />
-      <Route path={`${rootPath}/games`} element={<Games />} />
-      <Route path={`${rootPath}/accessories`} element={<Accessories />} />
-      <Route path={`${rootPath}/about`} element={<About />} />
-      <Route path={`${rootPath}/contact`} element={<Contact />} />
-    </Routes>
+    <HandleRefresh>
+      <Header />
+      <Routes>
+        <Route path={`${rootPath}/`} element={<Home />} />
+        <Route path={`${rootPath}/home`} element={<Home />} />
+        <Route path={`${rootPath}/index.html`} element={<Home />} />
+        <Route path={`${rootPath}/404.html`} element={<Home />} />
+        <Route path={`${rootPath}/consoles`} element={<Consoles />} />
+        <Route path={`${rootPath}/games`} element={<Games />} />
+        <Route path={`${rootPath}/accessories`} element={<Accessories />} />
+        <Route path={`${rootPath}/about`} element={<About />} />
+        <Route path={`${rootPath}/contact`} element={<Contact />} />
+      </Routes>
+    </HandleRefresh>
   </BrowserRouter>
 );
