@@ -36168,7 +36168,7 @@ function SignInModal(props) {
   // }
   function _handleSubmit() {
     _handleSubmit = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee(event) {
-      var errorMessage, closeButton;
+      var errorMessage;
       return _regeneratorRuntime().wrap(function _callee$(_context) {
         while (1) switch (_context.prev = _context.next) {
           case 0:
@@ -36179,9 +36179,6 @@ function SignInModal(props) {
             if (errorMessage) setErrorMessage(errorMessage); //Set an errorMessage if there is one.
             else {
               event.target;
-              closeButton = document.getElementById("cancelButton");
-              closeButton.click();
-              inputs.reset();
               onSignIn();
             } // If there isn't errorMessage. Let it signIn with onSignIn. onSignIn is a prop at the top.
           case 4:
@@ -36494,6 +36491,7 @@ function _handleSignIn() {
       password,
       resolveValue,
       isAuthenticated,
+      closeButton,
       _args = arguments;
     return _regeneratorRuntime().wrap(function _callee$(_context) {
       while (1) switch (_context.prev = _context.next) {
@@ -36511,14 +36509,18 @@ function _handleSignIn() {
           resolveValue = _context.sent;
           isAuthenticated = resolveValue;
           if (!isAuthenticated) {
-            _context.next = 14;
+            _context.next = 17;
             break;
           }
-          _context.next = 15;
+          closeButton = document.getElementById("cancelButton");
+          closeButton.click();
+          inputs.reset();
+          // onSignIn();
+          _context.next = 18;
           break;
-        case 14:
+        case 17:
           return _context.abrupt("return", "The email and password are incorrect.");
-        case 15:
+        case 18:
         case "end":
           return _context.stop();
       }

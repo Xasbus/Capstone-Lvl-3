@@ -18,9 +18,9 @@ export async function handleSignIn(
   const resolveValue = await authenticationAWS(email, password);
   const isAuthenticated = resolveValue;
   if (isAuthenticated) {
-    // const closeButton = document.getElementById("cancelButton");
-    // closeButton.click();
-    // inputs.reset();
+    const closeButton = document.getElementById("cancelButton");
+    closeButton.click();
+    inputs.reset();
     // onSignIn();
   } else return "The email and password are incorrect.";
   // The return value is the resolve value of the function.
