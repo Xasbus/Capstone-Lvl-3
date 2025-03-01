@@ -35702,6 +35702,9 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 function HandleRefresh(props) {
   var children = props.children;
   var navigateTo = (0,react_router__WEBPACK_IMPORTED_MODULE_1__.useNavigate)();
+  // the hook gives functions the ability to use BroswerRouter
+  // useNavigate hook so it refreshes to the last page user is on.
+  // returns a functions (navigateTo) that accepts a path string
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
     _useState2 = _slicedToArray(_useState, 2),
     didMount = _useState2[0],
@@ -35709,9 +35712,9 @@ function HandleRefresh(props) {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
   if (didMount) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, children);else return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null);
   function componentDidMount() {
-    var redirectPath = localStorage.getItem("redirect");
+    var redirectPath = localStorage.getItem("redirect"); // returns the value of a key
     if (redirectPath) {
-      navigateTo(redirectPath);
+      navigateTo(redirectPath); // BrowserRouter will load the path string in redirectPath
       localStorage.setItem("redirect", "");
       setTimeout(function () {
         return setDidMount(true);
@@ -35758,16 +35761,33 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _ImageMap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ImageMap */ "./src/Views/ImageMap.js");
-/* harmony import */ var _Home_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Home.scss */ "./src/Views/Home.scss");
+/* harmony import */ var _assets_gamePic1_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/gamePic1.jpg */ "./assets/gamePic1.jpg");
+/* harmony import */ var _assets_gamePic2_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/gamePic2.jpg */ "./assets/gamePic2.jpg");
+/* harmony import */ var _assets_gamePic3_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/gamePic3.jpg */ "./assets/gamePic3.jpg");
+/* harmony import */ var _Home_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Home.scss */ "./src/Views/Home.scss");
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
+
+
 
 
 
 
 // import styles directly
 function Home() {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState2 = _slicedToArray(_useState, 2),
+    didMount = _useState2[0],
+    setDidMount = _useState2[1];
+  // didMount is set to false
+
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
     id: "homeMain"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
@@ -35776,8 +35796,18 @@ function Home() {
     width: "100%",
     height: "100px",
     src: "https://cdn.glitch.global/484456c7-95c6-4c6d-8254-08d84585b7a3/f83b7c7f-1593-465d-bd43-6e8becdd04a4.image.png?v=1722101474400"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("u", null, "PlayStation")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
     className: "backgroundColor"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "container text-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("u", null, "PlayStation")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     id: "consoles"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
@@ -35786,29 +35816,88 @@ function Home() {
     width: "50%",
     height: "30%",
     src: "https://gmedia.playstation.com/is/image/SIEPDC/ps5-slim-dualsense-image-block-01-en-16nov23?$1600px--t$"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
-    className: "titleColor"
-  }, "Consoles"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Experience an all-new generation of incredible PlayStation games. Lightning Speed. Breath-taking Immersion. Stunning Gameplay"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Lorem ipsum odor amet, consectetuer adipiscing elit. Habitasse tristique ridiculus tristique dictum risus augue nibh. Quisque purus pretium a fames vulputate auctor sit ligula. Ridiculus posuere consequat facilisis commodo nulla senectus egestas integer. Penatibus in fermentum parturient morbi at varius. Sit aliquet clasds inceptos ligula blandit mi neque tempus. Vitae molestie fusce tempus ridiculus mollis lacinia vehicula. Purus platea viverra ac egestas hac?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Clasds dis ad sed donec est. Vehicula torquent mauris posuere praesent, tortor ridiculus pulvinar erat. Vel porttitor praesent aliquam litora varius egestas. Ante consequat luctus praesent sit hac aliquam maximus. Vulputate sociosqu lacus mauris erat venenatis aptent. Netus aliquet augue vulputate maecenas finibus vulputate massa montes. Sit montes aptent eleifend ac elementum felis erat quisque enim. Conubia volutpat adipiscing ac luctus eget metus sapien elit. Augue eros ligula sodales elementum vivamus semper pellentesque ligula."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col titleColor"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, "Consoles"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row row-cols-sm-1 row-cols-lg-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Experience an all-new generation of incredible PlayStation games. Lightning Speed. Breath-taking Immersion. Stunning Gameplay")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Lorem ipsum odor amet, consectetuer adipiscing elit. Habitasse tristique ridiculus tristique dictum risus augue nibh. Quisque purus pretium a fames vulputate auctor sit ligula. Ridiculus posuere consequat facilisis commodo nulla senectus egestas integer. Penatibus in fermentum parturient morbi at varius. Sit aliquet clasds inceptos ligula blandit mi neque tempus. Vitae molestie fusce tempus ridiculus mollis lacinia vehicula. Purus platea viverra ac egestas hac?")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Clasds dis ad sed donec est. Vehicula torquent mauris posuere praesent, tortor ridiculus pulvinar erat. Vel porttitor praesent aliquam litora varius egestas. Ante consequat luctus praesent sit hac aliquam maximus. Vulputate sociosqu lacus mauris erat venenatis aptent. Netus aliquet augue vulputate maecenas finibus vulputate massa montes. Sit montes aptent eleifend ac elementum felis erat quisque enim. Conubia volutpat adipiscing ac luctus eget metus sapien elit. Augue eros ligula sodales elementum vivamus semper pellentesque ligula.")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "container text-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col",
     id: "games"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    title: "assorted characters",
-    alt: "assorted characters",
-    width: "50%",
-    height: "30%",
-    src: "https://th.bing.com/th?id=OIP.ZuCoVty7pZYDA3t9Lz3l6QAAAA&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
-    className: "titleColor"
-  }, "Games"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    title: "Baldur's Gate 3",
+    alt: "Baldur's Gate 3",
+    width: "100%",
+    height: "100%",
+    src: _assets_gamePic1_jpg__WEBPACK_IMPORTED_MODULE_2__
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    title: "Skull & Bones",
+    alt: "Skull & Bones",
+    width: "100%",
+    height: "100%",
+    src: _assets_gamePic2_jpg__WEBPACK_IMPORTED_MODULE_3__
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    title: "Final Fantasy XIV",
+    alt: "Final Fantasy XIV",
+    width: "100%",
+    height: "100%",
+    src: _assets_gamePic3_jpg__WEBPACK_IMPORTED_MODULE_4__
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col titleColor"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, "Games", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "spinner-grow text-success"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "badge bg-success"
-  }, "ON SALE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Discover the games you want, from exclusive blockbusters to innovative indies, all brought to life with the power of the PS5\u2122 console."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Natoque mus curae leo ut commodo, sapien interdum. Dui vel risus erat magna at dui fusce. Malesuada praesent litora vulputate tempor accumsan adipiscing? Dictum classss quisque suscipit aptent vestibulum ipsum semper ad ultrices. Est dui diam ipsum penatibus lacinia posuere metus dui mus. Ultricies praesent elementum primis elementum sollicitudin mus. Sollicitudin torquent magnis fames cubilia eros quis sem. Habitasse consectetur ipsum ultricies inceptos vestibulum per sagittis. Massa enim fringilla; rutrum clwass quis consectetur eros."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Sapien libero mi vehicula mauris; feugiat auctor accumsan. Placerat habitant suspendisse elit donec sed curae phasellus tempus. Congue fermentum consectetur praesent cursus, aenean lobortis tristique. Aliquet ac ac proin condimentum suspendisse a at. Morbi malesuada massa eget id suspendisse. Elit maximus hac montes leo semper varius. Senectus ac aenean taciti penatibus posuere accumsan nullam. Etiam finibus risus neque urna dis tortor. Laoreet turpis dictum clrass sociosqu mi at molestie."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", {
+  }, "ON SALE")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row row-cols-sm-1 row-cols-lg-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Discover the games you want, from exclusive blockbusters to innovative indies, all brought to life with the power of the PS5\u2122 console.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Natoque mus curae leo ut commodo, sapien interdum. Dui vel risus erat magna at dui fusce. Malesuada praesent litora vulputate tempor accumsan adipiscing? Dictum quisque suscipit aptent vestibulum ipsum semper ad ultrices. Est dui diam ipsum penatibus lacinia posuere metus dui mus. Ultricies praesent elementum primis elementum sollicitudin mus. Sollicitudin torquent magnis fames cubilia eros quis sem. Habitasse consectetur ipsum ultricies inceptos vestibulum per sagittis. Massa enim fringilla; rutrum clwass quis consectetur eros.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Sapien libero mi vehicula mauris; feugiat auctor accumsan. Placerat habitant suspendisse elit donec sed curae phasellus tempus. Congue fermentum consectetur praesent cursus, aenean lobortis tristique. Aliquet ac ac proin condimentum suspendisse a at. Morbi malesuada massa eget id suspendisse. Elit maximus hac montes leo semper varius. Senectus ac aenean taciti penatibus posuere accumsan nullam. Etiam finibus risus neque urna dis tortor. Laoreet turpis dictum clrass sociosqu mi at molestie.")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "container text-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", {
     id: "accessories"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ImageMap__WEBPACK_IMPORTED_MODULE_1__.ImageMap, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ImageMap__WEBPACK_IMPORTED_MODULE_1__.ImageMap, null)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     className: "titleColor"
   }, "Accessories ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
     className: "bi bi-controller"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Build your perfect gaming setup with controllers, headsets and other accessories for your PS5\xAE or PS4\u2122 console."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Diam montes euismod orci lobortis hac eleifend mus ridiculus. Proin accumsan phasellus in maximus magna adipiscing sagittis. Venenatis tristique elit malesuada hendrerit inceptos. Malesuada diam suspendisse sollicitudin quisque felis. Montes diam felis elit ipsum quis lectus consectetur ullamcorper. Tempus donec lacinia mus suscipit dignissim et dignissim inceptos? Ad varius nibh iaculis pellentesque lacus cubilia."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Mattis facilisis potenti venenatis magna cubilia ligula venenatis. Consequat tortor fermentum id conubia, primis cras. Dolor maximus enim class posuere vivamus nam volutpat. Sagittis eget laoreet tristique primis, sit massa vehicula. Libero natoque lobortis orci, velit dictumst luctus non. Egestas magnis nulla nulla pharetra massa platea porttitor scelerisque. Hendrerit donec eget; nunc gravida suscipit hac et pretium. Morbi odio class dis; dolor consequat condimentum convallis. Tempor odio odio lacus ligula in lacinia fusce efficitur parturient."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row row-cols-sm-1 row-cols-lg-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Build your perfect gaming setup with controllers, headsets and other accessories for your PS5\xAE or PS4\u2122 console.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Diam montes euismod orci lobortis hac eleifend mus ridiculus. Proin accumsan phasellus in maximus magna adipiscing sagittis. Venenatis tristique elit malesuada hendrerit inceptos. Malesuada diam suspendisse sollicitudin quisque felis. Montes diam felis elit ipsum quis lectus consectetur ullamcorper. Tempus donec lacinia mus suscipit dignissim et dignissim inceptos? Ad varius nibh iaculis pellentesque lacus cubilia.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Mattis facilisis potenti venenatis magna cubilia ligula venenatis. Consequat tortor fermentum id conubia, primis cras. Dolor maximus enim claswad posuere vivamus nam volutpat. Sagittis eget laoreet tristique primis, sit massa vehicula. Libero natoque lobortis orci, velit dictumst luctus non. Egestas magnis nulla nulla pharetra massa platea porttitor scelerisque. Hendrerit donec eget; nunc gravida suscipit hac et pretium. Morbi odio clasdw dis; dolor consequat condimentum convallis. Tempor odio odio lacus ligula in lacinia fusce efficitur parturient.")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("hr", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: "#consoles"
   }, "Consoles"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: "#games"
@@ -35817,22 +35906,18 @@ function Home() {
   }, "Accessories")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "creatorName"
   }, "Website created by David Billiot")));
+  // componentDidMount will run and mount the title in the tab
+  function componentDidMount() {
+    document.title = "Unofficial Playstation Site";
+    console.log("Title mounted");
+  }
+  function componentDidUpdate() {
+    if (!didMount) {
+      // if !didMount and is still false, setDidMount changes it to true and will log into the console
+      setDidMount(true);
+    }
+  }
 }
-function componentDidMount() {
-  document.title = "Unofficial Playstation Site";
-  console.log("Title mounted");
-}
-function componentDidUpdate() {
-  setTimeout(console.log("Nothing to update"), 2000);
-}
-function componentDidUnmount() {
-  setTimeout(console.log("Nothing to unmount"), 2500);
-}
-
-// grids can be used to respond to the size of the screen.
-// row-cols-1 to 6
-// can also use # to set max columns based on size of screen, such as sm or xl
-// row-cols-sm-3, row-cols   then add the size of screen, followed by max number
 
 /***/ }),
 
@@ -35927,7 +36012,8 @@ function SignInArea() {
     didMount = _useState6[0],
     setDidMount = _useState6[1];
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, [isSignedIn]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, [isSignedIn]); // Will run everytime isSignedIn changes
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, button);
   function componentDidMount() {
     console.log("MOUNT PHASE: SignInArea");
@@ -35939,8 +36025,13 @@ function SignInArea() {
     }));
   }
   function componentDidUpdate() {
+    // check to see if didMount is true. Prevents the code from running on mount phase.
     if (didMount) {
       console.log("UPDATE PHASE: SignInArea");
+
+      // check value of isSignedIn - updates the button using setButton
+      // if true - sets button to SignOutModal
+      // if false - sets button to SignInModal
       if (isSignedIn) setButton(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SignOutModal__WEBPACK_IMPORTED_MODULE_2__.SignOutModal, {
         onSignOut: handleSignOut
       }));else setButton(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SignInModal__WEBPACK_IMPORTED_MODULE_1__.SignInModal, {
@@ -36401,6 +36492,7 @@ function _handleSignIn() {
       passwordInput,
       email,
       password,
+      resolveValue,
       isAuthenticated,
       _args = arguments;
     return _regeneratorRuntime().wrap(function _callee$(_context) {
@@ -36416,16 +36508,17 @@ function _handleSignIn() {
           _context.next = 9;
           return (0,_modules_loginAuthentication_authenticationAWS__WEBPACK_IMPORTED_MODULE_0__.authenticationAWS)(email, password);
         case 9:
-          isAuthenticated = _context.sent;
+          resolveValue = _context.sent;
+          isAuthenticated = resolveValue;
           if (!isAuthenticated) {
-            _context.next = 13;
+            _context.next = 14;
             break;
           }
-          _context.next = 14;
+          _context.next = 15;
           break;
-        case 13:
-          return _context.abrupt("return", "The email and password are incorrect.");
         case 14:
+          return _context.abrupt("return", "The email and password are incorrect.");
+        case 15:
         case "end":
           return _context.stop();
       }
@@ -37411,6 +37504,39 @@ module.exports = __webpack_require__.p + "c0c907ce2f3a39dfe9ad.jpg";
 
 "use strict";
 module.exports = __webpack_require__.p + "afbff1e84385bd709077.jpg";
+
+/***/ }),
+
+/***/ "./assets/gamePic1.jpg":
+/*!*****************************!*\
+  !*** ./assets/gamePic1.jpg ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "fba3260536230c1e5f8f.jpg";
+
+/***/ }),
+
+/***/ "./assets/gamePic2.jpg":
+/*!*****************************!*\
+  !*** ./assets/gamePic2.jpg ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "1d9b8b10e0d2d4a9ffc3.jpg";
+
+/***/ }),
+
+/***/ "./assets/gamePic3.jpg":
+/*!*****************************!*\
+  !*** ./assets/gamePic3.jpg ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "87bb7d05590070ae947a.jpg";
 
 /***/ }),
 

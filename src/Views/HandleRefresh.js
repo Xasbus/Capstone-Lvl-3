@@ -11,6 +11,9 @@ import { useNavigate } from "react-router";
 export function HandleRefresh(props) {
   const children = props.children;
   const navigateTo = useNavigate();
+  // the hook gives functions the ability to use BroswerRouter
+  // useNavigate hook so it refreshes to the last page user is on.
+  // returns a functions (navigateTo) that accepts a path string
   const [didMount, setDidMount] = useState(false);
   useEffect(componentDidMount, []);
 
@@ -18,9 +21,9 @@ export function HandleRefresh(props) {
   else return <></>;
 
   function componentDidMount() {
-    const redirectPath = localStorage.getItem("redirect");
+    const redirectPath = localStorage.getItem("redirect"); // returns the value of a key
     if (redirectPath) {
-      navigateTo(redirectPath);
+      navigateTo(redirectPath); // BrowserRouter will load the path string in redirectPath
       localStorage.setItem("redirect", "");
       setTimeout(() => setDidMount(true), 1000);
     } else setDidMount(true);

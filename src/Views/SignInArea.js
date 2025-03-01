@@ -8,7 +8,7 @@ export function SignInArea() {
   const [didMount, setDidMount] = useState(false);
 
   useEffect(componentDidMount, []);
-  useEffect(componentDidUpdate, [isSignedIn]);
+  useEffect(componentDidUpdate, [isSignedIn]); // Will run everytime isSignedIn changes
 
   return <>{button}</>;
 
@@ -21,9 +21,13 @@ export function SignInArea() {
   }
 
   function componentDidUpdate() {
+    // check to see if didMount is true. Prevents the code from running on mount phase.
     if (didMount) {
       console.log("UPDATE PHASE: SignInArea");
 
+      // check value of isSignedIn - updates the button using setButton
+      // if true - sets button to SignOutModal
+      // if false - sets button to SignInModal
       if (isSignedIn) setButton(<SignOutModal onSignOut={handleSignOut} />);
       else setButton(<SignInModal onSignIn={handleSignIn} />);
     }

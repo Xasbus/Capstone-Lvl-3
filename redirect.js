@@ -9,6 +9,7 @@
  **************************************************************/
 
 const rootPath = "/Capstone-Lvl-3";
-const path = window.location.pathname;
-window.localStorage.setItem("redirect", path);
+const path = window.location.pathname; //getting current url with pathname
+// saving the pathname to path and saving it in localStorage
+window.localStorage.setItem("redirect", path); // stores key and value in browser memory
 window.location.replace(rootPath);

@@ -15,13 +15,16 @@ export async function handleSignIn(
   const password = passwordInput.value;
 
   // use a variable to receive the resolve value from await function
-  const isAuthenticated = await authenticationAWS(email, password);
+  const resolveValue = await authenticationAWS(email, password);
+  const isAuthenticated = resolveValue;
   if (isAuthenticated) {
     // const closeButton = document.getElementById("cancelButton");
     // closeButton.click();
     // inputs.reset();
     // onSignIn();
   } else return "The email and password are incorrect.";
+  // The return value is the resolve value of the function.
+
   //Instead of setting the errorMessage. It can just return it.
   // Setting the errorMessage from handleSubmit.
 }
