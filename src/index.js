@@ -9,6 +9,7 @@ import { About } from "./Views/About";
 import { Contact } from "./Views/Contact";
 import { Header } from "./Views/Header";
 import { HandleRefresh } from "./Views/HandleRefresh";
+import "./index.scss";
 
 const domain = window.location.hostname; // Used to view the hostname you are in.
 let rootPath = ""; // rootpath needs to be blank and able to change
