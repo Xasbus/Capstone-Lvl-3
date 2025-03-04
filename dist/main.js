@@ -14,8 +14,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   region: () => (/* binding */ region),
 /* harmony export */   secretAccessKey: () => (/* binding */ secretAccessKey)
 /* harmony export */ });
-var accessKeyId = "AKIAXGZAMKF62TTTTN5U";
-var secretAccessKey = "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";
+var accessKeyId = "AKIAXGZAMKF65Y6SJCNF";
+var secretAccessKey = "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";
 var region = "us-east-2";
 
 /***/ }),
