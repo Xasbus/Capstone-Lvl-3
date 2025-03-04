@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { handleClick } from "../controllers/gamesHtml/handleClick";
 import { TFD } from "./Videos/TFD";
 import { GoW } from "./Videos/GoW";
@@ -6,9 +6,6 @@ import { StellarBlade } from "./Videos/StellarBlade";
 import { Carousel } from "./Carousel";
 
 export function Games() {
-  useEffect(componentDidUpdate);
-  useEffect(compontentDidUnmount, []);
-
   return (
     <>
       <main>
@@ -20,7 +17,9 @@ export function Games() {
         />
         <h1>Video Games</h1>
         <div style={{ width: "65%", margin: "auto" }}>
-          <Carousel />
+          <div data-testid="carouselTest">
+            <Carousel />
+          </div>
         </div>
 
         <article>
@@ -101,10 +100,4 @@ export function Games() {
       </footer>
     </>
   );
-  function componentDidUpdate() {
-    setTimeout(console.log("component updated."), 2000);
-  }
-  function compontentDidUnmount() {
-    setTimeout(console.log("component unmounted"), 3000);
-  }
 }

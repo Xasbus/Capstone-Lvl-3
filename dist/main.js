@@ -14,8 +14,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   region: () => (/* binding */ region),
 /* harmony export */   secretAccessKey: () => (/* binding */ secretAccessKey)
 /* harmony export */ });
-var accessKeyId = "AKIAXGZAMKF6QJZVQTAD";
-var secretAccessKey = "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";
+var accessKeyId = "AKIAXGZAMKF62TTTTN5U";
+var secretAccessKey = "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";
 var region = "us-east-2";
 
 /***/ }),
@@ -35611,8 +35611,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Games() {
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(compontentDidUnmount, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     alt: "various games",
     width: "100%",
@@ -35623,7 +35621,9 @@ function Games() {
       width: "65%",
       margin: "auto"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Carousel__WEBPACK_IMPORTED_MODULE_5__.Carousel, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    "data-testid": "carouselTest"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Carousel__WEBPACK_IMPORTED_MODULE_5__.Carousel, null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     id: "thefirstdesendant",
     className: "titleColor"
   }, "The First Desendant"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Videos_TFD__WEBPACK_IMPORTED_MODULE_2__.TFD, {
@@ -35659,12 +35659,6 @@ function Games() {
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "creatorName"
   }, "Website created by David Billiot")));
-  function componentDidUpdate() {
-    setTimeout(console.log("component updated."), 2000);
-  }
-  function compontentDidUnmount() {
-    setTimeout(console.log("component unmounted"), 3000);
-  }
 }
 
 /***/ }),
